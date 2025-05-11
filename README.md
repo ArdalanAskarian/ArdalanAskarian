@@ -7,6 +7,8 @@
   <img src="https://readme-typing-svg.herokuapp.com?lines=Welcome+to+my+GitHub!;Full-stack+developer+in+training;Building+cool+things+with+code..." />
 </p>
 
+![Profile Views](https://komarev.com/ghpvc/?username=ArdalanAskarian&color=blue&style=flat)
+
 ---
 
 🔭 **Current Project:**  
