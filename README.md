@@ -1,7 +1,7 @@
 ## Hi everyone! 👋
 
 <h1 align="center">Hi there 👋, I'm Ardalan Askarian</h1>
-<h3 align="center">Computer Science Student | UofS | AI & Software Enthusiast</h3>
+<h3 align="center">Computer Science Student | AI & Software Enthusiast</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?lines=Welcome+to+my+GitHub!;Full-stack+developer+in+training;Building+cool+things+with+code..." />
@@ -11,16 +11,15 @@
 
 🔭 **Current Project:**  
 Developing an AI-assisted Image Annotation Platform  
-Exploring Fair Share Scheduling in xv6  
+Exploring XV6  
 
 🌱 **Learning:**  
 - Systems Programming & Operating Systems  
-- Advanced Software Engineering (CMPT 470)  
+- Advanced Software Engineering 
 - Machine Learning for Bug Classification  
 
 📫 **Reach me at:**  
-[![Gmail](https://img.shields.io/badge/email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:you@example.com)  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/YOUR-LINK)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ardalan-askarian-79221a24b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2Bj2HC%2B8hSuCcEw8D1FTHew%3D%3D)
 
 ---
 
@@ -42,13 +41,5 @@ Exploring Fair Share Scheduling in xv6
   <img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=radical" width="48%" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=radical" width="48%" />
 </p>
-
----
-
-💡 **Fun Fact:**  
-I skate on even days, kickbox on odd days, and hack code every day!
-
-🐍 **GitHub Snake** (Just for fun):  
-![snake gif](https://github.com/ArdalanAskarian/ArdalanAskarian/blob/output/github-contribution-grid-snake.svg)
 
 ---
