@@ -1,5 +1,3 @@
-## Hi everyone! 👋
-
 <h1 align="center">Hi there 👋, I'm Ardalan Askarian</h1>
 <h3 align="center">Computer Science Student | AI & Software Enthusiast</h3>
 
