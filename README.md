@@ -5,7 +5,7 @@
 ### Computer Science Student | Software Developer | AI Research Intern
 
 <p>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Computer+Science+student+%40+University+of+Saskatchewan;Software+Developer+Intern+%40+BEAP+Lab;Specializing+in+AI%2C+data+processing%2C+and+full-stack+development;Building+innovative+solutions+with+code" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Computer+Science+student+%40+University+of+Saskatchewan;Software+Developer+Intern+%40+BEAP+Lab;Specializing+in+AI%2C+data+processing%2C+and+full-stack+development;Fine-tuning+LLMs+for+automated+bug+classification" alt="Typing SVG" />
 </p>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=flat-square&label=Profile+Views)
@@ -28,13 +28,14 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 ### 🔭 Current Projects
 - **AI-Assisted Image Annotation Platform** - Leading development of Django-based system combining ML with human expertise for mass-labeling computer vision datasets
 - **BEAP Engine Development** - Building front-end and back-end systems for smartwatch data processing and analysis
+- **Fine-Tuning LLMs for Automated Bug Classification** - Research project achieving 94% accuracy using transformer-based models (CodeBERT, GraphCodeBERT)
 - **Circuit Optimization Research** - Developing ML algorithms for electronic circuit layout optimization (Coming Soon)
 
 ### 🌱 Research Interests
 - **Artificial Intelligence & Machine Learning** - Computer vision, data modeling, human-AI collaboration
+- **Large Language Models** - Fine-tuning transformer architectures, automated classification systems
+- **Software Engineering Research** - Bug classification, software maintenance, AI-driven debugging
 - **Data Processing & Analysis** - Large-scale dataset processing, optimization algorithms
-- **Software Architecture** - Scalable systems, full-stack development, user interface design
-- **Research Methodology** - Inter-annotator agreement, cognitive workload assessment
 
 ---
 
@@ -59,6 +60,17 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
   <img src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Transformers-FF6B6B?style=for-the-badge&logo=huggingface&logoColor=white" />
+</p>
+
+### Research & AI Tools
+<p>
+  <img src="https://img.shields.io/badge/CodeBERT-4285F4?style=for-the-badge&logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/GraphCodeBERT-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/DistilBERT-FF9500?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
 </p>
 
 ### Tools & Technologies
@@ -70,17 +82,20 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
   <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" />
 </p>
 
-### Research & Analysis
-<p>
-  <img src="https://img.shields.io/badge/Machine_Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Computer_Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/Data_Analysis-E97627?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Research-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" />
-</p>
-
 ---
 
 ## 🔬 Research & Projects
+
+### 🤖 Fine-Tuning LLMs for Automated Bug Classification *(CMPT 470 - Published Research)*
+> **Group "Lower-Back"** - Advanced Software Engineering Research Project
+
+**Research Achievement**: Developed fine-tuned LLMs achieving **94.54% accuracy** using GraphCodeBERT for automated GitHub bug classification into 7 categories  
+**Dataset**: Manually labeled 1,552 GitHub issues across React, VS Code, Scikit-learn, TensorFlow  
+**Models**: CodeBERT (93.99%), GraphCodeBERT (94.54%), DistilBERT (92.90%) vs Traditional ML baselines  
+**Impact**: Demonstrated transformer superiority over traditional ML for complex bug classification tasks
+
+**Paper**: [Fine-Tuning LLMs for Automated Bug Classification](https://drive.google.com/file/d/1-EZ82nrDkz-cz7pluI41sm9CC6QkuIQV/view?usp=sharing)  
+**Collaborators**: Princess Tayab, Timofei Kabakov, Marmik Patel
 
 ### 🤖 AI-Assisted Image Annotation Platform *(Current Research)*
 > Leading development of cutting-edge platform for IMG Lab addressing human-AI collaboration in annotation workflows
@@ -104,6 +119,16 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 > Responsive website with appointment booking, Google Maps integration, and modern design
 
 **Features**: Form validation, responsive CSS Grid, custom theming, Google Maps embed
+
+### ⚽ Sports Scheduling Application
+> Comprehensive sports management platform with React and Redux for team scheduling and management
+
+**Technologies**: React, Redux, Calendar Libraries, Push Notifications
+
+### 🏰 Darkness Defenders Game
+> Strategic tower-defense game developed in Unity with progressive difficulty and multiple enemy types
+
+**Technologies**: Unity Game Engine, C#, Game AI, Level Design
 
 ---
 
@@ -132,14 +157,30 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 
 ---
 
+## 📈 Research Highlights
+
+<div align="center">
+
+**🎯 Bug Classification Accuracy: 94.54%** • **📊 Dataset Size: 1,552 Issues** • **🔬 Published Research Paper** • **🤝 4-Person Research Team**
+
+</div>
+
+### 🔬 Research Contributions
+- **Automated Bug Classification**: Fine-tuned transformer models outperforming traditional ML by 6-20%
+- **Dataset Creation**: Manually labeled GitHub issues with inter-rater agreement analysis
+- **Model Comparison**: Comprehensive evaluation of CodeBERT, GraphCodeBERT, DistilBERT vs SVM, Naive Bayes
+- **Software Engineering Impact**: Reducing developer workload through AI-driven bug triage
+
+---
+
 ## 🎯 Current Focus Areas
 
 <div align="center">
 
 ![AI Research](https://img.shields.io/badge/🤖_AI_Research-Current-success?style=for-the-badge)
+![LLM Fine-tuning](https://img.shields.io/badge/🧠_LLM_Fine--tuning-Active-blue?style=for-the-badge)
 ![Computer Vision](https://img.shields.io/badge/👁️_Computer_Vision-Active-blue?style=for-the-badge)
-![Data Processing](https://img.shields.io/badge/📊_Data_Processing-Ongoing-orange?style=for-the-badge)
-![Full Stack](https://img.shields.io/badge/⚛️_Full_Stack_Dev-Learning-purple?style=for-the-badge)
+![Software Engineering](https://img.shields.io/badge/⚙️_Software_Engineering-Ongoing-orange?style=for-the-badge)
 
 </div>
 
@@ -159,11 +200,11 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 
 ## 💼 Open to Opportunities
 
-**🔬 Research Collaborations** • **💼 Internship Opportunities** • **🚀 Freelance Projects** • **📚 Academic Partnerships**
+**🔬 Research Collaborations** • **💼 Internship Opportunities** • **🚀 Freelance Projects** • **📚 Academic Partnerships** • **🤖 AI/ML Projects**
 
 <div align="center">
 
-**Interests**: AI Research • Computer Vision • Data Science • Full-Stack Development • Human-Computer Interaction
+**Research Interests**: Large Language Models • Automated Bug Classification • Computer Vision • Human-AI Collaboration • Software Engineering
 
 </div>
 
@@ -172,18 +213,19 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 ## 💡 Fun Facts
 
 - 🎓 Currently pursuing Computer Science at University of Saskatchewan (Dec 2026)
-- 🔬 Active in research labs focusing on AI and computer vision applications
-- 🌐 Passionate about the intersection of AI and human-computer interaction
+- 🔬 Published research on fine-tuning LLMs achieving 94.54% accuracy in bug classification
+- 🤖 Passionate about the intersection of AI and software engineering
 - 📊 Experience in both theoretical research and practical software development
 - 🏗️ Building systems that process and analyze large-scale datasets
 - 🎮 Game development enthusiast (Unity, C#)
+- 🧠 Believer in AI's potential to revolutionize software maintenance
 
 ---
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer&animation=fadeIn" />
   
-  **Thanks for visiting! Open to research collaborations, internships, and interesting projects! 🚀**
+  **Thanks for visiting! Open to research collaborations, internships, and AI/ML projects! 🚀**
   
   ⭐ **Star my repositories if you find them interesting!**
 </div>
