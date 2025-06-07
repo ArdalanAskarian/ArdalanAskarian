@@ -86,7 +86,7 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 
 ## 🔬 Research & Projects
 
-### 🤖 Fine-Tuning LLMs for Automated Bug Classification *(CMPT 470 - Published Research)*
+### 🤖 Fine-Tuning LLMs for Automated Bug Classification
 > **Group "Lower-Back"** - Advanced Software Engineering Research Project
 
 **Research Achievement**: Developed fine-tuned LLMs achieving **94.54% accuracy** using GraphCodeBERT for automated GitHub bug classification into 7 categories  
@@ -157,22 +157,6 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 
 ---
 
-## 📈 Research Highlights
-
-<div align="center">
-
-**🎯 Bug Classification Accuracy: 94.54%** • **📊 Dataset Size: 1,552 Issues** • **🔬 Published Research Paper** • **🤝 4-Person Research Team**
-
-</div>
-
-### 🔬 Research Contributions
-- **Automated Bug Classification**: Fine-tuned transformer models outperforming traditional ML by 6-20%
-- **Dataset Creation**: Manually labeled GitHub issues with inter-rater agreement analysis
-- **Model Comparison**: Comprehensive evaluation of CodeBERT, GraphCodeBERT, DistilBERT vs SVM, Naive Bayes
-- **Software Engineering Impact**: Reducing developer workload through AI-driven bug triage
-
----
-
 ## 🎯 Current Focus Areas
 
 <div align="center">
@@ -213,7 +197,7 @@ I'm a passionate Computer Science student at the University of Saskatchewan with
 ## 💡 Fun Facts
 
 - 🎓 Currently pursuing Computer Science at University of Saskatchewan (Dec 2026)
-- 🔬 Published research on fine-tuning LLMs achieving 94.54% accuracy in bug classification
+- 🔬 Research on fine-tuning LLMs achieving 94.54% accuracy in bug classification
 - 🤖 Passionate about the intersection of AI and software engineering
 - 📊 Experience in both theoretical research and practical software development
 - 🏗️ Building systems that process and analyze large-scale datasets
