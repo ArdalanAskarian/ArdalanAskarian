@@ -20,7 +20,7 @@
 I'm a passionate Computer Science student at the University of Saskatchewan with hands-on research and development experience. Currently working as a Software Developer Intern at BEAP Lab, where I spearhead the development of front-end and back-end systems for the BEAP Engine - a platform for processing and analyzing large datasets for Smartwatches.
 
 ### 🎓 Current Status
-- **🏫 Education**: Computer Science @ University of Saskatchewan (Expected Dec 2026)
+- **🏫 Education**: Computer Science @ University of Saskatchewan
 - **💼 Position**: Software Developer Intern @ BEAP Lab (Oct 2024 - Present)
 - **🔬 Research**: AI-Assisted Image Annotation Platform @ IMG Lab
 - **🎯 Focus**: AI, Data Processing, Full-Stack Development, Research & Development
