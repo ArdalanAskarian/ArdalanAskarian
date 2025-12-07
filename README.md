@@ -1,424 +1,327 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=Ardalan%20Askarian&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=ffffff" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:8b5cf6,100:ec4899&height=220&section=header&text=Ardalan%20Askarian&fontSize=75&fontAlignY=35&animation=fadeIn&fontColor=ffffff&desc=Turning%20Ideas%20into%20Intelligent%20Solutions&descAlignY=55&descSize=20" />
 
-### 🎓 Computer Science Student | 💻 Software Developer | 🔬 AI Research Intern
+<br>
 
-<p>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Computer+Science+%40+University+of+Saskatchewan;Software+Developer+Intern+%40+BEAP+Lab;Specializing+in+AI+%26+Full-Stack+Development;Fine-tuning+LLMs+for+Bug+Classification;Building+AI-Assisted+Annotation+Systems" alt="Typing SVG" />
-</p>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=%F0%9F%8E%93+Computer+Science+%40+University+of+Saskatchewan;%F0%9F%94%AC+AI+Research+Intern+%7C+%F0%9F%92%BB+Software+Developer;%F0%9F%A7%A0+Fine-tuning+LLMs+%7C+%F0%9F%93%8A+Building+Data+Platforms)](https://git.io/typing-svg)
 
-<p>
-  <img src="https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=for-the-badge&label=Profile+Views" alt="Profile Views"/>
-  <a href="https://github.com/ArdalanAskarian?tab=followers">
-    <img src="https://img.shields.io/github/followers/ArdalanAskarian?label=Followers&style=for-the-badge&color=3b82f6&logo=github" alt="GitHub Followers"/>
-  </a>
-  <img src="https://img.shields.io/github/stars/ArdalanAskarian?label=Stars&style=for-the-badge&color=ffd700&logo=github" alt="GitHub Stars"/>
-</p>
+<br>
+
+<a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="mailto:ardalansecure@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+<a href="https://github.com/ArdalanAskarian">
+  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=flat-square&label=Profile+Views" alt="Profile Views"/>
+<img src="https://img.shields.io/github/followers/ArdalanAskarian?label=Followers&style=flat-square&color=8b5cf6&logo=github" alt="GitHub Followers"/>
+<img src="https://img.shields.io/github/stars/ArdalanAskarian?label=Stars&style=flat-square&color=f59e0b&logo=github" alt="GitHub Stars"/>
 
 </div>
 
----
+<br>
 
-## 🚀 About Me
+## 🎯 At a Glance
+
+```javascript
+const ardalan = {
+    education: "B.Sc. Computer Science @ University of Saskatchewan (Dec 2026)",
+    currentRole: "Software Developer Intern @ BEAP Lab",
+    research: "AI Research Intern @ IMG Lab",
+    expertise: ["Machine Learning", "Full-Stack Development", "Data Engineering"],
+    achievement: "94.54% accuracy in LLM-based bug classification",
+    passion: "Building AI systems that solve real-world problems"
+};
+```
+
+<br>
+
+## 💼 Experience
 
 <table>
 <tr>
 <td width="50%">
 
-I'm a **passionate Computer Science student** at the University of Saskatchewan with hands-on research and development experience. Currently working as a **Software Developer Intern at BEAP Lab**, where I spearhead the development of front-end and back-end systems for the **BEAP Engine** - a platform for processing and analyzing large datasets for Smartwatches.
+### <img src="https://img.icons8.com/color/24/000000/code.png"/> Software Developer Intern
+**BEAP Lab** • Oct 2024 - Present
 
-### 🎯 What I Do
-- 🤖 Fine-tuning LLMs for automated bug classification (**94.54% accuracy**)
-- 🖼️ Building AI-assisted image annotation platforms
-- 📊 Processing & analyzing large-scale smartwatch datasets
-- 🔬 Conducting research at the intersection of AI & software engineering
+<img src="https://img.shields.io/badge/Status-Active-00c853?style=flat-square"/>
+
+- 🏗️ Building the **BEAP Engine** - a comprehensive platform for smartwatch data processing
+- ⚡ Developing front-end & back-end systems for large-scale dataset analysis
+- 📊 Creating real-time data visualization & insights dashboards
+- 🔧 Implementing robust data processing pipelines
 
 </td>
 <td width="50%">
 
-### 🎓 Current Status
+### <img src="https://img.icons8.com/color/24/000000/brain.png"/> AI Research Intern
+**IMG Lab** • May 2025 - Aug 2025
 
-```yaml
-Education: Computer Science @ USask
-Position: Software Developer Intern @ BEAP Lab
-Duration: Oct 2024 - Present
-Research: AI-Assisted Annotation @ IMG Lab
-Focus Areas:
-  - Artificial Intelligence & ML
-  - Data Processing & Analysis
-  - Full-Stack Development
-  - Research & Development
-```
+<img src="https://img.shields.io/badge/Status-Upcoming-3b82f6?style=flat-square"/>
+
+- 🖼️ Leading development of AI-Assisted Image Annotation Platform
+- 🤝 Research focus on human-AI collaboration workflows
+- 📐 Studying inter-annotator agreement optimization
+- 🧠 Assessing cognitive workload in annotation tasks
 
 </td>
 </tr>
 </table>
 
-### 🔭 Current Projects
+<br>
 
-<details open>
-<summary><b>🤖 AI-Assisted Image Annotation Platform</b> <i>(Leading Development)</i></summary>
-
-- Django-based system combining ML with human expertise
-- Mass-labeling computer vision datasets
-- Research focus on inter-annotator agreement & cognitive workload
-- **Tech**: Django, Python, OpenCV, scikit-image, JavaScript, Selenium
-
-</details>
-
-<details open>
-<summary><b>📊 BEAP Engine Development</b> <i>(Software Developer Intern)</i></summary>
-
-- Building front-end and back-end systems for smartwatch data
-- Processing & analyzing large-scale datasets
-- Real-time data visualization & insights
-- **Tech**: Full-stack development, data processing pipelines
-
-</details>
-
-<details open>
-<summary><b>🧠 Fine-Tuning LLMs for Bug Classification</b> <i>(Research Completed)</i></summary>
-
-- **94.54% accuracy** using GraphCodeBERT
-- Manually labeled 1,552 GitHub issues across 4 major projects
-- Transformer models outperformed traditional ML baselines
-- **Models**: CodeBERT (93.99%), GraphCodeBERT (94.54%), DistilBERT (92.90%)
-
-</details>
-
-<details>
-<summary><b>⚡ Circuit Optimization Research</b> <i>(Coming Soon)</i></summary>
-
-- Developing ML algorithms for electronic circuit layout optimization
-- AI-driven routing algorithms & performance analysis
-- Applications in semiconductor industry & chip design
-
-</details>
-
----
-
-### 🌱 Research Interests
-
-| Area | Focus |
-|------|-------|
-| 🤖 **AI & Machine Learning** | Computer vision, data modeling, human-AI collaboration |
-| 🧠 **Large Language Models** | Fine-tuning transformers, automated classification systems |
-| ⚙️ **Software Engineering** | Bug classification, software maintenance, AI-driven debugging |
-| 📊 **Data Processing** | Large-scale dataset processing, optimization algorithms |
-
----
-
-## 🛠️ Tech Stack
+## 🏆 Research Highlights
 
 <div align="center">
 
-### 💻 Languages
+### 🧠 Fine-Tuning LLMs for Automated Bug Classification
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+<table>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/GraphCodeBERT-94.54%25-00c853?style=for-the-badge&logo=microsoft&logoColor=white"/>
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/CodeBERT-93.99%25-4caf50?style=for-the-badge&logo=microsoft&logoColor=white"/>
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/DistilBERT-92.90%25-8bc34a?style=for-the-badge&logo=huggingface&logoColor=white"/>
+</td>
+</tr>
+</table>
+
+</div>
+
+<details>
+<summary><b>📄 View Research Details</b></summary>
+<br>
+
+| Metric | Value |
+|--------|-------|
+| **Best Accuracy** | 94.54% (GraphCodeBERT) |
+| **Dataset Size** | 1,552 manually labeled GitHub issues |
+| **Projects Analyzed** | React, VS Code, Scikit-learn, TensorFlow |
+| **Key Finding** | Transformer models significantly outperform traditional ML baselines |
+
+**📑 [Read the Full Paper →](https://drive.google.com/file/d/1-EZ82nrDkz-cz7pluI41sm9CC6QkuIQV/view?usp=sharing)**
+
+*Team: Princess Tayab, Timofei Kabakov, Marmik Patel, Ardalan Askarian*
+
+</details>
+
+<br>
+
+## 🛠️ Technical Arsenal
+
+<div align="center">
+
+### Languages & Core Technologies
+
+![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Advanced-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Swift](https://img.shields.io/badge/Swift-Intermediate-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-Intermediate-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![R](https://img.shields.io/badge/R-Intermediate-276DC3?style=for-the-badge&logo=r&logoColor=white)
+
+### AI & Machine Learning
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/🤗_Transformers-FFD21E?style=for-the-badge)
+![scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+
+### Web & Frameworks
+
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### 🚀 Frameworks & Libraries
+### Tools & Platforms
 
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
-### 🧠 AI & Research Tools
-
-![Transformers](https://img.shields.io/badge/🤗_Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![CodeBERT](https://img.shields.io/badge/CodeBERT-4285F4?style=for-the-badge&logo=microsoft&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-### 🛠️ Tools & Platforms
-
-![Unity](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-![Google Maps](https://img.shields.io/badge/Google_Maps-4285F4?style=for-the-badge&logo=google-maps&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS_Dev-000000?style=for-the-badge&logo=apple&logoColor=white)
 
 </div>
 
----
+<br>
 
-## 🔬 Featured Research & Projects
+## 🚀 Featured Projects
 
-### 🏆 Highlighted Research
+<div align="center">
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-#### 🤖 Fine-Tuning LLMs for Bug Classification
-> **Advanced Software Engineering Research**
+### 📊 BEAP Engine
+**Enterprise Data Platform**
 
-```diff
-+ 94.54% Accuracy with GraphCodeBERT
-+ 1,552 Manually Labeled GitHub Issues
-+ Outperformed Traditional ML Baselines
-```
+<img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django"/>
+<img src="https://img.shields.io/badge/Python-Processing-3776AB?style=flat-square&logo=python"/>
 
-**Key Results**:
-- **GraphCodeBERT**: 94.54%
-- **CodeBERT**: 93.99%
-- **DistilBERT**: 92.90%
-
-**Dataset**: React, VS Code, Scikit-learn, TensorFlow
-
-📄 [**Read Full Paper**](https://drive.google.com/file/d/1-EZ82nrDkz-cz7pluI41sm9CC6QkuIQV/view?usp=sharing)
-
-👥 **Team**: Princess Tayab, Timofei Kabakov, Marmik Patel, Ardalan Askarian
+Full-stack platform for processing and analyzing large-scale smartwatch datasets with real-time visualization capabilities.
 
 </td>
 <td width="50%" valign="top">
 
-#### 🖼️ AI-Assisted Image Annotation Platform
-> **Current Research @ IMG Lab**
+### 🖼️ AI Annotation Platform
+**Computer Vision Research**
 
-**Research Focus**:
-- 🎯 Inter-annotator agreement optimization
-- 🧠 Cognitive workload assessment
-- ⚡ Annotation efficiency improvements
-- 🤝 Human-AI collaboration workflows
+<img src="https://img.shields.io/badge/OpenCV-Vision-5C3EE8?style=flat-square&logo=opencv"/>
+<img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django"/>
 
-**Tech Stack**:
-- Backend: Django, Python
-- Computer Vision: OpenCV, scikit-image
-- Automation: Selenium
-- Frontend: JavaScript
-
-**Timeline**: May 2025 - August 2025
-
-</td>
-</tr>
-</table>
-
----
-
-### 💡 Other Notable Projects
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-#### ⚡ Circuit Optimization
-**ML for Electronic Design Automation**
-
-- Circuit placement optimization
-- AI-driven routing algorithms
-- Performance analysis
-- Applications in semiconductor design
-
-</td>
-<td width="33%" valign="top">
-
-#### 📱 iOS Weather App
-**Native iOS Development**
-
-- Real-time weather data
-- Core Location integration
-- WeatherKit API
-- Clean Apple UI design
-
-</td>
-<td width="33%" valign="top">
-
-#### 🏥 Dentistry Website
-**Professional Web Development**
-
-- Appointment booking system
-- Google Maps integration
-- Responsive CSS Grid
-- Form validation
+AI-assisted image annotation system for mass-labeling datasets with focus on human-AI collaboration.
 
 </td>
 </tr>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-#### ⚽ Sports Scheduler
-**React & Redux Platform**
+### 📱 iOS Weather App
+**Native Mobile Development**
 
-- Team scheduling & management
-- Calendar integration
-- Push notifications
-- Real-time updates
+<img src="https://img.shields.io/badge/Swift-iOS-FA7343?style=flat-square&logo=swift"/>
+<img src="https://img.shields.io/badge/WeatherKit-API-000000?style=flat-square&logo=apple"/>
+
+Real-time weather application with Core Location integration and clean Apple-style UI design.
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-#### 🏰 Darkness Defenders
+### ⚽ Sports Scheduler
+**React Web Application**
+
+<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react"/>
+<img src="https://img.shields.io/badge/Redux-State-764ABC?style=flat-square&logo=redux"/>
+
+Team scheduling platform with calendar integration, push notifications, and real-time updates.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🏰 Darkness Defenders
 **Unity Game Development**
 
-- Tower-defense mechanics
-- Progressive difficulty
-- Game AI implementation
-- Multiple enemy types
+<img src="https://img.shields.io/badge/Unity-Engine-000000?style=flat-square&logo=unity"/>
+<img src="https://img.shields.io/badge/C%23-Logic-239120?style=flat-square&logo=csharp"/>
+
+Tower-defense game with progressive difficulty, game AI, and multiple enemy types.
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-#### 📊 BEAP Engine
-**Data Processing Platform**
+### 🏥 Dentistry Website
+**Professional Web Solution**
 
-- Smartwatch data analysis
-- Front-end & back-end systems
-- Large-scale dataset processing
-- Real-time insights
+<img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?style=flat-square&logo=html5"/>
+<img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=flat-square&logo=css3"/>
 
-</td>
-</tr>
-</table>
+Responsive website with appointment booking, Google Maps integration, and form validation.
 
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=react&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=3B82F6&text_color=FFFFFF" alt="GitHub Stats"/>
-
-</td>
-<td width="50%">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=react&hide_border=true&background=0D1117&stroke=3B82F6&ring=3B82F6&fire=FF6B6B&currStreakLabel=3B82F6" alt="GitHub Streak"/>
-
-</td>
-</tr>
-</table>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&theme=react-dark&hide_border=true&area=true&bg_color=0D1117&color=3B82F6&line=3B82F6&point=FFFFFF" alt="Contribution Graph" width="100%"/>
-
-### 🏆 GitHub Achievements
-
-<img src="https://github-profile-trophy.vercel.app/?username=ArdalanAskarian&theme=algolia&no-frame=true&no-bg=false&margin-w=4&row=2&column=4" alt="Trophies"/>
-
-### 📈 Most Used Languages
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArdalanAskarian&layout=compact&langs_count=10&theme=react&hide_border=true&bg_color=0D1117&title_color=3B82F6&text_color=FFFFFF" alt="Top Languages"/>
-
-</div>
-
----
-
-## 🎯 Current Focus Areas
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-  <img src="https://img.icons8.com/fluency/96/000000/artificial-intelligence.png" width="50px" alt="AI"/>
-  <br><b>AI Research</b>
-  <br><sub>LLMs & Transformers</sub>
-</td>
-<td align="center" width="25%">
-  <img src="https://img.icons8.com/fluency/96/000000/code.png" width="50px" alt="Dev"/>
-  <br><b>Full-Stack Dev</b>
-  <br><sub>Django & React</sub>
-</td>
-<td align="center" width="25%">
-  <img src="https://img.icons8.com/fluency/96/000000/camera.png" width="50px" alt="CV"/>
-  <br><b>Computer Vision</b>
-  <br><sub>Image Processing</sub>
-</td>
-<td align="center" width="25%">
-  <img src="https://img.icons8.com/fluency/96/000000/bar-chart.png" width="50px" alt="Data"/>
-  <br><b>Data Science</b>
-  <br><sub>Large-Scale Processing</sub>
 </td>
 </tr>
 </table>
 
 </div>
 
----
+<br>
 
-## 🤝 Let's Connect & Collaborate
+## 📈 GitHub Analytics
 
 <div align="center">
 
-### 📫 How to reach me
+<img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/>
+
+<br><br>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&theme=tokyo-night&hide_border=true&area=true&bg_color=0D1117" width="95%"/>
+
+<br><br>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArdalanAskarian&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&text_color=FFFFFF" height="180"/>
+
+<br><br>
+
+<img src="https://github-profile-trophy.vercel.app/?username=ArdalanAskarian&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=7" width="95%"/>
+
+</div>
+
+<br>
+
+## 🎯 Research Interests
+
+<div align="center">
+
+| <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/source-code.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/camera.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/combo-chart.png" width="30"/> |
+|:---:|:---:|:---:|:---:|
+| **AI & LLMs** | **Software Engineering** | **Computer Vision** | **Data Science** |
+| Fine-tuning transformers | Bug classification | Image annotation | Large-scale processing |
+| Human-AI collaboration | Software maintenance | Object detection | Optimization algorithms |
+
+</div>
+
+<br>
+
+## 🤝 Let's Connect
+
+<div align="center">
+
+I'm always excited to collaborate on **AI/ML research**, **software development projects**, and **innovative ideas**!
+
+<br>
+
+| 🔬 Research Collaborations | 💼 Internship Opportunities | 🚀 Open Source Projects | 📚 Academic Partnerships |
+|:---:|:---:|:---:|:---:|
+| AI & Machine Learning | Software Development | Full-Stack Applications | Computer Science Research |
+
+<br>
 
 <a href="mailto:ardalansecure@gmail.com">
-  <img src="https://img.shields.io/badge/Email-ardalansecure@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  <img src="https://img.shields.io/badge/📧_Email_Me-ardalansecure@gmail.com-EA4335?style=for-the-badge"/>
 </a>
-<br>
+
+<br><br>
+
 <a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
-  <img src="https://img.shields.io/badge/LinkedIn-Ardalan_Askarian-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  <img src="https://img.shields.io/badge/Let's_Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
+
+</div>
+
 <br>
-<a href="https://github.com/ArdalanAskarian">
-  <img src="https://img.shields.io/badge/GitHub-ArdalanAskarian-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-
-### 💼 Open to Opportunities
-
-<table>
-<tr>
-<td align="center">🔬<br><b>Research<br>Collaborations</b></td>
-<td align="center">💼<br><b>Internship<br>Opportunities</b></td>
-<td align="center">🚀<br><b>Freelance<br>Projects</b></td>
-<td align="center">📚<br><b>Academic<br>Partnerships</b></td>
-<td align="center">🤖<br><b>AI/ML<br>Projects</b></td>
-</tr>
-</table>
-
-**Primary Research Interests**: Large Language Models • Automated Bug Classification • Computer Vision • Human-AI Collaboration • Software Engineering
-
-</div>
-
----
-
-## 💡 Quick Facts About Me
-
-<div align="center">
-
-```yaml
-🎓 Education: Computer Science @ University of Saskatchewan (Dec 2026)
-🔬 Research Achievement: 94.54% accuracy in LLM-based bug classification
-🤖 Passion: Intersection of AI and software engineering
-💼 Experience: Theoretical research + practical development
-🏗️ Building: Large-scale data processing & analysis systems
-🎮 Hobbies: Game development (Unity, C#), AI experimentation
-🧠 Vision: AI-powered revolution in software maintenance
-```
-
-</div>
 
 ---
 
 <div align="center">
 
-### ⭐ If you find my work interesting, consider starring my repositories!
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
+<br><br>
 
-### 📈 Profile Stats
+![Snake animation](https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-contribution-grid-snake-dark.svg)
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ArdalanAskarian&theme=github_dark)
+<br>
 
----
+**⭐ If you find my work interesting, consider giving a star to my repositories!**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer&animation=fadeIn" />
+<br>
 
-**💬 Thanks for visiting! Always open to research collaborations, internships, and AI/ML projects!**
-
-<sub>Last Updated: September 2025</sub>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:8b5cf6,100:ec4899&height=120&section=footer&animation=fadeIn"/>
 
 </div>
