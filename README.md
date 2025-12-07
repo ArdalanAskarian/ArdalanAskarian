@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:8b5cf6,100:ec4899&height=220&section=header&text=Ardalan%20Askarian&fontSize=75&fontAlignY=35&animation=fadeIn&fontColor=ffffff&desc=Turning%20Ideas%20into%20Intelligent%20Solutions&descAlignY=55&descSize=20" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:8b5cf6,100:ec4899&height=220&section=header&text=Ardalan%20Askarian&fontSize=75&fontAlignY=35&animation=fadeIn&fontColor=ffffff&desc=M.Sc.%20Student%20%7C%20AI%20%26%20Computer%20Vision%20Researcher&descAlignY=55&descSize=20" />
 
 <br>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=%F0%9F%8E%93+Computer+Science+%40+University+of+Saskatchewan;%F0%9F%94%AC+AI+Research+Intern+%7C+%F0%9F%92%BB+Software+Developer;%F0%9F%A7%A0+Fine-tuning+LLMs+%7C+%F0%9F%93%8A+Building+Data+Platforms)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=M.Sc.+Computer+Science+%40+University+of+Saskatchewan;Software+Engineer+%7C+AI+Researcher;Computer+Vision+%26+Applied+Machine+Learning)](https://git.io/typing-svg)
 
 <br>
 
 <a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
-<a href="mailto:ardalansecure@gmail.com">
+<a href="mailto:ardalan.askarian@usask.ca">
   <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
 <a href="https://github.com/ArdalanAskarian">
@@ -32,14 +32,44 @@
 
 ```javascript
 const ardalan = {
-    education: "B.Sc. Computer Science @ University of Saskatchewan (Dec 2026)",
-    currentRole: "Software Developer Intern @ BEAP Lab",
-    research: "AI Research Intern @ IMG Lab",
-    expertise: ["Machine Learning", "Full-Stack Development", "Data Engineering"],
-    achievement: "94.54% accuracy in LLM-based bug classification",
-    passion: "Building AI systems that solve real-world problems"
+    currentlyPursuing: "M.Sc. Computer Science – Applied Machine Learning",
+    researchFocus: "Computer Vision & Image Processing under Dr. Mark Eramian",
+    bachelorsDegree: "B.Sc. Honours Computer Science – 86% Average",
+    expertise: ["Computer Vision", "AI/ML", "Full-Stack Development"],
+    awards: ["NSERC USRA 2025", "TESL Saskatchewan Bursary"]
 };
 ```
+
+<br>
+
+## 🎓 Education
+
+<table>
+<tr>
+<td width="50%">
+
+### <img src="https://img.icons8.com/color/24/000000/graduation-cap.png"/> M.Sc. Computer Science
+Sep 2025 - Present
+
+<img src="https://img.shields.io/badge/Focus-Applied%20Machine%20Learning-8b5cf6?style=flat-square"/>
+
+- 🔬 Research: Computer Vision & Image Processing
+- 👨‍🏫 Supervisor: Dr. Mark Eramian
+
+</td>
+<td width="50%">
+
+### <img src="https://img.icons8.com/color/24/000000/diploma.png"/> B.Sc. Honours Computer Science
+**University of Saskatchewan** • Sep 2020 - Apr 2025
+
+<img src="https://img.shields.io/badge/Average-86%25-00c853?style=flat-square"/>
+
+- 💻 Software Engineering Option
+- 🏆 Honours Graduate
+
+</td>
+</tr>
+</table>
 
 <br>
 
@@ -49,28 +79,38 @@ const ardalan = {
 <tr>
 <td width="50%">
 
-### <img src="https://img.icons8.com/color/24/000000/code.png"/> Software Developer Intern
-**BEAP Lab** • Oct 2024 - Present
+### <img src="https://img.icons8.com/color/24/000000/smartwatch.png"/> Software Developer Intern
+**BEAP Lab** • Oct 2024 - Sep 2025
 
-<img src="https://img.shields.io/badge/Status-Active-00c853?style=flat-square"/>
+<img src="https://img.shields.io/badge/Status-Completed-3b82f6?style=flat-square"/>
 
-- 🏗️ Building the **BEAP Engine** - a comprehensive platform for smartwatch data processing
-- ⚡ Developing front-end & back-end systems for large-scale dataset analysis
-- 📊 Creating real-time data visualization & insights dashboards
-- 🔧 Implementing robust data processing pipelines
+- 🏗️ Led full-stack development of BEAP Engine
+- ⚡ Redesigned UI with React.js & TypeScript
+- 🧠 Implemented ML for smartwatch data parsing
 
 </td>
 <td width="50%">
 
-### <img src="https://img.icons8.com/color/24/000000/brain.png"/> AI Research Intern
-**IMG Lab** • May 2025 - Aug 2025
+### <img src="https://img.icons8.com/color/24/000000/microscope.png"/> NSERC USRA Researcher
+**USask Imaging & AI Lab** • May 2025 - Aug 2025
 
-<img src="https://img.shields.io/badge/Status-Upcoming-3b82f6?style=flat-square"/>
+<img src="https://img.shields.io/badge/Award-NSERC%20USRA-f59e0b?style=flat-square"/>
 
-- 🖼️ Leading development of AI-Assisted Image Annotation Platform
-- 🤝 Research focus on human-AI collaboration workflows
-- 📐 Studying inter-annotator agreement optimization
-- 🧠 Assessing cognitive workload in annotation tasks
+- 🖼️ SIFT-assisted image annotation research
+- 📊 User study: 6 participants, 36,407 events
+- 📝 Co-authored research poster
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+### <img src="https://img.icons8.com/color/24/000000/teacher.png"/> Teaching Assistant
+**University of Saskatchewan** • Jan 2023 - Present
+
+<img src="https://img.shields.io/badge/Experience-2%2B%20Years-8b5cf6?style=flat-square"/>
+
+Currently: CMPT 332 (Operating Systems) | Mentored 100+ students across 6 CS courses
 
 </td>
 </tr>
@@ -78,81 +118,114 @@ const ardalan = {
 
 <br>
 
-## 🏆 Research Highlights
+## 🔬 Research
 
 <div align="center">
 
-### 🧠 Fine-Tuning LLMs for Automated Bug Classification
+### Enhancing Annotation Consistency and Efficiency
+**A Study of SIFT-Assisted Image Annotation in Computer Vision**
+
+*Ardalan Askarian, Dr. Mark Eramian – University of Saskatchewan*
+
+</div>
 
 <table>
 <tr>
-<td align="center">
-<img src="https://img.shields.io/badge/GraphCodeBERT-94.54%25-00c853?style=for-the-badge&logo=microsoft&logoColor=white"/>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Participants-6-3b82f6?style=for-the-badge"/>
+<br><sub>User Study</sub>
 </td>
-<td align="center">
-<img src="https://img.shields.io/badge/CodeBERT-93.99%25-4caf50?style=for-the-badge&logo=microsoft&logoColor=white"/>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Events-36,407-8b5cf6?style=for-the-badge"/>
+<br><sub>Interaction Data</sub>
 </td>
-<td align="center">
-<img src="https://img.shields.io/badge/DistilBERT-92.90%25-8bc34a?style=for-the-badge&logo=huggingface&logoColor=white"/>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Platform-Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
+<br><sub>Built With</sub>
 </td>
 </tr>
 </table>
-
-</div>
 
 <details>
 <summary><b>📄 View Research Details</b></summary>
 <br>
 
-| Metric | Value |
-|--------|-------|
-| **Best Accuracy** | 94.54% (GraphCodeBERT) |
-| **Dataset Size** | 1,552 manually labeled GitHub issues |
-| **Projects Analyzed** | React, VS Code, Scikit-learn, TensorFlow |
-| **Key Finding** | Transformer models significantly outperform traditional ML baselines |
+| Aspect | Details |
+|--------|---------|
+| **Platform** | Django-based annotation system combining SIFT boxes with human oversight |
+| **Comparison** | AI-assisted annotation vs. manual baseline |
+| **Key Finding** | AI assistance increased annotation time by 71.6% without improving IoU or GTC quality metrics |
+| **Contribution** | Distilled design lessons for productive human-AI collaboration in annotation systems |
+| **Output** | Co-authored research poster on human-AI collaboration in annotation workflows |
 
-**📑 [Read the Full Paper →](https://drive.google.com/file/d/1-EZ82nrDkz-cz7pluI41sm9CC6QkuIQV/view?usp=sharing)**
-
-*Team: Princess Tayab, Timofei Kabakov, Marmik Patel, Ardalan Askarian*
+**Technologies:** Django, Python, OpenCV, SIFT (Scale-Invariant Feature Transform), Image Segmentation
 
 </details>
 
 <br>
 
-## 🛠️ Technical Arsenal
+## 🛠️ Technical Skills
 
 <div align="center">
 
-### Languages & Core Technologies
+### Languages
 
-![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Advanced-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Swift](https://img.shields.io/badge/Swift-Intermediate-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-Intermediate-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![R](https://img.shields.io/badge/R-Intermediate-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 
-### AI & Machine Learning
+### Frameworks & Technologies
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/🤗_Transformers-FFD21E?style=for-the-badge)
-![scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-
-### Web & Frameworks
-
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+### ML & Computer Vision
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![SIFT](https://img.shields.io/badge/SIFT-Image%20Processing-8b5cf6?style=for-the-badge)
+
+### Databases
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ### Tools & Platforms
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS_Dev-000000?style=for-the-badge&logo=apple&logoColor=white)
+
+</div>
+
+<br>
+
+## 🏆 Accomplishments
+
+<div align="center">
+
+| Award | Year | Details |
+|:---:|:---:|:---:|
+| 🏅 **NSERC USRA** | 2025 | Undergraduate Student Research Award for Computer Vision research |
+| 🎓 **TESL Saskatchewan Bursary** | 2022 | One of two recipients province-wide |
+| 📚 **EAP Scholarship** | 2020 | $2,500 as highest achiever in English for Academic Purposes |
 
 </div>
 
@@ -167,71 +240,38 @@ const ardalan = {
 <td width="50%" valign="top">
 
 ### 📊 BEAP Engine
-**Enterprise Data Platform**
-
-<img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django"/>
-<img src="https://img.shields.io/badge/Python-Processing-3776AB?style=flat-square&logo=python"/>
-
-Full-stack platform for processing and analyzing large-scale smartwatch datasets with real-time visualization capabilities.
-
-</td>
-<td width="50%" valign="top">
-
-### 🖼️ AI Annotation Platform
-**Computer Vision Research**
-
-<img src="https://img.shields.io/badge/OpenCV-Vision-5C3EE8?style=flat-square&logo=opencv"/>
-<img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django"/>
-
-AI-assisted image annotation system for mass-labeling datasets with focus on human-AI collaboration.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📱 iOS Weather App
-**Native Mobile Development**
-
-<img src="https://img.shields.io/badge/Swift-iOS-FA7343?style=flat-square&logo=swift"/>
-<img src="https://img.shields.io/badge/WeatherKit-API-000000?style=flat-square&logo=apple"/>
-
-Real-time weather application with Core Location integration and clean Apple-style UI design.
-
-</td>
-<td width="50%" valign="top">
-
-### ⚽ Sports Scheduler
-**React Web Application**
+**Smartwatch Data Platform**
 
 <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react"/>
-<img src="https://img.shields.io/badge/Redux-State-764ABC?style=flat-square&logo=redux"/>
+<img src="https://img.shields.io/badge/TypeScript-Language-3178C6?style=flat-square&logo=typescript"/>
 
-Team scheduling platform with calendar integration, push notifications, and real-time updates.
+Full-stack platform for large-scale smartwatch data processing and analytics with ML-enhanced parsing.
+
+</td>
+<td width="50%" valign="top">
+
+### 🖼️ SIFT Annotation Platform
+**Computer Vision Research**
+
+<img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django"/>
+<img src="https://img.shields.io/badge/OpenCV-Vision-5C3EE8?style=flat-square&logo=opencv"/>
+
+AI-assisted image annotation system combining Scale-Invariant Feature Transform with human oversight.
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td colspan="2" align="center">
 
-### 🏰 Darkness Defenders
-**Unity Game Development**
+### ⚽ Sports Scheduling App
+**CMPT 370 – Intermediate Software Engineering**
 
-<img src="https://img.shields.io/badge/Unity-Engine-000000?style=flat-square&logo=unity"/>
-<img src="https://img.shields.io/badge/C%23-Logic-239120?style=flat-square&logo=csharp"/>
+<img src="https://img.shields.io/badge/React_Native-Mobile-61DAFB?style=flat-square&logo=react"/>
+<img src="https://img.shields.io/badge/TypeScript-Language-3178C6?style=flat-square&logo=typescript"/>
+<img src="https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql"/>
+<img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb"/>
 
-Tower-defense game with progressive difficulty, game AI, and multiple enemy types.
-
-</td>
-<td width="50%" valign="top">
-
-### 🏥 Dentistry Website
-**Professional Web Solution**
-
-<img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?style=flat-square&logo=html5"/>
-<img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=flat-square&logo=css3"/>
-
-Responsive website with appointment booking, Google Maps integration, and form validation.
+Led front-end development for team sport management app with Agile/Scrum methodology
 
 </td>
 </tr>
@@ -268,11 +308,11 @@ Responsive website with appointment booking, Google Maps integration, and form v
 
 <div align="center">
 
-| <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/source-code.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/camera.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/combo-chart.png" width="30"/> |
+| <img src="https://img.icons8.com/fluency/48/camera.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/source-code.png" width="30"/> | <img src="https://img.icons8.com/fluency/48/stethoscope.png" width="30"/> |
 |:---:|:---:|:---:|:---:|
-| **AI & LLMs** | **Software Engineering** | **Computer Vision** | **Data Science** |
-| Fine-tuning transformers | Bug classification | Image annotation | Large-scale processing |
-| Human-AI collaboration | Software maintenance | Object detection | Optimization algorithms |
+| **Computer Vision** | **Machine Learning** | **Full-Stack Dev** | **Healthcare AI** |
+| Image Processing | Applied ML | React & Django | Medical Systems |
+| SIFT & Segmentation | Deep Learning | System Integration | Data Security |
 
 </div>
 
@@ -282,18 +322,18 @@ Responsive website with appointment booking, Google Maps integration, and form v
 
 <div align="center">
 
-I'm always excited to collaborate on **AI/ML research**, **software development projects**, and **innovative ideas**!
+I'm always excited to collaborate on **AI/ML research**, **computer vision projects**, and **healthcare technology**!
 
 <br>
 
-| 🔬 Research Collaborations | 💼 Internship Opportunities | 🚀 Open Source Projects | 📚 Academic Partnerships |
+| 🔬 Research Collaborations | 💼 Industry Projects | 🏥 Healthcare AI | 📚 Academic Partnerships |
 |:---:|:---:|:---:|:---:|
-| AI & Machine Learning | Software Development | Full-Stack Applications | Computer Science Research |
+| Computer Vision | Software Development | Medical AI Systems | Graduate Research |
 
 <br>
 
-<a href="mailto:ardalansecure@gmail.com">
-  <img src="https://img.shields.io/badge/📧_Email_Me-ardalansecure@gmail.com-EA4335?style=for-the-badge"/>
+<a href="mailto:ardalan.askarian@usask.ca">
+  <img src="https://img.shields.io/badge/📧_Email_Me-ardalan.askarian@usask.ca-EA4335?style=for-the-badge"/>
 </a>
 
 <br><br>
@@ -313,10 +353,6 @@ I'm always excited to collaborate on **AI/ML research**, **software development 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
 
 <br><br>
-
-![Snake animation](https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-contribution-grid-snake-dark.svg)
-
-<br>
 
 **⭐ If you find my work interesting, consider giving a star to my repositories!**
 
