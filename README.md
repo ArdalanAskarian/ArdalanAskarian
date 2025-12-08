@@ -390,7 +390,7 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 <div align="center">
 
-<!-- Snake Animation -->
+<!-- Snake Animation - will appear after workflow runs successfully -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" />
@@ -399,19 +399,23 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 <br><br>
 
-<table>
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/></td>
-    <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&theme=tokyo-night&hide_border=true&area=true&bg_color=0D1117" width="100%"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArdalanAskarian&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&text_color=FFFFFF" height="180"/></td>
-    <td><img src="https://github-profile-trophy.vercel.app/?username=ArdalanAskarian&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=4" height="180"/></td>
-  </tr>
-</table>
+<!-- GitHub Stats -->
+<img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/>
+&nbsp;&nbsp;
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/>
+
+<br><br>
+
+<!-- Activity Graph -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&theme=tokyo-night&hide_border=true&area=true&bg_color=0D1117" width="95%"/>
+
+<br><br>
+
+<!-- Top Languages & Trophies -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArdalanAskarian&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&text_color=FFFFFF" height="180"/>
+&nbsp;&nbsp;
+<img src="https://github-profile-trophy.vercel.app/?username=ArdalanAskarian&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=4" height="180"/>
+
 </div>
 
 <br>
