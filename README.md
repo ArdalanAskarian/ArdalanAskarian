@@ -1,24 +1,39 @@
 <div align="center">
 
-<!-- Self-contained animated header - never breaks -->
-<h1>Ardalan Askarian</h1>
+<!-- Animated Wave Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ardalan%20Askarian&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=M.Sc.%20Student%20|%20AI%20Engineer%20|%20Computer%20Vision%20Researcher&descSize=16&descAlignY=52"/>
 
-<img src="./assets/header.svg" alt="M.Sc. Student | Computer Vision & Applied ML | Software Engineer | AI Researcher | Building Intelligent Systems" width="600"/>
-
-<a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>&nbsp;&nbsp;<a href="mailto:ardalan.askarian@usask.ca">
-  <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>&nbsp;&nbsp;<a href="https://github.com/ArdalanAskarian">
-  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
+<!-- Typing SVG -->
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Building+Intelligent+Systems+%F0%9F%A7%A0;Computer+Vision+%26+Applied+ML+Researcher+%F0%9F%94%AC;Full-Stack+Developer+%26+AI+Engineer+%F0%9F%9A%80;Teaching+Machines+to+See+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" /></a>
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=flat-square&label=Profile+Views" alt="Profile Views"/>&nbsp;<img src="https://img.shields.io/github/followers/ArdalanAskarian?label=Followers&style=flat-square&color=8b5cf6&logo=github" alt="GitHub Followers"/>&nbsp;<img src="https://img.shields.io/github/stars/ArdalanAskarian?label=Stars&style=flat-square&color=ec4899&logo=github" alt="GitHub Stars"/>
+<!-- Social Badges -->
+<a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>&nbsp;
+<a href="https://ardalanaskarian.github.io">
+  <img src="https://img.shields.io/badge/Portfolio-Visit-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
+</a>&nbsp;
+<a href="mailto:ardalan.askarian@usask.ca">
+  <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>&nbsp;
+<a href="https://github.com/ArdalanAskarian">
+  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
 
 <br><br>
 
+<!-- Profile Stats -->
+<img src="https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=flat-square&label=Profile+Views" alt="Profile Views"/>&nbsp;
+<img src="https://img.shields.io/github/followers/ArdalanAskarian?label=Followers&style=flat-square&color=8b5cf6&logo=github" alt="GitHub Followers"/>&nbsp;
+<img src="https://img.shields.io/github/stars/ArdalanAskarian?label=Stars&style=flat-square&color=ec4899&logo=github" alt="GitHub Stars"/>
+
+<br><br>
+
+<!-- Navigation -->
+<a href="#-currently">🎯 Currently</a> •
+<a href="#-at-a-glance">💡 About</a> •
 <a href="#-education">🎓 Education</a> •
 <a href="#-experience">💼 Experience</a> •
 <a href="#-research">🔬 Research</a> •
@@ -29,17 +44,51 @@
 
 <br>
 
-<h2 align="center">🎯 At a Glance</h2>
+<!-- Currently Section -->
+<h2 align="center">🎯 Currently</h2>
+
+<div align="center">
+
+|  |  |
+|:---:|:---|
+| 🔭 | **Working on:** AI agents for healthcare at **Wellman Medical Group** |
+| 🌱 | **Learning:** Advanced Computer Vision & Deep Learning architectures |
+| 💬 | **Ask me about:** Computer Vision, React, Django, PyTorch, or teaching CS! |
+| ⚡ | **Fun fact:** I've mass analyzed 36,407 interaction events in one study and mass mentored 100+ students — I like big numbers! |
+
+</div>
+
+<br>
+
+<!-- Fun About Me Code Block -->
+<h2 align="center">💡 At a Glance</h2>
 
 <div align="center">
 
 ```javascript
 const ardalan = {
-    currentlyPursuing: "M.Sc. Computer Science – Applied Machine Learning",
+    pronouns: "he" | "him",
+    location: "Saskatchewan, Canada 🇨🇦",
+
+    currentRole: "Software Engineer @ Wellman Medical Group",
+    pursuing: "M.Sc. Computer Science – Applied Machine Learning",
     researchFocus: "Computer Vision & Image Processing",
-    bachelorsDegree: "B.Sc. Honours Computer Science – 86% Average",
-    expertise: ["Computer Vision", "AI/ML", "Full-Stack Development"],
-    awards: ["NSERC USRA 2025", "TESL Saskatchewan Bursary"]
+
+    education: {
+        masters: "University of Saskatchewan (2025–Present)",
+        bachelors: "B.Sc. Honours CS – 86% Average 🎓"
+    },
+
+    dailyTools: ["Python", "TypeScript", "React", "PyTorch", "Django"],
+
+    achievements: {
+        studentsmentored: "100+",
+        interactionEventsAnalyzed: 36407,  // yes, I counted
+        awardsWon: ["NSERC USRA", "TESL Bursary", "EAP Scholarship"]
+    },
+
+    currentlyExcitedAbout: "Teaching machines to see 👁️",
+    lifePhilosophy: "Code, Coffee, Computer Vision, Repeat ☕"
 };
 ```
 
@@ -87,6 +136,18 @@ const ardalan = {
 <tr>
 <td width="50%" valign="top">
 
+### <img src="https://img.icons8.com/color/28/000000/hospital.png"/> &nbsp; Software Engineer
+**Wellman Medical Group** &nbsp;•&nbsp; Sep 2025 – Present
+
+<img src="https://img.shields.io/badge/Status-Current-10b981?style=flat-square"/>
+
+- 🤖 &nbsp; Design and develop AI agents
+- 🏥 &nbsp; Healthcare-specific AI solutions
+- 🔒 &nbsp; Ensuring data security & compliance
+
+</td>
+<td width="50%" valign="top">
+
 ### <img src="https://img.icons8.com/color/28/000000/smartwatch.png"/> &nbsp; Software Developer Intern
 **BEAP Lab** &nbsp;•&nbsp; Oct 2024 – Sep 2025
 
@@ -97,10 +158,12 @@ const ardalan = {
 - 🧠 &nbsp; Implemented ML for smartwatch data parsing
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### <img src="https://img.icons8.com/color/28/000000/microscope.png"/> &nbsp; NSERC USRA Researcher
-** Imaging & AI Lab** &nbsp;•&nbsp; May 2025 – Aug 2025
+**Imaging & AI Lab** &nbsp;•&nbsp; May 2025 – Aug 2025
 
 <img src="https://img.shields.io/badge/Award-NSERC%20USRA-ec4899?style=flat-square"/>
 
@@ -109,16 +172,16 @@ const ardalan = {
 - 📝 &nbsp; Co-authored research poster
 
 </td>
-</tr>
-<tr>
-<td colspan="2" align="center">
+<td width="50%" valign="top">
 
 ### <img src="https://img.icons8.com/color/28/000000/teacher.png"/> &nbsp; Teaching Assistant
 **University of Saskatchewan** &nbsp;•&nbsp; Jan 2023 – Present
 
 <img src="https://img.shields.io/badge/Experience-2%2B%20Years-8b5cf6?style=flat-square"/>
 
-Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students across 6 CS courses
+- 📚 &nbsp; Currently: CMPT 332 (Operating Systems)
+- 👨‍🏫 &nbsp; Mentored 100+ students across 6 CS courses
+- ✍️ &nbsp; Detailed feedback on assignments & exams
 
 </td>
 </tr>
@@ -177,6 +240,30 @@ Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students acr
 <h2 align="center">🛠️ Technical Skills</h2>
 
 <div align="center">
+
+<!-- Animated Skill Icons -->
+<p>
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nodejs,nextjs,django,flask&theme=dark" />
+</a>
+</p>
+<p>
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,postgres,mysql,mongodb,docker,git&theme=dark" />
+</a>
+</p>
+<p>
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=linux,c,java,cs,php,html,css,vscode&theme=dark" />
+</a>
+</p>
+
+<br>
+
+<details>
+<summary><b>📋 &nbsp; Detailed Skills Breakdown</b></summary>
+<br>
+
 <table>
   <tr>
     <td align="center" width="150"><b>Languages</b></td>
@@ -233,6 +320,9 @@ Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students acr
     </td>
   </tr>
 </table>
+
+</details>
+
 </div>
 
 <br>
@@ -299,6 +389,16 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 <h2 align="center">📈 GitHub Analytics</h2>
 
 <div align="center">
+
+<!-- Snake Animation -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" />
+</picture>
+
+<br><br>
+
 <table>
   <tr>
     <td><img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/></td>
@@ -330,6 +430,15 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 <br>
 
+<!-- Random Dev Quote -->
+<h2 align="center">💭 Random Dev Quote</h2>
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
+</div>
+
+<br>
+
 <h2 align="center">🤝 Let's Connect</h2>
 
 <div align="center">
@@ -340,18 +449,47 @@ I'm always excited to collaborate on **AI/ML research**, **computer vision proje
 |:---:|:---:|:---:| :---:|
 | Computer Vision | Software Development | Graduate Research | Contributions |
 
+<br>
+
 <a href="mailto:ardalan.askarian@usask.ca">
   <img src="https://img.shields.io/badge/📧_Email_Me-ardalan.askarian@usask.ca-EA4335?style=for-the-badge"/>
-</a>&nbsp;&nbsp;<a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
+</a>&nbsp;&nbsp;
+<a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
   <img src="https://img.shields.io/badge/Let's_Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>&nbsp;&nbsp;
+<a href="https://ardalanaskarian.github.io">
+  <img src="https://img.shields.io/badge/View_My_Portfolio-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white"/>
 </a>
 
 </div>
 
+<br>
+
 ---
 
+<!-- Retro Badges Footer -->
 <div align="center">
 
-**⭐ If you find my work interesting, consider giving a star to my repositories!**
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" height="28"/>&nbsp;
+<img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" height="28"/>&nbsp;
+<img src="https://forthebadge.com/images/badges/works-on-my-machine.svg" height="28"/>
+
+<br><br>
+
+<!-- Easter Egg -->
+<details>
+<summary>🥚 <b>Click for a programming joke</b></summary>
+<br>
+<i>Why do programmers prefer dark mode?</i>
+<br><br>
+<b>Because light attracts bugs! 🐛</b>
+<br><br>
+<img src="https://media.giphy.com/media/10zxDv7Hv5RF9C/giphy.gif" width="200"/>
+</details>
+
+<br>
+
+<!-- Animated Footer Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling"/>
 
 </div>
