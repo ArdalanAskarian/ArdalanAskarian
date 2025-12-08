@@ -12,11 +12,25 @@
   <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
-<img src="https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=flat-square&label=Profile+Views" alt="Profile Views"/>&nbsp;<img src="https://img.shields.io/github/followers/ArdalanAskarian?label=Followers&style=flat-square&color=8b5cf6&logo=github" alt="GitHub Followers"/>&nbsp;<img src="https://img.shields.io/github/stars/ArdalanAskarian?label=Stars&style=flat-square&color=f59e0b&logo=github" alt="GitHub Stars"/>
+<br>
+
+<img src="https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=flat-square&label=Profile+Views" alt="Profile Views"/>&nbsp;<img src="https://img.shields.io/github/followers/ArdalanAskarian?label=Followers&style=flat-square&color=8b5cf6&logo=github" alt="GitHub Followers"/>&nbsp;<img src="https://img.shields.io/github/stars/ArdalanAskarian?label=Stars&style=flat-square&color=ec4899&logo=github" alt="GitHub Stars"/>
+
+<br><br>
+
+<a href="#-education">🎓 Education</a> •
+<a href="#-experience">💼 Experience</a> •
+<a href="#-research">🔬 Research</a> •
+<a href="#-technical-skills">🛠️ Skills</a> •
+<a href="#-featured-projects">🚀 Projects</a>
 
 </div>
 
-## 🎯 At a Glance
+<br>
+
+<h2 align="center">🎯 At a Glance</h2>
+
+<div align="center">
 
 ```javascript
 const ardalan = {
@@ -28,37 +42,46 @@ const ardalan = {
 };
 ```
 
-## 🎓 Education
+</div>
 
+<br>
+
+<h2 align="center">🎓 Education</h2>
+
+<div align="center">
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%" align="center" valign="top">
 
-### <img src="https://img.icons8.com/color/28/000000/graduation-cap.png"/> &nbsp; M.Sc. Computer Science
+### M.Sc. Computer Science
 **Sep 2025 – Present**
-
+<br>
 <img src="https://img.shields.io/badge/Focus-Applied%20Machine%20Learning-8b5cf6?style=flat-square"/>
-
-- 🔬 &nbsp; Research: Computer Vision & Image Processing
-- 👨‍🏫 &nbsp; Supervisor: Dr. Mark Eramian
+<br><br>
+🔬 Research: Computer Vision & Image Processing<br>
+👨‍🏫 Supervisor: Dr. Mark Eramian
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" align="center" valign="top">
 
-### <img src="https://img.icons8.com/color/28/000000/diploma.png"/> &nbsp; B.Sc. Honours Computer Science
-**University of Saskatchewan** &nbsp;•&nbsp; Sep 2020 – Apr 2025
-
-<img src="https://img.shields.io/badge/Average-86%25-00c853?style=flat-square"/>
-
-- 💻 &nbsp; Software Engineering Option
-- 🏆 &nbsp; Honours Graduate
+### B.Sc. Honours Computer Science
+**University of Saskatchewan**
+<br>
+<img src="https://img.shields.io/badge/Average-86%25-ec4899?style=flat-square"/>
+<br><br>
+💻 Software Engineering Option<br>
+🏆 Honours Graduate
 
 </td>
 </tr>
 </table>
+</div>
 
-## 💼 Experience
+<br>
 
+<h2 align="center">💼 Experience</h2>
+
+<div align="center">
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -78,7 +101,7 @@ const ardalan = {
 ### <img src="https://img.icons8.com/color/28/000000/microscope.png"/> &nbsp; NSERC USRA Researcher
 ** Imaging & AI Lab** &nbsp;•&nbsp; May 2025 – Aug 2025
 
-<img src="https://img.shields.io/badge/Award-NSERC%20USRA-f59e0b?style=flat-square"/>
+<img src="https://img.shields.io/badge/Award-NSERC%20USRA-ec4899?style=flat-square"/>
 
 - 🖼️ &nbsp; SIFT-assisted image annotation research
 - 📊 &nbsp; User study: 6 participants, 36,407 events
@@ -87,8 +110,7 @@ const ardalan = {
 </td>
 </tr>
 <tr>
-<td colspan="2">
-<div align="center">
+<td colspan="2" align="center">
 
 ### <img src="https://img.icons8.com/color/28/000000/teacher.png"/> &nbsp; Teaching Assistant
 **University of Saskatchewan** &nbsp;•&nbsp; Jan 2023 – Present
@@ -97,12 +119,14 @@ const ardalan = {
 
 Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students across 6 CS courses
 
-</div>
 </td>
 </tr>
 </table>
+</div>
 
-## 🔬 Research
+<br>
+
+<h2 align="center">🔬 Research</h2>
 
 <div align="center">
 
@@ -111,7 +135,7 @@ Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students acr
 
 *Ardalan Askarian, Dr. Mark Eramian*
 
-</div>
+<br>
 
 <table>
 <tr>
@@ -132,6 +156,7 @@ Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students acr
 
 <details>
 <summary><b>📄 &nbsp; View Research Details</b></summary>
+<br>
 
 | Aspect | Details |
 |--------|---------|
@@ -144,33 +169,74 @@ Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students acr
 **Technologies:** &nbsp; Django, Python, OpenCV, SIFT (Scale-Invariant Feature Transform), Image Segmentation
 
 </details>
-
-## 🛠️ Technical Skills
-
-<div align="center">
-
-### Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)&nbsp;![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)&nbsp;![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)&nbsp;![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)&nbsp;![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)&nbsp;![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)&nbsp;![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)&nbsp;![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-
-### Frameworks & Technologies
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)&nbsp;![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)&nbsp;![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)&nbsp;![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)&nbsp;![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-
-### ML & Computer Vision
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)&nbsp;![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)&nbsp;![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)&nbsp;![scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
-### Databases
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)&nbsp;![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)&nbsp;![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)&nbsp;![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)&nbsp;![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)&nbsp;![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)&nbsp;![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)&nbsp;![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
-
 </div>
 
-## 🏆 Accomplishments
+<br>
+
+<h2 align="center">🛠️ Technical Skills</h2>
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" width="150"><b>Languages</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+      <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black"/>
+      <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+      <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+      <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+      <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/>
+      <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Frameworks</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+      <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>AI & ML</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Databases</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+      <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Tools</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
+      <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/>
+    </td>
+  </tr>
+</table>
+</div>
+
+<br>
+
+<h2 align="center">🏆 Accomplishments</h2>
 
 <div align="center">
 
@@ -182,7 +248,9 @@ Currently: CMPT 332 (Operating Systems) &nbsp;|&nbsp; Mentored 100+ students acr
 
 </div>
 
-## 🚀 Featured Projects
+<br>
+
+<h2 align="center">🚀 Featured Projects</h2>
 
 <div align="center">
 <table>
@@ -225,21 +293,29 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 </table>
 </div>
 
-## 📈 GitHub Analytics
+<br>
+
+<h2 align="center">📈 GitHub Analytics</h2>
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/>&nbsp;&nbsp;&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&theme=tokyo-night&hide_border=true&area=true&bg_color=0D1117" width="95%"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArdalanAskarian&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&text_color=FFFFFF" height="180"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=ArdalanAskarian&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=7" width="95%"/>
-
+<table>
+  <tr>
+    <td><img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/></td>
+    <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&theme=tokyo-night&hide_border=true&area=true&bg_color=0D1117" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArdalanAskarian&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&text_color=FFFFFF" height="180"/></td>
+    <td><img src="https://github-profile-trophy.vercel.app/?username=ArdalanAskarian&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=4" height="180"/></td>
+  </tr>
+</table>
 </div>
 
-## 🎯 Research Interests
+<br>
+
+<h2 align="center">🎯 Research Interests</h2>
 
 <div align="center">
 
@@ -251,7 +327,9 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 </div>
 
-## 🤝 Let's Connect
+<br>
+
+<h2 align="center">🤝 Let's Connect</h2>
 
 <div align="center">
 
