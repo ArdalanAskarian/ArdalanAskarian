@@ -1,8 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:8b5cf6,100:ec4899&height=220&section=header&text=Ardalan%20Askarian&fontSize=75&fontAlignY=35&animation=fadeIn&fontColor=ffffff&desc=M.Sc.%20Student%20%7C%20Computer%20Vision%20%26%20Applied%20ML&descAlignY=55&descSize=20" />
+<!-- Replaced unstable dynamic image with reliable text header to ensure it loads every time -->
+<h1>Ardalan Askarian</h1>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=M.Sc.+Student+%7C+Computer+Vision+%26+Applied+ML;Software+Engineer+%7C+AI+Researcher;Building+Intelligent+Systems)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=M.Sc.+Student+%7C+Computer+Vision+%26+Applied+ML;Software+Engineer+%7C+AI+Researcher;Building+Intelligent+Systems)](https://git.io/typing-svg)
 
 <a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -351,10 +352,6 @@ I'm always excited to collaborate on **AI/ML research**, **computer vision proje
 
 <div align="center">
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
-
 **⭐ If you find my work interesting, consider giving a star to my repositories!**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,50:8b5cf6,100:ec4899&height=120&section=footer&animation=fadeIn"/>
 
 </div>
