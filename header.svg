@@ -1,0 +1,32 @@
+<!-- filepath: /Users/ardalanaskarian/Desktop/t3/ArdalanAskarian/assets/header.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" width="600" height="100">
+  <style>
+    .title {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 24px;
+      font-weight: 600;
+      fill: #3B82F6;
+    }
+    .line1, .line2, .line3 {
+      opacity: 0;
+      animation: fadeText 9s infinite;
+    }
+    .line1 { animation-delay: 0s; }
+    .line2 { animation-delay: 3s; }
+    .line3 { animation-delay: 6s; }
+    @keyframes fadeText {
+      0%, 5% { opacity: 0; }
+      10%, 28% { opacity: 1; }
+      33%, 100% { opacity: 0; }
+    }
+  </style>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="title line1">
+    M.Sc. Student | Computer Vision &amp; Applied ML
+  </text>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="title line2">
+    Software Engineer | AI Researcher
+  </text>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="title line3">
+    Building Intelligent Systems
+  </text>
+</svg>

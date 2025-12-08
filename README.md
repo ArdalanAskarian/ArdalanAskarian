@@ -1,9 +1,9 @@
 <div align="center">
 
-<!-- Replaced unstable dynamic image with reliable text header to ensure it loads every time -->
+<!-- Self-contained animated header - never breaks -->
 <h1>Ardalan Askarian</h1>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=M.Sc.+Student+%7C+Computer+Vision+%26+Applied+ML;Software+Engineer+%7C+AI+Researcher;Building+Intelligent+Systems)](https://git.io/typing-svg)
+<img src="./assets/header.svg" alt="M.Sc. Student | Computer Vision & Applied ML | Software Engineer | AI Researcher | Building Intelligent Systems" width="600"/>
 
 <a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -337,7 +337,7 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 I'm always excited to collaborate on **AI/ML research**, **computer vision projects**, and **innovative software solutions**!
 
 | 🔬 Research Collaborations | 💼 Industry Projects | 🎓 Academic Partnerships | 🚀 Open Source |
-|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:| :---:|
 | Computer Vision | Software Development | Graduate Research | Contributions |
 
 <a href="mailto:ardalan.askarian@usask.ca">
