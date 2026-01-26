@@ -84,7 +84,8 @@ const ardalan = {
     achievements: {
         studentsmentored: "100+",
         interactionEventsAnalyzed: 36407,  // yes, I counted
-        awardsWon: ["NSERC USRA", "TESL Bursary", "EAP Scholarship"]
+        awardsWon: ["MIT Reality Hack 2026", "NSERC USRA", "TESL Bursary"],
+        hackathons: ["MIT Reality Hack 2026 🥽"]
     },
 
     currentlyExcitedAbout: "Teaching machines to see 👁️",
@@ -333,6 +334,7 @@ const ardalan = {
 
 | Award | Year | Details |
 |:---:|:---:|:---|
+| 🥽 &nbsp; **MIT Reality Hack** | 2026 | Built "Dreaming Machines" - immersive VR experience with biometric integration |
 | 🏅 &nbsp; **NSERC USRA** | 2025 | Undergraduate Student Research Award for Computer Vision research |
 | 🎓 &nbsp; **TESL Saskatchewan Bursary** | 2022 | One of two recipients province-wide |
 | 📚 &nbsp; **EAP Scholarship** | 2020 | $2,500 as highest achiever in English for Academic Purposes |
@@ -345,6 +347,20 @@ const ardalan = {
 
 <div align="center">
 <table>
+<tr>
+<td colspan="2">
+<div align="center">
+
+### 🥽 &nbsp; Dreaming Machines
+**MIT Reality Hack 2026** &nbsp;•&nbsp; <a href="https://github.com/ArdalanAskarian/dream_hackers">View Project</a>
+
+<img src="https://img.shields.io/badge/Unity_6-Engine-000000?style=flat-square&logo=unity"/>&nbsp;<img src="https://img.shields.io/badge/OpenXR-XR-8B5CF6?style=flat-square"/>&nbsp;<img src="https://img.shields.io/badge/Node.js-Server-339933?style=flat-square&logo=node.js"/>&nbsp;<img src="https://img.shields.io/badge/Arduino-Hardware-00979D?style=flat-square&logo=arduino"/>&nbsp;<img src="https://img.shields.io/badge/Three.js-3D-000000?style=flat-square&logo=three.js"/>
+
+Immersive VR experience for Meta Quest where players step inside the internet's dream. Features phone companion app, real-time biometric shader effects via Arduino pulse sensor, and WebSocket communication.
+
+</div>
+</td>
+</tr>
 <tr>
 <td width="50%" valign="top">
 
