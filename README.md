@@ -32,36 +32,36 @@
 <br><br>
 
 <!-- Navigation -->
-<a href="#-currently"><img src="https://img.icons8.com/color/16/000000/target.png" width="16" alt=""/> Currently</a> •
-<a href="#-at-a-glance"><img src="https://img.icons8.com/color/16/000000/idea.png" width="16" alt=""/> About</a> •
-<a href="#-education"><img src="https://img.icons8.com/color/16/000000/graduation-cap.png" width="16" alt=""/> Education</a> •
-<a href="#-experience"><img src="https://img.icons8.com/color/16/000000/briefcase.png" width="16" alt=""/> Experience</a> •
-<a href="#-research"><img src="https://img.icons8.com/color/16/000000/microscope.png" width="16" alt=""/> Research</a> •
-<a href="#-technical-skills"><img src="https://img.icons8.com/color/16/000000/maintenance.png" width="16" alt=""/> Skills</a> •
-<a href="#-featured-projects"><img src="https://img.icons8.com/color/16/000000/rocket.png" width="16" alt=""/> Projects</a>
+<a href="#-currently"><img src="https://img.icons8.com/color/96/target.png" width="16" alt=""/> Currently</a> •
+<a href="#-at-a-glance"><img src="https://img.icons8.com/color/96/idea.png" width="16" alt=""/> About</a> •
+<a href="#-education"><img src="https://img.icons8.com/color/96/graduation-cap.png" width="16" alt=""/> Education</a> •
+<a href="#-experience"><img src="https://img.icons8.com/color/96/briefcase.png" width="16" alt=""/> Experience</a> •
+<a href="#-research"><img src="https://img.icons8.com/color/96/microscope.png" width="16" alt=""/> Research</a> •
+<a href="#-technical-skills"><img src="https://img.icons8.com/color/96/maintenance.png" width="16" alt=""/> Skills</a> •
+<a href="#-featured-projects"><img src="https://img.icons8.com/color/96/rocket.png" width="16" alt=""/> Projects</a>
 
 </div>
 
 <br>
 
 <!-- Currently Section -->
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/target.png" width="28" alt=""/> Currently</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/target.png" width="28" alt=""/> Currently</h2>
 
 <div align="center">
 
 |  |  |
 |:---:|:---|
-| <img src="https://img.icons8.com/color/20/000000/telescope.png" width="20" alt=""/> | **Working on:** AI agents for healthcare at **Wellman Medical Group** |
-| <img src="https://img.icons8.com/color/20/000000/plant-under-sun.png" width="20" alt=""/> | **Learning:** Advanced Computer Vision & Deep Learning architectures |
-| <img src="https://img.icons8.com/color/20/000000/chat.png" width="20" alt=""/> | **Ask me about:** Computer Vision, React, Django, PyTorch, or teaching CS! |
-| <img src="https://img.icons8.com/color/20/000000/lightning-bolt.png" width="20" alt=""/> | **Fun fact:** I've mass analyzed 36,407 interaction events in one study and mass mentored 100+ students — I like big numbers! |
+| <img src="https://img.icons8.com/color/96/telescope.png" width="20" alt=""/> | **Working on:** AI agents for healthcare at **Wellman Medical Group** |
+| <img src="https://img.icons8.com/color/96/plant-under-sun.png" width="20" alt=""/> | **Learning:** Advanced Computer Vision & Deep Learning architectures |
+| <img src="https://img.icons8.com/color/96/chat.png" width="20" alt=""/> | **Ask me about:** Computer Vision, React, Django, PyTorch, or teaching CS! |
+| <img src="https://img.icons8.com/color/96/lightning-bolt.png" width="20" alt=""/> | **Fun fact:** I've mass analyzed 36,407 interaction events in one study and mass mentored 100+ students — I like big numbers! |
 
 </div>
 
 <br>
 
 <!-- Fun About Me Code Block -->
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/idea.png" width="28" alt=""/> At a Glance</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/idea.png" width="28" alt=""/> At a Glance</h2>
 
 <div align="center">
 
@@ -97,7 +97,7 @@ const ardalan = {
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/graduation-cap.png" width="28" alt=""/> Education</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/graduation-cap.png" width="28" alt=""/> Education</h2>
 
 <div align="center">
 <table>
@@ -109,8 +109,8 @@ const ardalan = {
 <br>
 <img src="https://img.shields.io/badge/Focus-Applied%20Machine%20Learning-8b5cf6?style=flat-square"/>
 <br><br>
-<img src="https://img.icons8.com/color/18/000000/microscope.png" width="18" alt=""/> Research: Computer Vision & Image Processing<br>
-<img src="https://img.icons8.com/color/18/000000/teacher.png" width="18" alt=""/> Supervisor: Dr. Mark Eramian
+<img src="https://img.icons8.com/color/96/microscope.png" width="18" alt=""/> Research: Computer Vision & Image Processing<br>
+<img src="https://img.icons8.com/color/96/teacher.png" width="18" alt=""/> Supervisor: Dr. Mark Eramian
 
 </td>
 <td width="50%" align="center" valign="top">
@@ -120,8 +120,8 @@ const ardalan = {
 <br>
 <img src="https://img.shields.io/badge/Average-86%25-ec4899?style=flat-square"/>
 <br><br>
-<img src="https://img.icons8.com/color/18/000000/laptop.png" width="18" alt=""/> Software Engineering Option<br>
-<img src="https://img.icons8.com/color/18/000000/trophy.png" width="18" alt=""/> Honours Graduate
+<img src="https://img.icons8.com/color/96/laptop.png" width="18" alt=""/> Software Engineering Option<br>
+<img src="https://img.icons8.com/color/96/trophy.png" width="18" alt=""/> Honours Graduate
 
 </td>
 </tr>
@@ -130,59 +130,59 @@ const ardalan = {
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/briefcase.png" width="28" alt=""/> Experience</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/briefcase.png" width="28" alt=""/> Experience</h2>
 
 <div align="center">
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/28/000000/hospital.png"/> &nbsp; Software Engineer
+### <img src="https://img.icons8.com/color/96/hospital.png"/> &nbsp; Software Engineer
 **Wellman Medical Group** &nbsp;•&nbsp; Sep 2025 – Present
 
 <img src="https://img.shields.io/badge/Status-Current-10b981?style=flat-square"/>
 
-- <img src="https://img.icons8.com/color/18/000000/robot.png" width="18" alt=""/> &nbsp; Design and develop AI agents
-- <img src="https://img.icons8.com/color/18/000000/hospital.png" width="18" alt=""/> &nbsp; Healthcare-specific AI solutions
-- <img src="https://img.icons8.com/color/18/000000/lock.png" width="18" alt=""/> &nbsp; Ensuring data security & compliance
+- <img src="https://img.icons8.com/color/96/robot.png" width="18" alt=""/> &nbsp; Design and develop AI agents
+- <img src="https://img.icons8.com/color/96/hospital.png" width="18" alt=""/> &nbsp; Healthcare-specific AI solutions
+- <img src="https://img.icons8.com/color/96/lock.png" width="18" alt=""/> &nbsp; Ensuring data security & compliance
 
 </td>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/28/000000/smartwatch.png"/> &nbsp; Software Developer Intern
+### <img src="https://img.icons8.com/color/96/smartwatch.png"/> &nbsp; Software Developer Intern
 **BEAP Lab** &nbsp;•&nbsp; Oct 2024 – Sep 2025
 
 <img src="https://img.shields.io/badge/Status-Completed-3b82f6?style=flat-square"/>
 
-- <img src="https://img.icons8.com/color/18/000000/construction.png" width="18" alt=""/> &nbsp; Led full-stack development of BEAP Engine
-- <img src="https://img.icons8.com/color/18/000000/lightning-bolt.png" width="18" alt=""/> &nbsp; Redesigned UI with React.js & TypeScript
-- <img src="https://img.icons8.com/color/18/000000/brain.png" width="18" alt=""/> &nbsp; Implemented ML for smartwatch data parsing
+- <img src="https://img.icons8.com/color/96/construction.png" width="18" alt=""/> &nbsp; Led full-stack development of BEAP Engine
+- <img src="https://img.icons8.com/color/96/lightning-bolt.png" width="18" alt=""/> &nbsp; Redesigned UI with React.js & TypeScript
+- <img src="https://img.icons8.com/color/96/brain.png" width="18" alt=""/> &nbsp; Implemented ML for smartwatch data parsing
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/28/000000/microscope.png"/> &nbsp; NSERC USRA Researcher
+### <img src="https://img.icons8.com/color/96/microscope.png"/> &nbsp; NSERC USRA Researcher
 **Imaging & AI Lab** &nbsp;•&nbsp; May 2025 – Aug 2025
 
 <img src="https://img.shields.io/badge/Award-NSERC%20USRA-ec4899?style=flat-square"/>
 
-- <img src="https://img.icons8.com/color/18/000000/image.png" width="18" alt=""/> &nbsp; SIFT-assisted image annotation research
-- <img src="https://img.icons8.com/color/18/000000/bar-chart.png" width="18" alt=""/> &nbsp; User study: 6 participants, 36,407 events
-- <img src="https://img.icons8.com/color/18/000000/document.png" width="18" alt=""/> &nbsp; Co-authored research poster
+- <img src="https://img.icons8.com/color/96/image.png" width="18" alt=""/> &nbsp; SIFT-assisted image annotation research
+- <img src="https://img.icons8.com/color/96/bar-chart.png" width="18" alt=""/> &nbsp; User study: 6 participants, 36,407 events
+- <img src="https://img.icons8.com/color/96/document.png" width="18" alt=""/> &nbsp; Co-authored research poster
 
 </td>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/28/000000/teacher.png"/> &nbsp; Teaching Assistant
+### <img src="https://img.icons8.com/color/96/teacher.png"/> &nbsp; Teaching Assistant
 **University of Saskatchewan** &nbsp;•&nbsp; Jan 2023 – Present
 
 <img src="https://img.shields.io/badge/Experience-2%2B%20Years-8b5cf6?style=flat-square"/>
 
-- <img src="https://img.icons8.com/color/18/000000/books.png" width="18" alt=""/> &nbsp; Currently: CMPT 332 (Operating Systems)
-- <img src="https://img.icons8.com/color/18/000000/teacher.png" width="18" alt=""/> &nbsp; Mentored 100+ students across 6 CS courses
-- <img src="https://img.icons8.com/color/18/000000/signing-a-document.png" width="18" alt=""/> &nbsp; Detailed feedback on assignments & exams
+- <img src="https://img.icons8.com/color/96/books.png" width="18" alt=""/> &nbsp; Currently: CMPT 332 (Operating Systems)
+- <img src="https://img.icons8.com/color/96/teacher.png" width="18" alt=""/> &nbsp; Mentored 100+ students across 6 CS courses
+- <img src="https://img.icons8.com/color/96/signing-a-document.png" width="18" alt=""/> &nbsp; Detailed feedback on assignments & exams
 
 </td>
 </tr>
@@ -191,7 +191,7 @@ const ardalan = {
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/microscope.png" width="28" alt=""/> Research</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/microscope.png" width="28" alt=""/> Research</h2>
 
 <div align="center">
 
@@ -220,7 +220,7 @@ const ardalan = {
 </table>
 
 <details>
-<summary><b><img src="https://img.icons8.com/color/18/000000/document.png" width="18" alt=""/> &nbsp; View Research Details</b></summary>
+<summary><b><img src="https://img.icons8.com/color/96/document.png" width="18" alt=""/> &nbsp; View Research Details</b></summary>
 <br>
 
 | Aspect | Details |
@@ -238,7 +238,7 @@ const ardalan = {
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/maintenance.png" width="28" alt=""/> Technical Skills</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/maintenance.png" width="28" alt=""/> Technical Skills</h2>
 
 <div align="center">
 
@@ -262,7 +262,7 @@ const ardalan = {
 <br>
 
 <details>
-<summary><b><img src="https://img.icons8.com/color/18/000000/clipboard.png" width="18" alt=""/> &nbsp; Detailed Skills Breakdown</b></summary>
+<summary><b><img src="https://img.icons8.com/color/96/clipboard.png" width="18" alt=""/> &nbsp; Detailed Skills Breakdown</b></summary>
 <br>
 
 <table>
@@ -328,22 +328,22 @@ const ardalan = {
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/trophy.png" width="28" alt=""/> Accomplishments</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/trophy.png" width="28" alt=""/> Accomplishments</h2>
 
 <div align="center">
 
 | Award | Year | Details |
 |:---:|:---:|:---|
-| <img src="https://img.icons8.com/color/20/000000/vr-glasses.png" width="20" alt=""/> &nbsp; **MIT Reality Hack** | 2026 | Built "Dreaming Machines" - immersive VR experience with biometric integration |
-| <img src="https://img.icons8.com/color/20/000000/medal.png" width="20" alt=""/> &nbsp; **NSERC USRA** | 2025 | Undergraduate Student Research Award for Computer Vision research |
-| <img src="https://img.icons8.com/color/20/000000/graduation-cap.png" width="20" alt=""/> &nbsp; **TESL Saskatchewan Bursary** | 2022 | One of two recipients province-wide |
-| <img src="https://img.icons8.com/color/20/000000/books.png" width="20" alt=""/> &nbsp; **EAP Scholarship** | 2020 | $2,500 as highest achiever in English for Academic Purposes |
+| <img src="https://img.icons8.com/color/96/vr-glasses.png" width="20" alt=""/> &nbsp; **MIT Reality Hack** | 2026 | Built "Dreaming Machines" - immersive VR experience with biometric integration |
+| <img src="https://img.icons8.com/color/96/medal.png" width="20" alt=""/> &nbsp; **NSERC USRA** | 2025 | Undergraduate Student Research Award for Computer Vision research |
+| <img src="https://img.icons8.com/color/96/graduation-cap.png" width="20" alt=""/> &nbsp; **TESL Saskatchewan Bursary** | 2022 | One of two recipients province-wide |
+| <img src="https://img.icons8.com/color/96/books.png" width="20" alt=""/> &nbsp; **EAP Scholarship** | 2020 | $2,500 as highest achiever in English for Academic Purposes |
 
 </div>
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/rocket.png" width="28" alt=""/> Featured Projects</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/rocket.png" width="28" alt=""/> Featured Projects</h2>
 
 <div align="center">
 <table>
@@ -351,7 +351,7 @@ const ardalan = {
 <td colspan="2">
 <div align="center">
 
-### <img src="https://img.icons8.com/color/24/000000/vr-glasses.png" width="24" alt=""/> &nbsp; Dreaming Machines
+### <img src="https://img.icons8.com/color/96/vr-glasses.png" width="24" alt=""/> &nbsp; Dreaming Machines
 **MIT Reality Hack 2026** &nbsp;•&nbsp; <a href="https://github.com/ArdalanAskarian/dream_hackers">View Project</a>
 
 <img src="https://img.shields.io/badge/Unity_6-Engine-000000?style=flat-square&logo=unity"/>&nbsp;<img src="https://img.shields.io/badge/OpenXR-XR-8B5CF6?style=flat-square"/>&nbsp;<img src="https://img.shields.io/badge/Node.js-Server-339933?style=flat-square&logo=node.js"/>&nbsp;<img src="https://img.shields.io/badge/Arduino-Hardware-00979D?style=flat-square&logo=arduino"/>&nbsp;<img src="https://img.shields.io/badge/Three.js-3D-000000?style=flat-square&logo=three.js"/>
@@ -364,7 +364,7 @@ Immersive VR experience for Meta Quest where players step inside the internet's 
 <tr>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/24/000000/bar-chart.png" width="24" alt=""/> &nbsp; BEAP Engine
+### <img src="https://img.icons8.com/color/96/bar-chart.png" width="24" alt=""/> &nbsp; BEAP Engine
 **Smartwatch Data Platform**
 
 <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react"/>&nbsp;<img src="https://img.shields.io/badge/TypeScript-Language-3178C6?style=flat-square&logo=typescript"/>
@@ -374,7 +374,7 @@ Full-stack platform for large-scale smartwatch data processing and analytics wit
 </td>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/24/000000/image.png" width="24" alt=""/> &nbsp; SIFT Annotation Platform
+### <img src="https://img.icons8.com/color/96/image.png" width="24" alt=""/> &nbsp; SIFT Annotation Platform
 **Computer Vision Research**
 
 <img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django"/>&nbsp;<img src="https://img.shields.io/badge/OpenCV-Vision-5C3EE8?style=flat-square&logo=opencv"/>
@@ -387,7 +387,7 @@ AI-assisted image annotation system combining Scale-Invariant Feature Transform 
 <td colspan="2">
 <div align="center">
 
-### <img src="https://img.icons8.com/color/24/000000/soccer-ball.png" width="24" alt=""/> &nbsp; Sports Scheduling App
+### <img src="https://img.icons8.com/color/96/soccer-ball.png" width="24" alt=""/> &nbsp; Sports Scheduling App
 **CMPT 370 – Intermediate Software Engineering**
 
 <img src="https://img.shields.io/badge/React_Native-Mobile-61DAFB?style=flat-square&logo=react"/>&nbsp;<img src="https://img.shields.io/badge/TypeScript-Language-3178C6?style=flat-square&logo=typescript"/>&nbsp;<img src="https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql"/>&nbsp;<img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb"/>
@@ -402,7 +402,7 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/combo-chart.png" width="28" alt=""/> GitHub Analytics</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/combo-chart.png" width="28" alt=""/> GitHub Analytics</h2>
 
 <div align="center">
 
@@ -436,7 +436,7 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/target.png" width="28" alt=""/> Research Interests</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/target.png" width="28" alt=""/> Research Interests</h2>
 
 <div align="center">
 
@@ -451,7 +451,7 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 <br>
 
 <!-- Random Dev Quote -->
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/quote-left.png" width="28" alt=""/> Random Dev Quote</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/quote-left.png" width="28" alt=""/> Random Dev Quote</h2>
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
@@ -459,13 +459,13 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/28/000000/handshake.png" width="28" alt=""/> Let's Connect</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/handshake.png" width="28" alt=""/> Let's Connect</h2>
 
 <div align="center">
 
 I'm always excited to collaborate on **AI/ML research**, **computer vision projects**, and **innovative software solutions**!
 
-| <img src="https://img.icons8.com/color/18/000000/microscope.png" width="18" alt=""/> Research Collaborations | <img src="https://img.icons8.com/color/18/000000/briefcase.png" width="18" alt=""/> Industry Projects | <img src="https://img.icons8.com/color/18/000000/graduation-cap.png" width="18" alt=""/> Academic Partnerships | <img src="https://img.icons8.com/color/18/000000/rocket.png" width="18" alt=""/> Open Source |
+| <img src="https://img.icons8.com/color/96/microscope.png" width="18" alt=""/> Research Collaborations | <img src="https://img.icons8.com/color/96/briefcase.png" width="18" alt=""/> Industry Projects | <img src="https://img.icons8.com/color/96/graduation-cap.png" width="18" alt=""/> Academic Partnerships | <img src="https://img.icons8.com/color/96/rocket.png" width="18" alt=""/> Open Source |
 |:---:|:---:|:---:| :---:|
 | Computer Vision | Software Development | Graduate Research | Contributions |
 
@@ -498,11 +498,11 @@ I'm always excited to collaborate on **AI/ML research**, **computer vision proje
 
 <!-- Easter Egg -->
 <details>
-<summary><img src="https://img.icons8.com/color/18/000000/easter-egg.png" width="18" alt=""/> <b>Click for a programming joke</b></summary>
+<summary><img src="https://img.icons8.com/color/96/easter-egg.png" width="18" alt=""/> <b>Click for a programming joke</b></summary>
 <br>
 <i>Why do programmers prefer dark mode?</i>
 <br><br>
-<b>Because light attracts bugs! <img src="https://img.icons8.com/color/18/000000/bug.png" width="18" alt=""/></b>
+<b>Because light attracts bugs! <img src="https://img.icons8.com/color/96/bug.png" width="18" alt=""/></b>
 <br><br>
 <img src="https://media.giphy.com/media/10zxDv7Hv5RF9C/giphy.gif" width="200"/>
 </details>
