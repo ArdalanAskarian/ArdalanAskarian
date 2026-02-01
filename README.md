@@ -351,7 +351,9 @@ const ardalan = {
 <td colspan="2">
 <div align="center">
 
-### <img src="banner.gif" width="28" alt=""/> &nbsp; Does the Internet Dream of Itself?
+<img src="banner.gif" width="280" alt="Does the Internet Dream of Itself?"/>
+
+### Does the Internet Dream of Itself?
 **MIT Reality Hack 2026** &nbsp;•&nbsp; <a href="https://github.com/ArdalanAskarian/dream_hackers">View Project</a>
 
 <img src="https://img.shields.io/badge/Unity_6-Engine-000000?style=flat-square&logo=unity"/>&nbsp;<img src="https://img.shields.io/badge/OpenXR-XR-8B5CF6?style=flat-square"/>&nbsp;<img src="https://img.shields.io/badge/Node.js-Server-339933?style=flat-square&logo=node.js"/>&nbsp;<img src="https://img.shields.io/badge/Arduino-Hardware-00979D?style=flat-square&logo=arduino"/>&nbsp;<img src="https://img.shields.io/badge/Three.js-3D-000000?style=flat-square&logo=three.js"/>
@@ -436,7 +438,7 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 
 <br>
 
-<h2 align="center"><img src="https://img.icons8.com/color/96/target.png" width="28" alt=""/> Research Interests</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/compass.png" width="28" alt=""/> Research Interests</h2>
 
 <div align="center">
 
