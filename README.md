@@ -32,7 +32,7 @@
 <br><br>
 
 <!-- Navigation -->
-<a href="#-currently"><img src="https://img.icons8.com/color/96/target.png" width="16" alt=""/> Currently</a> •
+<a href="#-currently"><img src="https://img.icons8.com/color/96/clock--v1.png" width="16" alt=""/> Currently</a> •
 <a href="#-at-a-glance"><img src="https://img.icons8.com/color/96/idea.png" width="16" alt=""/> About</a> •
 <a href="#-education"><img src="https://img.icons8.com/color/96/graduation-cap.png" width="16" alt=""/> Education</a> •
 <a href="#-experience"><img src="https://img.icons8.com/color/96/briefcase.png" width="16" alt=""/> Experience</a> •
@@ -45,7 +45,7 @@
 <br>
 
 <!-- Currently Section -->
-<h2 align="center"><img src="https://img.icons8.com/color/96/target.png" width="28" alt=""/> Currently</h2>
+<h2 align="center"><img src="https://img.icons8.com/color/96/clock--v1.png" width="28" alt=""/> Currently</h2>
 
 <div align="center">
 
