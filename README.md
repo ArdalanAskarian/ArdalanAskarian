@@ -137,7 +137,7 @@ const ardalan = {
 <tr>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/96/hospital.png"/> &nbsp; Software Engineer
+### <img src="https://img.icons8.com/color/96/hospital.png" width="28" alt=""/> &nbsp; Software Engineer
 **Wellman Medical Group** &nbsp;•&nbsp; Sep 2025 – Present
 
 <img src="https://img.shields.io/badge/Status-Current-10b981?style=flat-square"/>
@@ -149,7 +149,7 @@ const ardalan = {
 </td>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/96/smartwatch.png"/> &nbsp; Software Developer Intern
+### <img src="https://img.icons8.com/color/96/apple-watch.png" width="28" alt=""/> &nbsp; Software Developer Intern
 **BEAP Lab** &nbsp;•&nbsp; Oct 2024 – Sep 2025
 
 <img src="https://img.shields.io/badge/Status-Completed-3b82f6?style=flat-square"/>
@@ -163,7 +163,7 @@ const ardalan = {
 <tr>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/96/microscope.png"/> &nbsp; NSERC USRA Researcher
+### <img src="https://img.icons8.com/color/96/microscope.png" width="28" alt=""/> &nbsp; NSERC USRA Researcher
 **Imaging & AI Lab** &nbsp;•&nbsp; May 2025 – Aug 2025
 
 <img src="https://img.shields.io/badge/Award-NSERC%20USRA-ec4899?style=flat-square"/>
@@ -175,7 +175,7 @@ const ardalan = {
 </td>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/96/teacher.png"/> &nbsp; Teaching Assistant
+### <img src="https://img.icons8.com/color/96/teacher.png" width="28" alt=""/> &nbsp; Teaching Assistant
 **University of Saskatchewan** &nbsp;•&nbsp; Jan 2023 – Present
 
 <img src="https://img.shields.io/badge/Experience-2%2B%20Years-8b5cf6?style=flat-square"/>
@@ -334,7 +334,7 @@ const ardalan = {
 
 | Award | Year | Details |
 |:---:|:---:|:---|
-| <img src="https://img.icons8.com/color/96/vr-glasses.png" width="20" alt=""/> &nbsp; **MIT Reality Hack** | 2026 | Built "Dreaming Machines" - immersive VR experience with biometric integration |
+| <img src="banner.gif" width="20" alt=""/> &nbsp; **MIT Reality Hack** | 2026 | Built "Does the Internet Dream of Itself?" - immersive VR experience with biometric integration |
 | <img src="https://img.icons8.com/color/96/medal.png" width="20" alt=""/> &nbsp; **NSERC USRA** | 2025 | Undergraduate Student Research Award for Computer Vision research |
 | <img src="https://img.icons8.com/color/96/graduation-cap.png" width="20" alt=""/> &nbsp; **TESL Saskatchewan Bursary** | 2022 | One of two recipients province-wide |
 | <img src="https://img.icons8.com/color/96/books.png" width="20" alt=""/> &nbsp; **EAP Scholarship** | 2020 | $2,500 as highest achiever in English for Academic Purposes |
@@ -351,7 +351,7 @@ const ardalan = {
 <td colspan="2">
 <div align="center">
 
-### <img src="https://img.icons8.com/color/96/vr-glasses.png" width="24" alt=""/> &nbsp; Dreaming Machines
+### <img src="banner.gif" width="28" alt=""/> &nbsp; Does the Internet Dream of Itself?
 **MIT Reality Hack 2026** &nbsp;•&nbsp; <a href="https://github.com/ArdalanAskarian/dream_hackers">View Project</a>
 
 <img src="https://img.shields.io/badge/Unity_6-Engine-000000?style=flat-square&logo=unity"/>&nbsp;<img src="https://img.shields.io/badge/OpenXR-XR-8B5CF6?style=flat-square"/>&nbsp;<img src="https://img.shields.io/badge/Node.js-Server-339933?style=flat-square&logo=node.js"/>&nbsp;<img src="https://img.shields.io/badge/Arduino-Hardware-00979D?style=flat-square&logo=arduino"/>&nbsp;<img src="https://img.shields.io/badge/Three.js-3D-000000?style=flat-square&logo=three.js"/>
