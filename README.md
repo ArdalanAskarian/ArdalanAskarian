@@ -4,7 +4,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ardalan%20Askarian&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=M.Sc.%20Student%20|%20AI%20Engineer%20|%20Computer%20Vision%20Researcher&descSize=16&descAlignY=52"/>
 
 <!-- Typing SVG -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Building+Intelligent+Systems+%F0%9F%A7%A0;Computer+Vision+%26+Applied+ML+Researcher+%F0%9F%94%AC;Full-Stack+Developer+%26+AI+Engineer+%F0%9F%9A%80;Teaching+Machines+to+See+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Building+Intelligent+Systems+%F0%9F%A7%A0;Computer+Vision+%26+Applied+ML+Researcher+%F0%9F%94%AC;Full-Stack+Developer+%26+AI+Engineer+%F0%9F%9A%80;Teaching+Machines+to+See+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" /></a>
 
 <br>
 
@@ -82,7 +82,7 @@ const ardalan = {
     dailyTools: ["Python", "TypeScript", "React", "PyTorch", "Django"],
 
     achievements: {
-        studentsmentored: "100+",
+        studentsMentored: "100+",
         interactionEventsAnalyzed: 36407,  // yes, I counted
         awardsWon: ["MIT Reality Hack 2026", "NSERC USRA", "TESL Bursary"],
         hackathons: ["MIT Reality Hack 2026 🥽"]
@@ -334,7 +334,7 @@ const ardalan = {
 
 | Award | Year | Details |
 |:---:|:---:|:---|
-| <img src="banner.gif" width="20" alt=""/> &nbsp; **MIT Reality Hack** | 2026 | Built "Does the Internet Dream of Itself?" - immersive VR experience with biometric integration |
+| <img src="https://img.icons8.com/color/96/virtual-reality.png" width="20" alt=""/> &nbsp; **MIT Reality Hack** | 2026 | Built "Does the Internet Dream of Itself?" - immersive VR experience with biometric integration |
 | <img src="https://img.icons8.com/color/96/medal.png" width="20" alt=""/> &nbsp; **NSERC USRA** | 2025 | Undergraduate Student Research Award for Computer Vision research |
 | <img src="https://img.icons8.com/color/96/graduation-cap.png" width="20" alt=""/> &nbsp; **TESL Saskatchewan Bursary** | 2022 | One of two recipients province-wide |
 | <img src="https://img.icons8.com/color/96/books.png" width="20" alt=""/> &nbsp; **EAP Scholarship** | 2020 | $2,500 as highest achiever in English for Academic Purposes |
@@ -420,7 +420,7 @@ Led front-end development for team sport management app with Agile/Scrum methodo
 <!-- GitHub Stats -->
 <img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/>
 &nbsp;&nbsp;
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/>
+<img src="https://streak-stats.demolab.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/>
 
 <br><br>
 
