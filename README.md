@@ -137,18 +137,6 @@ const ardalan = {
 <tr>
 <td width="50%" valign="top">
 
-### <img src="https://img.icons8.com/color/96/hospital.png" width="28" alt=""/> &nbsp; Software Engineer
-**Wellman Medical Group** &nbsp;•&nbsp; Sep 2025 – Present
-
-<img src="https://img.shields.io/badge/Status-Current-10b981?style=flat-square"/>
-
-- <img src="https://img.icons8.com/color/96/robot.png" width="18" alt=""/> &nbsp; Design and develop AI agents
-- <img src="https://img.icons8.com/color/96/hospital.png" width="18" alt=""/> &nbsp; Healthcare-specific AI solutions
-- <img src="https://img.icons8.com/color/96/lock.png" width="18" alt=""/> &nbsp; Ensuring data security & compliance
-
-</td>
-<td width="50%" valign="top">
-
 ### <img src="https://img.icons8.com/color/96/apple-watch.png" width="28" alt=""/> &nbsp; Software Developer Intern
 **BEAP Lab** &nbsp;•&nbsp; Oct 2024 – Sep 2025
 
