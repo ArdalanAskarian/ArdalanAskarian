@@ -70,7 +70,7 @@ const ardalan = {
     pronouns: "he" | "him",
     location: "Saskatchewan, Canada 🇨🇦",
 
-    currentRole: "Software Engineer @ Wellman Medical Group",
+    currentRole: "Software Engineer",
     pursuing: "M.Sc. Computer Science – Applied Machine Learning",
     researchFocus: "Computer Vision & Image Processing",
 
