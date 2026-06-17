@@ -51,7 +51,7 @@
 
 |  |  |
 |:---:|:---|
-| <img src="https://img.icons8.com/color/96/telescope.png" width="20" alt=""/> | **Working on:** AI agents for healthcare at **Wellman Medical Group** |
+| <img src="https://img.icons8.com/color/96/telescope.png" width="20" alt=""/> | |
 | <img src="https://img.icons8.com/color/96/plant-under-sun.png" width="20" alt=""/> | **Learning:** Advanced Computer Vision & Deep Learning architectures |
 | <img src="https://img.icons8.com/color/96/chat.png" width="20" alt=""/> | **Ask me about:** Computer Vision, React, Django, PyTorch, or teaching CS! |
 | <img src="https://img.icons8.com/color/96/lightning-bolt.png" width="20" alt=""/> | **Fun fact:** I've mass analyzed 36,407 interaction events in one study and mass mentored 100+ students — I like big numbers! |
