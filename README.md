@@ -1,505 +1,180 @@
-<div align="center">
-
-<!-- Animated Wave Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ardalan%20Askarian&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=M.Sc.%20Student%20|%20AI%20Engineer%20|%20Computer%20Vision%20Researcher&descSize=16&descAlignY=52"/>
-
-<!-- Typing SVG -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Building+Intelligent+Systems+%F0%9F%A7%A0;Computer+Vision+%26+Applied+ML+Researcher+%F0%9F%94%AC;Full-Stack+Developer+%26+AI+Engineer+%F0%9F%9A%80;Teaching+Machines+to+See+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" /></a>
-
-<br>
-
-<!-- Social Badges -->
-<a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>&nbsp;
-<a href="https://ardalanaskarian.github.io">
-  <img src="https://img.shields.io/badge/Portfolio-Visit-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
-</a>&nbsp;
-<a href="mailto:ardalan.askarian@usask.ca">
-  <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>&nbsp;
-<a href="https://github.com/ArdalanAskarian">
-  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-
-<br><br>
-
-<!-- Profile Stats -->
-<img src="https://komarev.com/ghpvc/?username=ArdalanAskarian&color=3b82f6&style=flat-square&label=Profile+Views" alt="Profile Views"/>&nbsp;
-<img src="https://img.shields.io/github/followers/ArdalanAskarian?label=Followers&style=flat-square&color=8b5cf6&logo=github" alt="GitHub Followers"/>&nbsp;
-<img src="https://img.shields.io/github/stars/ArdalanAskarian?label=Stars&style=flat-square&color=ec4899&logo=github" alt="GitHub Stars"/>
-
-<br><br>
-
-<!-- Navigation -->
-<a href="#-currently"><img src="https://img.icons8.com/color/96/clock--v1.png" width="16" alt=""/> Currently</a> •
-<a href="#-at-a-glance"><img src="https://img.icons8.com/color/96/idea.png" width="16" alt=""/> About</a> •
-<a href="#-education"><img src="https://img.icons8.com/color/96/graduation-cap.png" width="16" alt=""/> Education</a> •
-<a href="#-experience"><img src="https://img.icons8.com/color/96/briefcase.png" width="16" alt=""/> Experience</a> •
-<a href="#-research"><img src="https://img.icons8.com/color/96/microscope.png" width="16" alt=""/> Research</a> •
-<a href="#-technical-skills"><img src="https://img.icons8.com/color/96/maintenance.png" width="16" alt=""/> Skills</a> •
-<a href="#-featured-projects"><img src="https://img.icons8.com/color/96/rocket.png" width="16" alt=""/> Projects</a>
-
-</div>
-
-<br>
-
-<!-- Currently Section -->
-<h2 align="center"><img src="https://img.icons8.com/color/96/clock--v1.png" width="28" alt=""/> Currently</h2>
-
-<div align="center">
-
-|  |  |
-|:---:|:---|
-| <img src="https://img.icons8.com/color/96/telescope.png" width="20" alt=""/> | |
-| <img src="https://img.icons8.com/color/96/plant-under-sun.png" width="20" alt=""/> | **Learning:** Advanced Computer Vision & Deep Learning architectures |
-| <img src="https://img.icons8.com/color/96/chat.png" width="20" alt=""/> | **Ask me about:** Computer Vision, React, Django, PyTorch, or teaching CS! |
-| <img src="https://img.icons8.com/color/96/lightning-bolt.png" width="20" alt=""/> | **Fun fact:** I've mass analyzed 36,407 interaction events in one study and mass mentored 100+ students — I like big numbers! |
-
-</div>
-
-<br>
-
-<!-- Fun About Me Code Block -->
-<h2 align="center"><img src="https://img.icons8.com/color/96/idea.png" width="28" alt=""/> At a Glance</h2>
-
-<div align="center">
-
-```javascript
-const ardalan = {
-    pronouns: "he" | "him",
-    location: "Saskatchewan, Canada 🇨🇦",
-
-    currentRole: "Software Engineer",
-    pursuing: "M.Sc. Computer Science – Applied Machine Learning",
-    researchFocus: "Computer Vision & Image Processing",
-
-    education: {
-        masters: "University of Saskatchewan (2025–Present)",
-        bachelors: "B.Sc. Honours CS – 86% Average 🎓"
-    },
-
-    dailyTools: ["Python", "TypeScript", "React", "PyTorch", "Django"],
-
-    achievements: {
-        studentsMentored: "100+",
-        interactionEventsAnalyzed: 36407,  // yes, I counted
-        awardsWon: ["MIT Reality Hack 2026", "NSERC USRA", "TESL Bursary"],
-        hackathons: ["MIT Reality Hack 2026 🥽"]
-    },
-
-    currentlyExcitedAbout: "Teaching machines to see 👁️",
-    lifePhilosophy: "Code, Coffee, Computer Vision, Repeat ☕"
-};
-```
-
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/graduation-cap.png" width="28" alt=""/> Education</h2>
-
-<div align="center">
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-
-### M.Sc. Computer Science
-**Sep 2025 – Present**
-<br>
-<img src="https://img.shields.io/badge/Focus-Applied%20Machine%20Learning-8b5cf6?style=flat-square"/>
-<br><br>
-<img src="https://img.icons8.com/color/96/microscope.png" width="18" alt=""/> Research: Computer Vision & Image Processing<br>
-<img src="https://img.icons8.com/color/96/teacher.png" width="18" alt=""/> Supervisor: Dr. Mark Eramian
-
-</td>
-<td width="50%" align="center" valign="top">
-
-### B.Sc. Honours Computer Science
-**University of Saskatchewan**
-<br>
-<img src="https://img.shields.io/badge/Average-86%25-ec4899?style=flat-square"/>
-<br><br>
-<img src="https://img.icons8.com/color/96/laptop.png" width="18" alt=""/> Software Engineering Option<br>
-<img src="https://img.icons8.com/color/96/trophy.png" width="18" alt=""/> Honours Graduate
-
-</td>
-</tr>
-</table>
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/briefcase.png" width="28" alt=""/> Experience</h2>
-
-<div align="center">
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### <img src="https://img.icons8.com/color/96/apple-watch.png" width="28" alt=""/> &nbsp; Software Developer Intern
-**BEAP Lab** &nbsp;•&nbsp; Oct 2024 – Sep 2025
-
-<img src="https://img.shields.io/badge/Status-Completed-3b82f6?style=flat-square"/>
-
-- <img src="https://img.icons8.com/color/96/construction.png" width="18" alt=""/> &nbsp; Led full-stack development of BEAP Engine
-- <img src="https://img.icons8.com/color/96/lightning-bolt.png" width="18" alt=""/> &nbsp; Redesigned UI with React.js & TypeScript
-- <img src="https://img.icons8.com/color/96/brain.png" width="18" alt=""/> &nbsp; Implemented ML for smartwatch data parsing
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### <img src="https://img.icons8.com/color/96/microscope.png" width="28" alt=""/> &nbsp; NSERC USRA Researcher
-**Imaging & AI Lab** &nbsp;•&nbsp; May 2025 – Aug 2025
-
-<img src="https://img.shields.io/badge/Award-NSERC%20USRA-ec4899?style=flat-square"/>
-
-- <img src="https://img.icons8.com/color/96/image.png" width="18" alt=""/> &nbsp; SIFT-assisted image annotation research
-- <img src="https://img.icons8.com/color/96/bar-chart.png" width="18" alt=""/> &nbsp; User study: 6 participants, 36,407 events
-- <img src="https://img.icons8.com/color/96/document.png" width="18" alt=""/> &nbsp; Co-authored research poster
-
-</td>
-<td width="50%" valign="top">
-
-### <img src="https://img.icons8.com/color/96/teacher.png" width="28" alt=""/> &nbsp; Teaching Assistant
-**University of Saskatchewan** &nbsp;•&nbsp; Jan 2023 – Present
-
-<img src="https://img.shields.io/badge/Experience-2%2B%20Years-8b5cf6?style=flat-square"/>
-
-- <img src="https://img.icons8.com/color/96/books.png" width="18" alt=""/> &nbsp; Currently: CMPT 332 (Operating Systems)
-- <img src="https://img.icons8.com/color/96/teacher.png" width="18" alt=""/> &nbsp; Mentored 100+ students across 6 CS courses
-- <img src="https://img.icons8.com/color/96/signing-a-document.png" width="18" alt=""/> &nbsp; Detailed feedback on assignments & exams
-
-</td>
-</tr>
-</table>
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/microscope.png" width="28" alt=""/> Research</h2>
-
-<div align="center">
-
-### Enhancing Annotation Consistency and Efficiency
-**A Study of SIFT-Assisted Image Annotation in Computer Vision**
-
-*Ardalan Askarian, Dr. Mark Eramian*
-
-<br>
-
-<table>
-<tr>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/Participants-6-3b82f6?style=for-the-badge"/>
-<br><b>User Study</b>
-</td>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/Events-36,407-8b5cf6?style=for-the-badge"/>
-<br><b>Interaction Data</b>
-</td>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/Platform-Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
-<br><b>Built With</b>
-</td>
-</tr>
-</table>
-
-<details>
-<summary><b><img src="https://img.icons8.com/color/96/document.png" width="18" alt=""/> &nbsp; View Research Details</b></summary>
-<br>
-
-| Aspect | Details |
-|--------|---------|
-| **Platform** | Django-based annotation system combining SIFT boxes with human oversight |
-| **Comparison** | AI-assisted annotation vs. manual baseline |
-| **Key Finding** | AI assistance increased annotation time by 71.6% without improving IoU or GTC quality metrics |
-| **Contribution** | Distilled design lessons for productive human-AI collaboration in annotation systems |
-| **Output** | Co-authored research poster on human-AI collaboration in annotation workflows |
-
-**Technologies:** &nbsp; Django, Python, OpenCV, SIFT (Scale-Invariant Feature Transform), Image Segmentation
-
-</details>
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/maintenance.png" width="28" alt=""/> Technical Skills</h2>
-
-<div align="center">
-
-<!-- Animated Skill Icons -->
-<p>
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nodejs,nextjs,django,flask&theme=dark" />
-</a>
-</p>
-<p>
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,postgres,mysql,mongodb,docker,git&theme=dark" />
-</a>
-</p>
-<p>
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=linux,c,java,cs,php,html,css,vscode&theme=dark" />
-</a>
-</p>
-
-<br>
-
-<details>
-<summary><b><img src="https://img.icons8.com/color/96/clipboard.png" width="18" alt=""/> &nbsp; Detailed Skills Breakdown</b></summary>
-<br>
-
-<table>
-  <tr>
-    <td align="center" width="150"><b>Languages</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-      <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black"/>
-      <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
-      <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-      <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
-      <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/>
-      <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Frameworks</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-      <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-      <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>AI & ML</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Databases</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-      <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
-      <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Tools</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
-      <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/>
-    </td>
-  </tr>
-</table>
-
-</details>
-
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/trophy.png" width="28" alt=""/> Accomplishments</h2>
-
-<div align="center">
-
-| Award | Year | Details |
-|:---:|:---:|:---|
-| <img src="https://img.icons8.com/color/96/virtual-reality.png" width="20" alt=""/> &nbsp; **MIT Reality Hack** | 2026 | Built "Does the Internet Dream of Itself?" - immersive VR experience with biometric integration |
-| <img src="https://img.icons8.com/color/96/medal.png" width="20" alt=""/> &nbsp; **NSERC USRA** | 2025 | Undergraduate Student Research Award for Computer Vision research |
-| <img src="https://img.icons8.com/color/96/graduation-cap.png" width="20" alt=""/> &nbsp; **TESL Saskatchewan Bursary** | 2022 | One of two recipients province-wide |
-| <img src="https://img.icons8.com/color/96/books.png" width="20" alt=""/> &nbsp; **EAP Scholarship** | 2020 | $2,500 as highest achiever in English for Academic Purposes |
-
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/rocket.png" width="28" alt=""/> Featured Projects</h2>
-
-<div align="center">
-<table>
-<tr>
-<td colspan="2">
-<div align="center">
-
-<img src="banner.gif" width="280" alt="Does the Internet Dream of Itself?"/>
-
-### Does the Internet Dream of Itself?
-**MIT Reality Hack 2026** &nbsp;•&nbsp; <a href="https://github.com/ArdalanAskarian/dream_hackers">View Project</a>
-
-<img src="https://img.shields.io/badge/Unity_6-Engine-000000?style=flat-square&logo=unity"/>&nbsp;<img src="https://img.shields.io/badge/OpenXR-XR-8B5CF6?style=flat-square"/>&nbsp;<img src="https://img.shields.io/badge/Node.js-Server-339933?style=flat-square&logo=node.js"/>&nbsp;<img src="https://img.shields.io/badge/Arduino-Hardware-00979D?style=flat-square&logo=arduino"/>&nbsp;<img src="https://img.shields.io/badge/Three.js-3D-000000?style=flat-square&logo=three.js"/>
-
-Immersive VR experience for Meta Quest where players step inside the internet's dream. Features phone companion app, real-time biometric shader effects via Arduino pulse sensor, and WebSocket communication.
-
-</div>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### <img src="https://img.icons8.com/color/96/bar-chart.png" width="24" alt=""/> &nbsp; BEAP Engine
-**Smartwatch Data Platform**
-
-<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react"/>&nbsp;<img src="https://img.shields.io/badge/TypeScript-Language-3178C6?style=flat-square&logo=typescript"/>
-
-Full-stack platform for large-scale smartwatch data processing and analytics with ML-enhanced parsing.
-
-</td>
-<td width="50%" valign="top">
-
-### <img src="https://img.icons8.com/color/96/image.png" width="24" alt=""/> &nbsp; SIFT Annotation Platform
-**Computer Vision Research**
-
-<img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django"/>&nbsp;<img src="https://img.shields.io/badge/OpenCV-Vision-5C3EE8?style=flat-square&logo=opencv"/>
-
-AI-assisted image annotation system combining Scale-Invariant Feature Transform with human oversight.
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<div align="center">
-
-### <img src="https://img.icons8.com/color/96/soccer-ball.png" width="24" alt=""/> &nbsp; Sports Scheduling App
-**CMPT 370 – Intermediate Software Engineering**
-
-<img src="https://img.shields.io/badge/React_Native-Mobile-61DAFB?style=flat-square&logo=react"/>&nbsp;<img src="https://img.shields.io/badge/TypeScript-Language-3178C6?style=flat-square&logo=typescript"/>&nbsp;<img src="https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=flat-square&logo=postgresql"/>&nbsp;<img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb"/>
-
-Led front-end development for team sport management app with Agile/Scrum methodology
-
-</div>
-</td>
-</tr>
-</table>
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/combo-chart.png" width="28" alt=""/> GitHub Analytics</h2>
-
-<div align="center">
-
-<!-- Snake Animation - will appear after workflow runs successfully -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/header-light.svg">
+  <img src="./assets/header-light.svg" width="100%" alt="Ardalan Askarian. Computer vision, software engineering, and teaching in Saskatchewan, Canada.">
 </picture>
 
-<br><br>
+<p align="center">
+  <a href="https://ardalanaskarian.github.io">Portfolio</a>
+  &nbsp;/&nbsp;
+  <a href="https://linkedin.com/in/ardalan-askarian-79221a24b">LinkedIn</a>
+  &nbsp;/&nbsp;
+  <a href="mailto:ardalan.askarian@usask.ca">Email</a>
+  &nbsp;/&nbsp;
+  <a href="https://github.com/ArdalanAskarian">GitHub</a>
+</p>
 
-<!-- GitHub Stats -->
-<img src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=8B5CF6&text_color=FFFFFF" height="180"/>
-&nbsp;&nbsp;
-<img src="https://streak-stats.demolab.com/?user=ArdalanAskarian&theme=tokyonight&hide_border=true&background=0D1117&stroke=3B82F6&ring=8B5CF6&fire=EC4899&currStreakLabel=3B82F6" height="180"/>
+I build software around messy human signals: image annotations, smartwatch data, and a heartbeat inside VR.
 
-<br><br>
+I am an M.Sc. student in Computer Science at the University of Saskatchewan, specializing in Applied Machine Learning. My research sits at the intersection of computer vision, image processing, and the people who actually have to use intelligent tools. Away from the research questions, I like turning the same ideas into dependable full-stack systems and helping students make sense of computer science.
 
-<!-- Activity Graph -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&theme=tokyo-night&hide_border=true&area=true&bg_color=0D1117" width="95%"/>
+## 01 / Current frame
 
-<br><br>
+| Focus | In this frame |
+|:--|:--|
+| **Researching** | Computer vision and image processing with Dr. Mark Eramian |
+| **Building** | Full-stack tools for computer vision and interaction-data studies |
+| **Teaching** | Computer science at the University of Saskatchewan since 2023 |
+| **Learning** | Advanced computer vision and deep learning architectures |
+| **Based in** | Saskatchewan, Canada |
+| **Pronouns** | he/him |
 
-<!-- Top Languages & Trophies -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArdalanAskarian&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&text_color=FFFFFF" height="180"/>
-&nbsp;&nbsp;
-<img src="https://github-profile-trophy.vercel.app/?username=ArdalanAskarian&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=4" height="180"/>
+Ask me about computer vision, PyTorch, React, Django, teaching CS, or what 36,407 logged interactions can reveal about a tool.
 
-</div>
+## 02 / Research
 
-<br>
+<img src="./assets/research-study.svg" width="100%" alt="SIFT-assisted annotation study: 6 participants, 36,407 interaction events, and 71.6 percent more annotation time without better quality.">
 
-<h2 align="center"><img src="https://img.icons8.com/color/96/compass.png" width="28" alt=""/> Research Interests</h2>
+### Enhancing Annotation Consistency and Efficiency
 
-<div align="center">
+**A study of SIFT-assisted image annotation in computer vision**<br>
+Ardalan Askarian and Dr. Mark Eramian
 
-| <img src="https://img.icons8.com/fluency/48/camera.png" width="35"/> | <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" width="35"/> | <img src="https://img.icons8.com/fluency/48/source-code.png" width="35"/> | <img src="https://img.icons8.com/fluency/48/combo-chart.png" width="35"/> |
-|:---:|:---:|:---:|:---:|
-| **Computer Vision** | **Machine Learning** | **Full-Stack Dev** | **Data Science** |
-| Image Processing | Applied ML | React & Django | Analytics |
-| SIFT & Segmentation | Deep Learning | System Integration | Visualization |
+My work included developing a Django annotation platform that paired SIFT-generated boxes with human oversight, then comparing the assisted workflow with a manual baseline. Across six participants and 36,407 interaction events, assistance increased annotation time by 71.6 percent without improving the reported annotation quality measures.
 
-</div>
+The result is counterintuitive, which is exactly why I value it. Adding automation is not the same as improving a workflow. The study became a practical lesson in designing human-machine collaboration around evidence instead of novelty.
 
-<br>
-
-<!-- Random Dev Quote -->
-<h2 align="center"><img src="https://img.icons8.com/color/96/quote-left.png" width="28" alt=""/> Random Dev Quote</h2>
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
-</div>
-
-<br>
-
-<h2 align="center"><img src="https://img.icons8.com/color/96/handshake.png" width="28" alt=""/> Let's Connect</h2>
-
-<div align="center">
-
-I'm always excited to collaborate on **AI/ML research**, **computer vision projects**, and **innovative software solutions**!
-
-| <img src="https://img.icons8.com/color/96/microscope.png" width="18" alt=""/> Research Collaborations | <img src="https://img.icons8.com/color/96/briefcase.png" width="18" alt=""/> Industry Projects | <img src="https://img.icons8.com/color/96/graduation-cap.png" width="18" alt=""/> Academic Partnerships | <img src="https://img.icons8.com/color/96/rocket.png" width="18" alt=""/> Open Source |
-|:---:|:---:|:---:| :---:|
-| Computer Vision | Software Development | Graduate Research | Contributions |
-
-<br>
-
-<a href="mailto:ardalan.askarian@usask.ca">
-  <img src="https://img.shields.io/badge/📧_Email_Me-ardalan.askarian@usask.ca-EA4335?style=for-the-badge"/>
-</a>&nbsp;&nbsp;
-<a href="https://linkedin.com/in/ardalan-askarian-79221a24b">
-  <img src="https://img.shields.io/badge/Let's_Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>&nbsp;&nbsp;
-<a href="https://ardalanaskarian.github.io">
-  <img src="https://img.shields.io/badge/View_My_Portfolio-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white"/>
-</a>
-
-</div>
-
-<br>
-
----
-
-<!-- Retro Badges Footer -->
-<div align="center">
-
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" height="28"/>&nbsp;
-<img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" height="28"/>&nbsp;
-<img src="https://forthebadge.com/images/badges/works-on-my-machine.svg" height="28"/>
-
-<br><br>
-
-<!-- Easter Egg -->
 <details>
-<summary><img src="https://img.icons8.com/color/96/easter-egg.png" width="18" alt=""/> <b>Click for a programming joke</b></summary>
-<br>
-<i>Why do programmers prefer dark mode?</i>
-<br><br>
-<b>Because light attracts bugs! <img src="https://img.icons8.com/color/96/bug.png" width="18" alt=""/></b>
-<br><br>
-<img src="https://media.giphy.com/media/10zxDv7Hv5RF9C/giphy.gif" width="200"/>
+<summary><strong>Study notes</strong></summary>
+
+| Aspect | Detail |
+|:--|:--|
+| Platform | Django-based image annotation system with SIFT proposals and human review |
+| Comparison | Assisted annotation against a manual baseline |
+| Data | 6 participants and 36,407 recorded interaction events |
+| Finding | 71.6 percent more annotation time with no improvement in the reported quality measures |
+| Output | Co-authored research poster on human-machine annotation workflows |
+| Tools | Python, Django, OpenCV, SIFT, image segmentation |
+
 </details>
 
+## 03 / Selected work
+
+<img src="./assets/dream-project.svg" width="100%" alt="Does the Internet Dream of Itself? A VR system connecting a headset, phone companion, and pulse sensor.">
+
+### [Does the Internet Dream of Itself?](https://github.com/ArdalanAskarian/dream_hackers)
+
+**Built at MIT Reality Hack 2026**
+
+An immersive Meta Quest experience where players enter the internet's dream. A phone companion, an Arduino pulse sensor, and live WebSocket communication let the virtual world respond to the participant's heartbeat in real time. My work focused on the phone interface and Three.js previews, WebSocket setup, asset pipeline, and technical documentation. [Read the project story on Devpost](https://devpost.com/software/dream_hackers).
+
+`Unity 6` `OpenXR` `Node.js` `Arduino` `Three.js` `WebSockets`
+
+### BEAP Engine
+
+**Smartwatch data platform / BEAP Lab**
+
+Led full-stack development of a platform for large-scale smartwatch data processing and analytics. I redesigned the interface with React and TypeScript and implemented machine learning support for data parsing.
+
+`React` `TypeScript` `Python` `Machine Learning`
+
+### SIFT Annotation Platform
+
+**Computer vision research system / Imaging and AI Lab**
+
+Developed the research platform used to compare manual image annotation with SIFT-assisted workflows and capture detailed interaction data.
+
+`Django` `Python` `OpenCV` `SIFT`
+
+### Sports Scheduling App
+
+**Team project / CMPT 370, Intermediate Software Engineering**
+
+Led front-end development for a team sport management app using an Agile and Scrum workflow.
+
+`React Native` `TypeScript` `PostgreSQL` `MongoDB`
+
+## 04 / Experience
+
+### Teaching Assistant
+
+**University of Saskatchewan / Jan 2023 to present**
+
+- Mentored more than 100 students across six computer science courses.
+- Supported courses including Operating Systems.
+- Gave detailed feedback on assignments and exams.
+
+### NSERC USRA Researcher
+
+**Imaging and AI Lab / May 2025 to Aug 2025**
+
+- Researched SIFT-assisted image annotation.
+- Conducted a six-participant user study and analyzed 36,407 events.
+- Co-authored a research poster on human-machine collaboration.
+
+### Software Developer Intern
+
+**BEAP Lab / Oct 2024 to Sep 2025**
+
+- Led full-stack development of BEAP Engine.
+- Redesigned the interface with React and TypeScript.
+- Implemented machine learning support for smartwatch data parsing.
+
+## 05 / Education and recognition
+
+### M.Sc. Computer Science
+
+**University of Saskatchewan / Sep 2025 to present**
+
+- Specialization: Applied Machine Learning
+- Research: Computer Vision and Image Processing
+- Supervisor: Dr. Mark Eramian
+
+### B.Sc. Honours Computer Science
+
+**University of Saskatchewan**
+
+- Software Engineering Option
+- 86 percent average
+- Honours graduate
+
+### Recognition
+
+- **2025 / NSERC Undergraduate Student Research Award.** Supported computer vision research.
+- **2022 / TESL Saskatchewan Bursary.** One of two recipients across the province.
+- **2020 / EAP Scholarship.** $2,500 as the highest achiever in English for Academic Purposes.
+
+## 06 / Working stack
+
+My regular working set is **Python, TypeScript, React, PyTorch, Django, and OpenCV**. The broader toolkit comes from research, software work, teaching, and team projects.
+
+| Area | Tools |
+|:--|:--|
+| Languages | Python, TypeScript, JavaScript, C, Java, SQL, PHP, C#, R |
+| Web and mobile | React, React Native, Node.js, Next.js, Django, Flask, Express, HTML, CSS |
+| Vision and ML | PyTorch, TensorFlow, OpenCV, scikit-learn |
+| Data | PostgreSQL, MySQL, MongoDB, SQLite |
+| Systems and tools | Git, Docker, Linux, Playwright, Unity, VS Code |
+
+The questions I return to most often are how people work with computer vision systems, how applied ML fits into real software, and how interaction data can expose the gap between a promising idea and a useful tool.
+
+<details>
+<summary><strong>GitHub activity</strong></summary>
+
 <br>
 
-<!-- Animated Footer Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg">
+  <img src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" alt="Ardalan's GitHub contribution activity">
+</picture>
 
-</div>
+</details>
+
+## 07 / Contact
+
+I am always glad to talk about computer vision research, human-centered ML tools, teaching, or the difficult middle stretch between a prototype and dependable software.
+
+- [ardalan.askarian@usask.ca](mailto:ardalan.askarian@usask.ca)
+- [linkedin.com/in/ardalan-askarian-79221a24b](https://linkedin.com/in/ardalan-askarian-79221a24b)
+- [ardalanaskarian.github.io](https://ardalanaskarian.github.io)

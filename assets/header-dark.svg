@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Ardalan Askarian</title>
+  <desc id="desc">An editorial field note connecting Ardalan's computer vision research with a Saskatchewan prairie horizon.</desc>
+  <rect width="1200" height="360" fill="#10191F"/>
+  <rect x="24" y="24" width="1152" height="312" fill="none" stroke="#F0EBE1" stroke-width="2"/>
+
+  <g fill="none" stroke="#E2B250" stroke-width="3">
+    <path d="M24 58h24M58 24v24M1152 24v24M1176 58h-24M24 302h24M58 336v-24M1152 336v-24M1176 302h-24"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" letter-spacing="2" fill="#B0B8B7">
+    <text x="72" y="66">FIELD NOTE / 01</text>
+    <text x="1128" y="66" text-anchor="end">36,407 INTERACTIONS</text>
+  </g>
+
+  <g fill="#F0EBE1" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="2">
+    <text x="70" y="145" font-size="70">ARDALAN</text>
+    <text x="70" y="214" font-size="70">ASKARIAN</text>
+  </g>
+  <text x="74" y="254" fill="#69AFB7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" letter-spacing="1.4">COMPUTER VISION / SOFTWARE ENGINEERING / TEACHING</text>
+  <text x="74" y="297" fill="#B0B8B7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" letter-spacing="1.5">SASKATCHEWAN, CANADA</text>
+
+  <g>
+    <rect x="770" y="91" width="145" height="168" fill="#17242D" stroke="#F0EBE1" stroke-width="2"/>
+    <rect x="970" y="91" width="145" height="168" fill="#17242D" stroke="#F0EBE1" stroke-width="2"/>
+    <path d="M772 199c30-13 52-5 72-17 24-15 44-8 69-23v98H772z" fill="#233842"/>
+    <path d="M972 188c27-8 47-1 69-15 27-17 48-9 72-27v111H972z" fill="#233842"/>
+    <path d="M772 199c30-13 52-5 72-17 24-15 44-8 69-23M972 188c27-8 47-1 69-15 27-17 48-9 72-27" fill="none" stroke="#69AFB7" stroke-width="3"/>
+    <path d="M915 123l55 13M915 181l55-12M915 229l55-18" fill="none" stroke="#E17C64" stroke-width="2" stroke-dasharray="6 7"/>
+  </g>
+
+  <g fill="#10191F" stroke="#E17C64" stroke-width="3">
+    <g transform="translate(822 123) rotate(-18)"><circle r="14"/><path d="M0-19v10M0 9v10M-19 0h10M9 0h10"/></g>
+    <g transform="translate(854 181) rotate(28)"><circle r="11"/><path d="M0-16v8M0 8v8M-16 0h8M8 0h8"/></g>
+    <g transform="translate(876 229) rotate(-42)"><circle r="16"/><path d="M0-21v10M0 11v10M-21 0h10M11 0h10"/></g>
+    <g transform="translate(1022 136) rotate(20)"><circle r="14"/><path d="M0-19v10M0 9v10M-19 0h10M9 0h10"/></g>
+    <g transform="translate(1054 169) rotate(-24)"><circle r="11"/><path d="M0-16v8M0 8v8M-16 0h8M8 0h8"/></g>
+    <g transform="translate(1076 211) rotate(38)"><circle r="16"/><path d="M0-21v10M0 11v10M-21 0h10M11 0h10"/></g>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" letter-spacing="1.5" fill="#B0B8B7">
+    <text x="770" y="282">FRAME A</text>
+    <text x="1115" y="282" text-anchor="end">FRAME B</text>
+    <text x="1115" y="307" text-anchor="end" fill="#E17C64">SIFT / MATCH SET</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
+  <title id="title">SIFT-assisted annotation study</title>
+  <desc id="desc">Six participants generated 36,407 interaction events. Assistance increased annotation time by 71.6 percent without improving quality.</desc>
+  <rect width="1200" height="270" fill="#17242D"/>
+  <path d="M0 10h1200M0 260h1200" stroke="#2D7480" stroke-width="3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="700">
+    <text x="52" y="52" font-size="15" letter-spacing="2" fill="#69AFB7">STUDY / SIFT-ASSISTED IMAGE ANNOTATION</text>
+    <text x="1148" y="52" text-anchor="end" font-size="15" letter-spacing="2" fill="#B0B8B7">HUMAN + MACHINE</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800" fill="#F0EBE1">
+    <text x="52" y="135" font-size="62">6</text>
+    <text x="310" y="135" font-size="62">36,407</text>
+    <text x="696" y="135" font-size="62">+71.6%</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" letter-spacing="1.2" fill="#B0B8B7">
+    <text x="52" y="166">PARTICIPANTS</text>
+    <text x="310" y="166">INTERACTION EVENTS</text>
+    <text x="696" y="166">ANNOTATION TIME</text>
+  </g>
+
+  <path d="M52 204h1096" stroke="#596260" stroke-width="2"/>
+  <circle cx="52" cy="204" r="6" fill="#E2B250"/>
+  <circle cx="1148" cy="204" r="6" fill="#E17C64"/>
+  <text x="52" y="235" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" letter-spacing="1" fill="#F0EBE1">ASSISTANCE DID NOT IMPROVE THE REPORTED QUALITY MEASURES</text>
+</svg>
