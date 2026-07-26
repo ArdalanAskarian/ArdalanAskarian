@@ -70,3 +70,6 @@ db.sqlite3-journal
 *.bak
 *.tmp
 .cache/
+
+# Build-time only: fonts are fetched by tools/build_svg.py, never committed
+tools/fonts/

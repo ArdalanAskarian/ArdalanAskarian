@@ -30,9 +30,12 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Contribution density is encoded along the same magma ramp the rest
+          # of the profile uses, so the graph reads as part of the page rather
+          # than a bolted-on widget. Palettes defined in tools/build_svg.py.
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=%23C9421D&color_dots=%23EFEAF7,%23C9B8DC,%23A32E6D,%23C9421D,%239A6206
+            dist/github-snake-dark.svg?color_snake=%23E55C30&color_dots=%23140C2B,%234F0C6B,%23B5367A,%23E55C30,%23FBA40A
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
