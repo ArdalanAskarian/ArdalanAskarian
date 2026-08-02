@@ -71,3 +71,6 @@ db.sqlite3-journal
 *.tmp
 .cache/
 
+# Local decision aid: previews README directions, not part of the profile
+tools/readme-options.html
+
