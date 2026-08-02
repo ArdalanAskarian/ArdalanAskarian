@@ -131,14 +131,14 @@ Smartwatch data ingestion and analytics.
 
 </details>
 
-### Also
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-also-dark.svg"><img src="assets/icon-also.svg" width="20" alt=""></picture> &nbsp;Also
 
-| | |
-|:--|:--|
-| [Sports Scheduling App](https://github.com/ArdalanAskarian/Sports-Scheduler) | front end for a team-management app |
-| [Weather App](https://github.com/ArdalanAskarian/Ardalan-Weather-App) | a native Swift client for live forecasts |
-| [Dentistry Website](https://github.com/ArdalanAskarian/Dentist-Website) | booking flow and integrated maps |
-| [Darkness Defenders](https://github.com/ArdalanAskarian/Darkness-Defenders) | a Unity tower defence with layered enemy AI |
+| | | |
+|:--|:--|:--|
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-schedule-dark.svg"><img src="assets/icon-schedule.svg" width="20" alt=""></picture> | [Sports Scheduling App](https://github.com/ArdalanAskarian/Sports-Scheduler) | front end for a team-management app |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-weather-dark.svg"><img src="assets/icon-weather.svg" width="20" alt=""></picture> | [Weather App](https://github.com/ArdalanAskarian/Ardalan-Weather-App) | a native Swift client for live forecasts |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-maps-dark.svg"><img src="assets/icon-maps.svg" width="20" alt=""></picture> | [Dentistry Website](https://github.com/ArdalanAskarian/Dentist-Website) | booking flow and integrated maps |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tower-dark.svg"><img src="assets/icon-tower.svg" width="20" alt=""></picture> | [Darkness Defenders](https://github.com/ArdalanAskarian/Darkness-Defenders) | a Unity tower defence with layered enemy AI |
 
 [Browse every repo](https://github.com/ArdalanAskarian?tab=repositories)
 

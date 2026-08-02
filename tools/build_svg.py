@@ -1145,6 +1145,51 @@ ICONS = {
         f'<rect x="11" y="11" width="4" height="4" rx="1" fill="{c["blue"]}"/>',
         f'<rect x="17" y="11" width="4" height="4" rx="1" fill="{c["muted"]}"/>',
     ],
+    # The four small repos have no figure to miniaturise, so these are objects
+    # rather than thumbnails - the same licence the envelope took. Still the
+    # same four primitives: rects, circles, hairlines, one dot.
+    # a roster: a calendar frame, a header rule, three fixtures
+    "schedule": lambda c: [
+        f'<rect x="5.5" y="7.5" width="15" height="12.5" rx="2" ry="2" '
+        f'fill="none" stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        f'<line x1="5.5" y1="11.5" x2="20.5" y2="11.5" stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        f'<line x1="9.5" y1="5.5" x2="9.5" y2="8" stroke="{c["ink-2"]}" '
+        f'stroke-width="1.5" stroke-linecap="round"/>',
+        f'<line x1="16.5" y1="5.5" x2="16.5" y2="8" stroke="{c["ink-2"]}" '
+        f'stroke-width="1.5" stroke-linecap="round"/>',
+        _idot(c, 9.5, 15.8, 1.2, "muted"), _idot(c, 13, 15.8, 1.2, "muted"),
+        _idot(c, 16.5, 15.8, 1.2, "muted"),
+    ],
+    # a forecast: one sun, four rays, nothing else at this size
+    "weather": lambda c: [
+        f'<circle cx="13" cy="13" r="4" fill="none" stroke="{c["ink-2"]}" stroke-width="1.6"/>',
+    ] + [
+        f'<line x1="{a}" y1="{b}" x2="{d}" y2="{e}" stroke="{c["ink-2"]}" '
+        f'stroke-width="1.6" stroke-linecap="round"/>'
+        for a, b, d, e in ((13, 5.5, 13, 7.4), (13, 18.6, 13, 20.5),
+                           (5.5, 13, 7.4, 13), (18.6, 13, 20.5, 13))
+    ],
+    # a booking on a map: the pin, and the point it marks
+    "maps": lambda c: [
+        f'<path d="M13 6 C9.8 6 7.3 8.5 7.3 11.7 C7.3 15.5 13 20.5 13 20.5 '
+        f'C13 20.5 18.7 15.5 18.7 11.7 C18.7 8.5 16.2 6 13 6 Z" fill="none" '
+        f'stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        _idot(c, 13, 11.6, 1.8),
+    ],
+    # a tower, and the ground it defends
+    "tower": lambda c: [
+        f'<rect x="6.5" y="17.5" width="13" height="3" rx="1" fill="{c["muted"]}"/>',
+        f'<rect x="9.5" y="10.2" width="7" height="7.3" fill="none" '
+        f'stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        f'<rect x="9" y="7.2" width="2.2" height="2.6" fill="{c["ink-2"]}"/>',
+        f'<rect x="11.9" y="7.2" width="2.2" height="2.6" fill="{c["ink-2"]}"/>',
+        f'<rect x="14.8" y="7.2" width="2.2" height="2.6" fill="{c["ink-2"]}"/>',
+    ],
+    # and the rest: three dots fading out, which is what "Also" means
+    "also": lambda c: [
+        _idot(c, 7.5, 13, 1.9), _idot(c, 13, 13, 1.9, "faint"),
+        _idot(c, 18.5, 13, 1.9, "line-strong"),
+    ],
 }
 
 ICON_ALT = {
@@ -1152,6 +1197,8 @@ ICON_ALT = {
     "stack": "Stack", "activity": "Activity", "talk": "Contact",
     "bug": "Bug classification", "annotate": "Image annotation",
     "signal": "Biometric chain", "pipeline": "Data pipeline",
+    "schedule": "Team scheduling", "weather": "Weather forecasts",
+    "maps": "Booking and maps", "tower": "Tower defence", "also": "Also",
 }
 
 
