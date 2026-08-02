@@ -180,9 +180,4 @@ I'm looking for full-time software and machine learning roles, and I'm intereste
 
 [ardalan.askarian@usask.ca](mailto:ardalan.askarian@usask.ca) · [GitHub](https://github.com/ArdalanAskarian) · [LinkedIn](https://linkedin.com/in/ardalan-askarian-79221a24b) · [Portfolio](https://ardalanaskarian.github.io) · [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
 
-<picture>
-  <source media="(max-width: 500px)" srcset="assets/tokens-narrow.svg">
-  <img src="assets/tokens.svg" width="880" alt="How this page is drawn. Eight neutral steps, two cover hues, and nothing else. The accent is absent from every file here; it belongs to links.">
-</picture>
-
 <sub>Saskatoon, SK. Figures are built by <a href="tools/build_svg.py">tools/build_svg.py</a> from the same tokens as <a href="https://ardalanaskarian.github.io">the portfolio</a>: system fonts, one neutral ramp, and colour reserved for links. The light set is served to every reader, so the page reads the same whichever theme you are in.</sub>

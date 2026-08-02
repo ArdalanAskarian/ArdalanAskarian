@@ -962,83 +962,6 @@ def stack_narrow(theme):
     return "".join(o) + "</svg>"
 
 
-# --------------------------------------------------------------------------
-# Tokens
-#
-# The colophon already claims one neutral ramp and colour reserved for links.
-# This is that sentence with its evidence attached: the ten colours this
-# profile is allowed to use, at the size they are used, with their hexes.
-#
-# Unframed, like the masthead, so the page opens and closes on type sitting on
-# the ground with nothing drawn around it. Two of the swatches are --bg and
-# --surface and would otherwise be invisible, so every swatch is outlined
-# rather than only the pale ones - the outline is a constant, not a fix.
-#
-# The last line is the rule this whole directory is built to keep, and BANNED
-# above is what enforces it: the accent cannot reach a committed asset, so it
-# is not in the specimen either. It is only ever on something you can click.
-# --------------------------------------------------------------------------
-
-RAMP = ("bg", "surface", "line", "line-strong", "faint", "muted", "ink-2", "ink")
-HUES = ("teal", "blue")
-
-TOKENS_EYEBROW = "HOW THIS PAGE IS DRAWN"
-TOKENS_LINE = "Eight neutral steps, two cover hues, and nothing else."
-TOKENS_RULE = "THE ACCENT IS ABSENT FROM EVERY FILE HERE · IT BELONGS TO LINKS"
-
-TOKENS_ALT = (
-    "How this page is drawn. Eight neutral steps, two cover hues, and nothing "
-    "else. The accent is absent from every file here; it belongs to links.")
-
-
-def _swatches(o, c, x, y, size, pitch, hex_size, hex_track, gap):
-    for i, name in enumerate(RAMP + HUES):
-        sx = x + i * pitch + (gap if i >= len(RAMP) else 0)
-        o.append(f'<rect x="{sx}.5" y="{y}.5" width="{size}" height="{size}" '
-                 f'fill="{c[name]}" stroke="{c["line-strong"]}" stroke-width="1"/>')
-        o.append(text(fits(c[name], hex_size, pitch - 2, hex_track), sx,
-                      y + size + 16, MONO, hex_size, 400, c["faint"],
-                      tracking=hex_track))
-
-
-def tokens(theme):
-    c = THEMES[theme]
-    W, H, CL, CR = 880, 176, 76, 804
-    o = [head(W, H, TOKENS_ALT),
-         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
-         text(fits(TOKENS_EYEBROW, 11, CR - CL, 1.43), CL, 34, MONO, 11, 500,
-              c["faint"], tracking=1.43)]
-    _swatches(o, c, CL, 50, 34, 46, 8.5, 0, 24)
-    o.append(text(fits(TOKENS_LINE, 14, CR - CL), CL, 132, SANS, 14, 400, c["ink-2"]))
-    o.append(text(fits(TOKENS_RULE, 11, CR - CL, 1.43), CL, 158, MONO, 11, 500,
-                  c["faint"], tracking=1.43))
-    return "".join(o) + "</svg>"
-
-
-def tokens_narrow(theme):
-    c = THEMES[theme]
-    W, H, CL, CR = 420, 196, 36, 384
-    o = [head(W, H, TOKENS_ALT),
-         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
-         text(fits(TOKENS_EYEBROW, 10, CR - CL, 1.3), CL, 34, MONO, 10, 500,
-              c["faint"], tracking=1.3)]
-    # No hexes at this width: eight of them at a legible size do not fit, and a
-    # size that fits would not be legible. The wide figure carries the numbers.
-    for i, name in enumerate(RAMP + HUES):
-        sx = CL + i * 32 + (16 if i >= len(RAMP) else 0)
-        o.append(f'<rect x="{sx}.5" y="50.5" width="28" height="28" '
-                 f'fill="{c[name]}" stroke="{c["line-strong"]}" stroke-width="1"/>')
-    for i, line in enumerate(("Eight neutral steps, two cover hues,",
-                              "and nothing else.")):
-        o.append(text(fits(line, 12.5, CR - CL), CL, 108 + i * 19, SANS, 12.5,
-                      400, c["ink-2"]))
-    for i, line in enumerate(("THE ACCENT IS ABSENT FROM EVERY",
-                              "FILE HERE · IT BELONGS TO LINKS")):
-        o.append(text(fits(line, 10, CR - CL, 1.3), CL, 162 + i * 17, MONO, 10,
-                      500, c["faint"], tracking=1.3))
-    return "".join(o) + "</svg>"
-
-
 def main():
     OUT.mkdir(exist_ok=True)
     n = 0
@@ -1057,9 +980,7 @@ def main():
                            ("tenure", tenure(theme)),
                            ("tenure-narrow", tenure_narrow(theme)),
                            ("stack", stack(theme)),
-                           ("stack-narrow", stack_narrow(theme)),
-                           ("tokens", tokens(theme)),
-                           ("tokens-narrow", tokens_narrow(theme))):
+                           ("stack-narrow", stack_narrow(theme))):
             path = OUT / f"{stem}{sfx}.svg"
             low = body.lower()
             bad = [b for b in BANNED if b in low]
