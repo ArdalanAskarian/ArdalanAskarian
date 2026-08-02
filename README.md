@@ -5,19 +5,19 @@
   <img src="assets/masthead.svg" width="880" alt="Ardalan Askarian. Open to full-time software and ML roles. Software engineer working on machine learning systems, and the ordinary software that has to hold them up. M.Sc. Computer Science, University of Saskatchewan, Applied ML stream. Computer vision and image processing, under Dr. Mark Eramian. 1,552 hand-labelled reports. 36,407 logged events. 6 participants. 4 models. 1 null result.">
 </picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-projects-dark.svg"><img src="assets/icon-projects.svg" width="18" alt=""></picture> [See the work](#-selected-projects) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="18" alt=""></picture> [Get in touch](#-lets-talk) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-portfolio-dark.svg"><img src="assets/icon-portfolio.svg" width="18" alt=""></picture> [Portfolio](https://ardalanaskarian.github.io) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-resume-dark.svg"><img src="assets/icon-resume.svg" width="18" alt=""></picture> [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-projects-dark.svg"><img src="assets/icon-projects.svg" width="22" align="middle" alt=""></picture> [See the work](#-selected-projects) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="22" align="middle" alt=""></picture> [Get in touch](#-lets-talk) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-portfolio-dark.svg"><img src="assets/icon-portfolio.svg" width="22" align="middle" alt=""></picture> [Portfolio](https://ardalanaskarian.github.io) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-resume-dark.svg"><img src="assets/icon-resume.svg" width="22" align="middle" alt=""></picture> [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-research-dark.svg"><img src="assets/icon-research.svg" width="24" alt=""></picture> &nbsp;Turning research questions into working systems
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-research-dark.svg"><img src="assets/icon-research.svg" width="28" align="middle" alt=""></picture> &nbsp;Turning research questions into working systems
 
 Most of my work sits between a research question and the software that answers it: annotation platforms, data pipelines, and the interfaces researchers actually use. A good part of it is checking whether a thing works before claiming that it does.
 
 I'm a Master's student specializing in Applied Machine Learning, researching computer vision and image processing under Dr. Mark Eramian. Before that, a B.Sc. Honours in Computer Science, Software Engineering option.
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-projects-dark.svg"><img src="assets/icon-projects.svg" width="24" alt=""></picture> &nbsp;Selected projects
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-projects-dark.svg"><img src="assets/icon-projects.svg" width="28" align="middle" alt=""></picture> &nbsp;Selected projects
 
 Research first, then apps and games. Open any one for the detail.
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-bug-dark.svg"><img src="assets/icon-bug.svg" width="20" alt=""></picture> &nbsp;Fine-tuning LLMs for bug classification
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-bug-dark.svg"><img src="assets/icon-bug.svg" width="24" align="middle" alt=""></picture> &nbsp;Fine-tuning LLMs for bug classification
 
 Fine-tuned code transformers to sort GitHub bug reports into seven categories, benchmarked against classical ML on a hand-labelled corpus.
 
@@ -35,10 +35,10 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
 
 | | |
 |:--|:--|
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="18" alt=""></picture> **Built** | A labelling protocol, a scraper over the GitHub API, and one fine-tuning harness run across four models on one corpus |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="18" alt=""></picture> **Result** | GraphCodeBERT **94.54%** · CodeBERT 93.99% · DistilBERT 92.90% · Naïve Bayes 74.59% |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="18" alt=""></picture> **With** | Princess Tayab, Timofei Kabakov, Marmik Patel · January to April 2025 |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="18" alt=""></picture> **Stack** | Python · PyTorch · Transformers · CodeBERT · scikit-learn · GitHub API |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="22" align="middle" alt=""></picture> **Built** | A labelling protocol, a scraper over the GitHub API, and one fine-tuning harness run across four models on one corpus |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="22" align="middle" alt=""></picture> **Result** | GraphCodeBERT **94.54%** · CodeBERT 93.99% · DistilBERT 92.90% · Naïve Bayes 74.59% |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="22" align="middle" alt=""></picture> **With** | Princess Tayab, Timofei Kabakov, Marmik Patel · January to April 2025 |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="22" align="middle" alt=""></picture> **Stack** | Python · PyTorch · Transformers · CodeBERT · scikit-learn · GitHub API |
 
 > Four people had to agree, 1,552 times, on whether a thing was a runtime bug or a logical one. That is what Fleiss' Kappa is measuring, and it is the part that never shows up in the accuracy column.
 
@@ -46,7 +46,7 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
 
 </details>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-annotate-dark.svg"><img src="assets/icon-annotate.svg" width="20" alt=""></picture> &nbsp;SIFT-assisted image annotation
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-annotate-dark.svg"><img src="assets/icon-annotate.svg" width="24" align="middle" alt=""></picture> &nbsp;SIFT-assisted image annotation
 
 An annotation platform built to answer one question honestly: does machine assistance make human annotators better, or just busier?
 
@@ -64,10 +64,10 @@ An annotation platform built to answer one question honestly: does machine assis
 
 | | |
 |:--|:--|
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="18" alt=""></picture> **Built** | A Django platform that proposed SIFT-derived bounding boxes for a human to accept, adjust or reject, logging every interaction against a manual baseline |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="18" alt=""></picture> **Result** | Assistance cost **71.6%** more time and returned no measurable gain in IoU or ground-truth coverage · 6 participants · 36,407 logged events |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="18" alt=""></picture> **With** | Dr. Mark Eramian, Imaging &amp; AI Lab · NSERC USRA, May to August 2025 · co-authored research poster |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="18" alt=""></picture> **Stack** | Django · Python · SIFT · OpenCV · JavaScript |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="22" align="middle" alt=""></picture> **Built** | A Django platform that proposed SIFT-derived bounding boxes for a human to accept, adjust or reject, logging every interaction against a manual baseline |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="22" align="middle" alt=""></picture> **Result** | Assistance cost **71.6%** more time and returned no measurable gain in IoU or ground-truth coverage · 6 participants · 36,407 logged events |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="22" align="middle" alt=""></picture> **With** | Dr. Mark Eramian, Imaging &amp; AI Lab · NSERC USRA, May to August 2025 · co-authored research poster |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="22" align="middle" alt=""></picture> **Stack** | Django · Python · SIFT · OpenCV · JavaScript |
 
 > Reviewing a wrong proposal costs more than drawing a box from scratch, and confidence in a suggestion is not the same thing as its accuracy.
 
@@ -75,7 +75,7 @@ An annotation platform built to answer one question honestly: does machine assis
 
 </details>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-signal-dark.svg"><img src="assets/icon-signal.svg" width="20" alt=""></picture> &nbsp;Dreaming Machines
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-signal-dark.svg"><img src="assets/icon-signal.svg" width="24" align="middle" alt=""></picture> &nbsp;Dreaming Machines
 
 <img src="banner.gif" width="420" alt="Dreaming Machines, VR experience footage">
 
@@ -95,16 +95,16 @@ Biometric VR driven by a live pulse sensor.
 
 | | |
 |:--|:--|
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="18" alt=""></picture> **Built** | A Meta Quest experience, a phone companion app that feeds content in as dream artifacts, and the wire between a fingertip and a shader |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="18" alt=""></picture> **Result** | Live biometrics driving the environment in real time, demoed at MIT Reality Hack 2026 |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="18" alt=""></picture> **With** | Samantha Herle (design and PM), Sean Rove (tech art), Ben Branch (hardware) · Ardalan Askarian on software |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="18" alt=""></picture> **Stack** | Unity 6 · OpenXR · XR Toolkit · Node.js · WebSocket · Three.js · Arduino · C# |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="22" align="middle" alt=""></picture> **Built** | A Meta Quest experience, a phone companion app that feeds content in as dream artifacts, and the wire between a fingertip and a shader |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="22" align="middle" alt=""></picture> **Result** | Live biometrics driving the environment in real time, demoed at MIT Reality Hack 2026 |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="22" align="middle" alt=""></picture> **With** | Samantha Herle (design and PM), Sean Rove (tech art), Ben Branch (hardware) · Ardalan Askarian on software |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="22" align="middle" alt=""></picture> **Stack** | Unity 6 · OpenXR · XR Toolkit · Node.js · WebSocket · Three.js · Arduino · C# |
 
 [Repo](https://github.com/ArdalanAskarian/dream_hackers) · [Demo video](https://www.youtube.com/watch?v=NY5WnzpsTtc) · [Pitch deck](https://docs.google.com/presentation/d/1j2qTOKgDBow35dwZyvudL7hVXUyHlVYta0Yu95tXGPk/edit?usp=sharing)
 
 </details>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-pipeline-dark.svg"><img src="assets/icon-pipeline.svg" width="20" alt=""></picture> &nbsp;BEAP Engine
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-pipeline-dark.svg"><img src="assets/icon-pipeline.svg" width="24" align="middle" alt=""></picture> &nbsp;BEAP Engine
 
 Smartwatch data ingestion and analytics.
 
@@ -122,27 +122,27 @@ Smartwatch data ingestion and analytics.
 
 | | |
 |:--|:--|
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="18" alt=""></picture> **Built** | Ingestion, processing and analytics for wearable sensor data, with the interface rebuilt in React and TypeScript |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="18" alt=""></picture> **Result** | Vendor exports that disagree on shape, parsed into one the analytics can read |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="18" alt=""></picture> **With** | BEAP Lab · Software Developer Intern, October 2024 to September 2025 |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="18" alt=""></picture> **Stack** | React · TypeScript · Python · Data processing |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="22" align="middle" alt=""></picture> **Built** | Ingestion, processing and analytics for wearable sensor data, with the interface rebuilt in React and TypeScript |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="22" align="middle" alt=""></picture> **Result** | Vendor exports that disagree on shape, parsed into one the analytics can read |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="22" align="middle" alt=""></picture> **With** | BEAP Lab · Software Developer Intern, October 2024 to September 2025 |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="22" align="middle" alt=""></picture> **Stack** | React · TypeScript · Python · Data processing |
 
 <sub>Internal platform. No public repo.</sub>
 
 </details>
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-also-dark.svg"><img src="assets/icon-also.svg" width="20" alt=""></picture> &nbsp;Also
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-also-dark.svg"><img src="assets/icon-also.svg" width="24" align="middle" alt=""></picture> &nbsp;Also
 
 | | | |
 |:--|:--|:--|
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-schedule-dark.svg"><img src="assets/icon-schedule.svg" width="20" alt=""></picture> | [Sports Scheduling App](https://github.com/ArdalanAskarian/Sports-Scheduler) | front end for a team-management app |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-weather-dark.svg"><img src="assets/icon-weather.svg" width="20" alt=""></picture> | [Weather App](https://github.com/ArdalanAskarian/Ardalan-Weather-App) | a native Swift client for live forecasts |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-maps-dark.svg"><img src="assets/icon-maps.svg" width="20" alt=""></picture> | [Dentistry Website](https://github.com/ArdalanAskarian/Dentist-Website) | booking flow and integrated maps |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tower-dark.svg"><img src="assets/icon-tower.svg" width="20" alt=""></picture> | [Darkness Defenders](https://github.com/ArdalanAskarian/Darkness-Defenders) | a Unity tower defence with layered enemy AI |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-schedule-dark.svg"><img src="assets/icon-schedule.svg" width="24" align="middle" alt=""></picture> | [Sports Scheduling App](https://github.com/ArdalanAskarian/Sports-Scheduler) | front end for a team-management app |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-weather-dark.svg"><img src="assets/icon-weather.svg" width="24" align="middle" alt=""></picture> | [Weather App](https://github.com/ArdalanAskarian/Ardalan-Weather-App) | a native Swift client for live forecasts |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-maps-dark.svg"><img src="assets/icon-maps.svg" width="24" align="middle" alt=""></picture> | [Dentistry Website](https://github.com/ArdalanAskarian/Dentist-Website) | booking flow and integrated maps |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tower-dark.svg"><img src="assets/icon-tower.svg" width="24" align="middle" alt=""></picture> | [Darkness Defenders](https://github.com/ArdalanAskarian/Darkness-Defenders) | a Unity tower defence with layered enemy AI |
 
 [Browse every repo](https://github.com/ArdalanAskarian?tab=repositories)
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-work-dark.svg"><img src="assets/icon-work.svg" width="24" alt=""></picture> &nbsp;Where I've worked
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-work-dark.svg"><img src="assets/icon-work.svg" width="28" align="middle" alt=""></picture> &nbsp;Where I've worked
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/tenure-narrow-dark.svg">
@@ -161,7 +161,7 @@ Smartwatch data ingestion and analytics.
 
 Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022, one of two given province-wide, and the EAP Scholarship in 2020 as the highest achiever in English for Academic Purposes.
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-stack-dark.svg"><img src="assets/icon-stack.svg" width="24" alt=""></picture> &nbsp;Stack
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-stack-dark.svg"><img src="assets/icon-stack.svg" width="28" align="middle" alt=""></picture> &nbsp;Stack
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/stack-narrow-dark.svg">
@@ -182,7 +182,7 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
 
 <sub>Daily, in a project this term. Regular, several times a year. Familiar, used but not current.</sub>
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-activity-dark.svg"><img src="assets/icon-activity.svg" width="24" alt=""></picture> &nbsp;Activity
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-activity-dark.svg"><img src="assets/icon-activity.svg" width="28" align="middle" alt=""></picture> &nbsp;Activity
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ArdalanAskarian&background=0e0f13&border=24272e&stroke=24272e&ring=343841&fire=0e0f13&currStreakNum=eceff0&currStreakLabel=3ecec2&sideNums=eceff0&sideLabels=8a8f99&dates=656a74&border_radius=14&card_width=880&disable_animations=true">
@@ -201,10 +201,10 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
 
 <sub>Three windows on the same habit, widest first. The snake is redrawn every twelve hours by <a href=".github/workflows/snake.yml">an Action in this repo</a>; the streak and the thirty-one-day graph come from third-party services, passed the same tokens as every figure above so they arrive in this page's palette rather than their own. None of the three measures anything except how often I pushed.</sub>
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="24" alt=""></picture> &nbsp;Let's talk.
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="28" align="middle" alt=""></picture> &nbsp;Let's talk.
 
 I'm looking for full-time software and machine learning roles, and I'm interested in research collaborations in computer vision. I answer every email.
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="18" alt=""></picture> [ardalan.askarian@usask.ca](mailto:ardalan.askarian@usask.ca) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.svg"><img src="assets/icon-github.svg" width="18" alt=""></picture> [GitHub](https://github.com/ArdalanAskarian) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-linkedin-dark.svg"><img src="assets/icon-linkedin.svg" width="18" alt=""></picture> [LinkedIn](https://linkedin.com/in/ardalan-askarian-79221a24b) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-portfolio-dark.svg"><img src="assets/icon-portfolio.svg" width="18" alt=""></picture> [Portfolio](https://ardalanaskarian.github.io) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-resume-dark.svg"><img src="assets/icon-resume.svg" width="18" alt=""></picture> [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="22" align="middle" alt=""></picture> [ardalan.askarian@usask.ca](mailto:ardalan.askarian@usask.ca) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.svg"><img src="assets/icon-github.svg" width="22" align="middle" alt=""></picture> [GitHub](https://github.com/ArdalanAskarian) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-linkedin-dark.svg"><img src="assets/icon-linkedin.svg" width="22" align="middle" alt=""></picture> [LinkedIn](https://linkedin.com/in/ardalan-askarian-79221a24b) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-portfolio-dark.svg"><img src="assets/icon-portfolio.svg" width="22" align="middle" alt=""></picture> [Portfolio](https://ardalanaskarian.github.io) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-resume-dark.svg"><img src="assets/icon-resume.svg" width="22" align="middle" alt=""></picture> [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
 
 <sub>Saskatoon, SK. Figures are built by <a href="tools/build_svg.py">tools/build_svg.py</a> from the same tokens as <a href="https://ardalanaskarian.github.io">the portfolio</a>: system fonts, one neutral ramp, and colour reserved for links. Every figure ships in both themes and switches on <code>prefers-color-scheme</code>, so the page follows your setting rather than picking for you. The one exception is the video still, which has no second version.</sub>
