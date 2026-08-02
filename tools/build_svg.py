@@ -854,112 +854,311 @@ def tenure_narrow(theme):
 # --------------------------------------------------------------------------
 # Stack
 #
-# The skills table answers "which ones". It cannot answer "how much of this is
-# current", because thirty-two names in fifteen cells all read at the same
-# weight. So the figure counts them instead: one dot per entry, in the column
-# for how current it is, and the shape of the answer is visible before any of
-# it is read.
+# A wall of chips, not a table and not a dot matrix. The table underneath
+# answers "which ones" in searchable text; this answers "which ones, and how
+# current" in one look, which is the pair of questions a stack list is always
+# really being asked.
 #
-# No hue at all. The three levels are three weights of the same neutral mark,
-# which is what the site's ramp is for, and a fluency level is not a subject.
-# The table stays underneath: the names are the part a reader searches for.
+# The weight is the encoding, and it is the whole reason this is not just a
+# prettier list: a filled chip is in a project this term, a tinted one comes
+# round a few times a year, a hairline outline is used but not current. Three
+# steps of the same neutral, no hue, because a fluency level is not a subject
+# and this system spends its colour on subjects.
+#
+# Chip widths come from the same pessimistic 0.62 em/char ceiling everything
+# else asserts against, and the label is centred inside, so the slack between
+# the estimate and the reader's actual monospace shows up as symmetric padding
+# instead of a ragged right edge. That is the only reason a hugging shape is
+# safe to draw on a machine that cannot measure text.
+#
+# --r-pill, the second of the two radii the design language allows. A chip is
+# the one shape here that is pill-shaped without being a control.
 # --------------------------------------------------------------------------
 
-STACK = [("Languages", 3, 3, 3), ("Vision & ML", 3, 3, 1), ("Web", 2, 4, 1),
-         ("Data", 1, 2, 1), ("Tools", 2, 2, 1)]
+# name, level: 0 daily, 1 regular, 2 familiar. The single source of truth for
+# both this figure and the counts quoted in its footer.
+STACK_ENTRIES = [
+    ("Languages", [("Python", 0), ("TypeScript", 0), ("JavaScript", 0),
+                   ("C", 1), ("Java", 1), ("SQL", 1),
+                   ("C#", 2), ("PHP", 2), ("R", 2)]),
+    ("Vision & ML", [("PyTorch", 0), ("OpenCV", 0), ("SIFT", 0),
+                     ("scikit-learn", 1), ("Transformers", 1), ("segmentation", 1),
+                     ("TensorFlow", 2)]),
+    ("Web", [("React", 0), ("Django", 0),
+             ("Node.js", 1), ("Next.js", 1), ("React Native", 1), ("Express", 1),
+             ("Flask", 2)]),
+    ("Data", [("PostgreSQL", 0), ("MongoDB", 1), ("MySQL", 1), ("SQLite", 2)]),
+    ("Tools", [("Git", 0), ("Unix/Linux", 0),
+               ("Docker", 1), ("Playwright", 1), ("Unity", 2)]),
+]
 
-LEVELS = ("DAILY", "REGULAR", "FAMILIAR")
+LEVELS = ("daily", "regular", "familiar")
 
-STACK_TITLE = "Thirty-two things, and where the daily weight sits"
+TOTAL = sum(len(v) for _, v in STACK_ENTRIES)
+BY_LEVEL = tuple(sum(1 for _, v in STACK_ENTRIES for _, l in v if l == i)
+                 for i in range(3))
+
+STACK_TITLE = "Thirty-two things, weighted by how current"
 STACK_TITLE_SHORT = "Thirty-two things, by how current"
-STACK_STATS = "32 ENTRIES · 5 CATEGORIES · DAILY, REGULAR OR FAMILIAR"
-STACK_STATS_SHORT = "32 ENTRIES · 5 CATEGORIES"
+STACK_STATS = (f"{TOTAL} ENTRIES \u00b7 {BY_LEVEL[0]} DAILY \u00b7 "
+               f"{BY_LEVEL[1]} REGULAR \u00b7 {BY_LEVEL[2]} FAMILIAR")
+STACK_STATS_SHORT = f"{TOTAL} ENTRIES \u00b7 5 CATEGORIES"
 
-STACK_ALT = (
-    "Thirty-two things, and where the daily weight sits. Counts are daily, "
-    "regular, familiar. Languages 3, 3, 3. Vision and ML 3, 3, 1. Web 2, 4, 1. "
-    "Data 1, 2, 1. Tools 2, 2, 1. Thirty-two entries in five categories.")
+STACK_ALT = ("Thirty-two things, weighted by how current. "
+             + " ".join(f"{cat}: " + ", ".join(f"{n} ({LEVELS[l]})" for n, l in v) + "."
+                        for cat, v in STACK_ENTRIES))
 
 
-def _dot(c, x, y, level, r):
-    """One entry. Filled, half-weight or hollow, for daily, regular, familiar."""
-    if level == 0:
-        return f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c["ink-2"]}"/>'
-    if level == 1:
-        return f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c["faint"]}"/>'
-    return (f'<circle cx="{x}" cy="{y}" r="{r - 0.5}" fill="none" '
-            f'stroke="{c["line-strong"]}" stroke-width="1.5"/>')
+def _chip_w(label, size, pad):
+    return len(label) * 0.62 * size + 2 * pad
+
+
+def _flow(entries, measure, gap, size, pad):
+    """Break one category's chips into lines that fit the measure."""
+    lines, cur, x = [], [], 0.0
+    for label, lvl in entries:
+        w = _chip_w(label, size, pad)
+        assert w <= measure, f"{label!r} needs {w:.0f}px, measure is {measure}px"
+        if cur and x + w > measure:
+            lines.append(cur)
+            cur, x = [], 0.0
+        cur.append((label, lvl, x, w))
+        x += w + gap
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def _chip(c, label, lvl, x, y, w, h, size):
+    r = h / 2
+    if lvl == 0:
+        body = (f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="{h}" '
+                f'rx="{r}" ry="{r}" fill="{c["ink-2"]}"/>')
+        ink = c["bg"]
+    elif lvl == 1:
+        body = (f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="{h}" '
+                f'rx="{r}" ry="{r}" fill="{c["line"]}"/>')
+        ink = c["ink-2"]
+    else:
+        body = (f'<rect x="{x + 0.5:.1f}" y="{y + 0.5}" width="{w:.1f}" '
+                f'height="{h - 1}" rx="{r}" ry="{r}" fill="none" '
+                f'stroke="{c["line-strong"]}" stroke-width="1"/>')
+        ink = c["muted"]
+    return body + text(label, x + w / 2, y + h / 2 + size * 0.36, MONO, size,
+                       500, ink, anchor="middle")
+
+
+def _wall(c, entries, x0, measure, y, h, gap, pitch, size, pad, cat_x=None,
+          cat_size=11, cat_above=False, cat_gap=16):
+    """Emit the chip wall. Returns the markup and the y it finished at."""
+    o = []
+    for cat, items in entries:
+        lines = _flow(items, measure, gap, size, pad)
+        if cat_above:
+            o.append(text(fits(cat, cat_size, measure, 1.3), x0, y, MONO,
+                          cat_size, 500, c["faint"], tracking=1.3))
+            y += 14
+        else:
+            o.append(text(fits(cat, cat_size, x0 - cat_x - 16, 1.3), cat_x,
+                          y + h / 2 + 4, MONO, cat_size, 500, c["faint"],
+                          tracking=1.3))
+        for line in lines:
+            for label, lvl, dx, w in line:
+                o.append(_chip(c, label, lvl, x0 + dx, y, w, h, size))
+            y += pitch
+        y += cat_gap
+    return "".join(o), y - cat_gap
 
 
 def stack(theme):
     c = THEMES[theme]
-    W, H, CL, CR = 880, 372, 76, 804
-    cols, pitch, r = (320, 480, 640), 20, 5
+    W, CL, CR, X0 = 880, 76, 804, 216
+    h, gap, pitch, size, pad = 26, 8, 34, 11.5, 11
+    body, end = _wall(c, STACK_ENTRIES, X0, CR - X0, 112, h, gap, pitch, size,
+                      pad, cat_x=CL)
+    # the legend is three chips wearing the three treatments, labelled with the
+    # words the caption uses, so nothing has to explain the encoding twice
+    ly = end + 22
+    legend, x = [], float(X0)
+    for lvl, word in enumerate(LEVELS):
+        w = _chip_w(word, 10.5, 9)
+        legend.append(_chip(c, word, lvl, x, ly, w, 22, 10.5))
+        x += w + 8
+    assert x <= CR, f"legend runs {x - CR:.0f}px past the measure"
+    H = int(ly + 22 + 62)
     o = [head(W, H, STACK_ALT),
          f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
-         f'<rect x="24.5" y="24.5" width="831" height="323" rx="{R}" ry="{R}" '
+         f'<rect x="24.5" y="24.5" width="831" height="{H - 45}" rx="{R}" ry="{R}" '
          f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
          text(fits(STACK_TITLE, 17, CR - CL, -0.15), CL, 82, MONO, 17, 600,
-              c["ink"], tracking=-0.15)]
-    for x, name in zip(cols, LEVELS):
-        o.append(text(fits(name, 10, 150, 1.3), x - r, 118, MONO, 10, 500,
-                      c["faint"], tracking=1.3))
-    o.append(text("TOTAL", CR, 118, MONO, 10, 500, c["faint"], tracking=1.3,
-                  anchor="end"))
-    for i, row in enumerate(STACK):
-        name, counts = row[0], row[1:]
-        cy = 148 + i * 34
-        fits(name, 14, cols[0] - CL - 20)
-        o.append(text(name, CL, cy + 5, SANS, 14, 400, c["ink-2"]))
-        for level, (x, n) in enumerate(zip(cols, counts)):
-            for k in range(n):
-                o.append(_dot(c, x + k * pitch, cy, level, r))
-        o.append(text(str(sum(counts)), CR, cy + 5, MONO, 13, 600, c["ink"],
-                      anchor="end"))
-    o.append(f'<line x1="{CL}" y1="310.5" x2="{CR}" y2="310.5" '
-             f'stroke="{c["line"]}" stroke-width="1"/>')
-    o.append(text(fits(STACK_STATS, 11, CR - CL, 1.43), CL, 336, MONO, 11, 500,
-                  c["faint"], tracking=1.43))
+              c["ink"], tracking=-0.15),
+         body, "".join(legend),
+         text(fits("HOW CURRENT", 11, X0 - CL - 16, 1.3), CL, ly + 15, MONO, 11,
+              500, c["faint"], tracking=1.3),
+         f'<line x1="{CL}" y1="{H - 62}.5" x2="{CR}" y2="{H - 62}.5" '
+         f'stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(STACK_STATS, 11, CR - CL, 1.43), CL, H - 36, MONO, 11, 500,
+              c["faint"], tracking=1.43)]
     return "".join(o) + "</svg>"
 
 
 def stack_narrow(theme):
     c = THEMES[theme]
-    W, H, CL, CR = 420, 412, 36, 384
-    pitch, gap, r = 14, 10, 4.5
+    W, CL, CR = 420, 36, 384
+    h, gap, pitch, size, pad = 23, 6, 30, 10.5, 9
+    # Category labels move above their chips, the same flip every narrow figure
+    # here makes: 348px of measure will not hold a label column as well.
+    body, end = _wall(c, STACK_ENTRIES, CL, CR - CL, 92, h, gap, pitch, size,
+                      pad, cat_size=10, cat_above=True, cat_gap=14)
+    ly = end + 20
+    legend, x = [], float(CL)
+    for lvl, word in enumerate(LEVELS):
+        w = _chip_w(word, 9.5, 8)
+        legend.append(_chip(c, word, lvl, x, ly, w, 20, 9.5))
+        x += w + 6
+    assert x <= CR, f"narrow legend runs {x - CR:.0f}px past the measure"
+    H = int(ly + 20 + 58)
     o = [head(W, H, STACK_ALT),
          f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
-         f'<rect x="14.5" y="14.5" width="391" height="367" rx="{R}" ry="{R}" '
+         f'<rect x="14.5" y="14.5" width="391" height="{H - 45}" rx="{R}" ry="{R}" '
          f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
          text(fits(STACK_TITLE_SHORT, 14, CR - CL, -0.15), CL, 62, MONO, 14, 600,
-              c["ink"], tracking=-0.15)]
-    # One legend line, because the three columns collapse into one row here and
-    # the mark is the only thing left distinguishing the levels.
-    x = CL
-    for level, name in enumerate(LEVELS):
-        o.append(_dot(c, x + r, 88 - 4, level, r))
-        o.append(text(fits(name, 9, 70, 1.1), x + 2 * r + 6, 88, MONO, 9, 500,
-                      c["faint"], tracking=1.1))
-        x += 2 * r + 6 + len(name) * 0.62 * 9 + (len(name) - 1) * 1.1 + 16
-    for i, row in enumerate(STACK):
-        name, counts = row[0], row[1:]
-        base = 128 + i * 44
-        o.append(text(fits(name, 12, CR - CL - 40), CL, base, SANS, 12, 400,
-                      c["ink-2"]))
-        o.append(text(str(sum(counts)), CR, base, MONO, 12, 600, c["ink"],
-                      anchor="end"))
-        x = CL + r
-        for level, n in enumerate(counts):
-            for k in range(n):
-                o.append(_dot(c, x, base + 16, level, r))
-                x += pitch
-            x += gap
-        assert x <= CR, f"{name}: dots run {x - CR:.0f}px past the measure"
-    o.append(f'<line x1="{CL}" y1="352.5" x2="{CR}" y2="352.5" '
-             f'stroke="{c["line"]}" stroke-width="1"/>')
-    o.append(text(fits(STACK_STATS_SHORT, 10, CR - CL, 1.3), CL, 376, MONO, 10,
-                  500, c["faint"], tracking=1.3))
+              c["ink"], tracking=-0.15),
+         body, "".join(legend),
+         f'<line x1="{CL}" y1="{H - 58}.5" x2="{CR}" y2="{H - 58}.5" '
+         f'stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(STACK_STATS_SHORT, 10, CR - CL, 1.3), CL, H - 34, MONO, 10,
+              500, c["faint"], tracking=1.3)]
     return "".join(o) + "</svg>"
+
+
+# --------------------------------------------------------------------------
+# Icons
+#
+# The old profile put a colour icon from a CDN next to every heading - a
+# microscope, a rocket, a lightning bolt. They read well and they were the one
+# thing this redesign lost. This brings the density back without importing
+# anybody else's palette: each mark is drawn here, from the same eight neutrals,
+# and shipped as a committed asset like every other figure.
+#
+# Each one is a miniature of the figure it introduces. The projects mark is the
+# benchmark's four bars, the work mark is the tenure chart's three overlapping
+# ones, the stack mark is nine dots in three weights, the research mark is a
+# delta bar with a null dot on a zero rule. So the icon is not decoration beside
+# a heading - it is a thumbnail of the drawing underneath it, and a reader who
+# has scrolled once already knows what each one points at.
+#
+# A 26px rounded tile on --bg with a --line hairline, which is the same surface
+# the framed panels use, at the smallest size it still reads. Glyphs sit in the
+# 6-20 band so every mark shares an optical margin.
+# --------------------------------------------------------------------------
+
+ICON = 26
+
+
+def _itile(c):
+    return (f'<rect x="0.5" y="0.5" width="{ICON - 1}" height="{ICON - 1}" '
+            f'rx="7" ry="7" fill="{c["bg"]}" stroke="{c["line"]}" stroke-width="1"/>')
+
+
+def _ibar(c, x, y, w, h=2.8, hue=None):
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{c[hue or "muted"]}"/>'
+
+
+def _idot(c, x, y, r=1.8, hue="ink-2"):
+    return f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c[hue]}"/>'
+
+
+def _iring(c, x, y, r=1.6):
+    return (f'<circle cx="{x}" cy="{y}" r="{r}" fill="none" '
+            f'stroke="{c["line-strong"]}" stroke-width="1.3"/>')
+
+
+def _ivrule(c, x, y0, y1, hue="line-strong", w=1):
+    return (f'<line x1="{x}" y1="{y0}" x2="{x}" y2="{y1}" stroke="{c[hue]}" '
+            f'stroke-width="{w}"/>')
+
+
+# Each entry returns the glyph for one tile. Deliberately geometric: rects,
+# dots, hairlines - the same four things the big figures are made of.
+ICONS = {
+    # study(): a zero rule, one bar that moved, one null sitting on the rule
+    "research": lambda c: [
+        _ivrule(c, 7.5, 6, 20.5, w=1.3),
+        _ibar(c, 8, 8.5, 11.5, 3.4),
+        _idot(c, 7.5, 16.5, 2.6, "line-strong"),
+    ],
+    # bench(): four bars, three clustered and one twenty points back
+    "projects": lambda c: [
+        _ibar(c, 6, 6.2, 14), _ibar(c, 6, 10.8, 13.2),
+        _ibar(c, 6, 15.4, 12.4), _ibar(c, 6, 20, 6, hue="faint"),
+    ],
+    # tenure(): three ranges that overlap, and the marker time stops at
+    "work": lambda c: [
+        _ibar(c, 5, 7.6, 15, 3), _ibar(c, 9, 12.6, 9, 3), _ibar(c, 12, 17.6, 5, 3),
+        _ivrule(c, 20.5, 6, 21, "teal"),
+    ],
+    # stack(): nine entries in the three weights the columns encode
+    "stack": lambda c: [
+        m for i, y in enumerate((8, 14, 20)) for m in (
+            _idot(c, 7, y), _idot(c, 13, y, 1.8, "faint"), _iring(c, 19, y))
+    ],
+    # the thirty-one-day graph, at one thirtieth of the width
+    "activity": lambda c: [
+        f'<polyline points="6,18.5 9,12 12,15.5 15,7.5 18,14 21,9.5" fill="none" '
+        f'stroke="{c["ink-2"]}" stroke-width="1.6" stroke-linecap="round" '
+        f'stroke-linejoin="round"/>',
+    ],
+    # the one mark here that is not a figure: an envelope, because the section
+    # under it is the only one asking the reader to do something
+    "talk": lambda c: [
+        f'<rect x="5.5" y="8" width="15" height="11" rx="2" ry="2" '
+        f'fill="none" stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        f'<path d="M6.5 9.5 L13 14.5 L19.5 9.5" fill="none" stroke="{c["ink-2"]}" '
+        f'stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>',
+    ],
+    # bench() again, tighter: this is the panel that chart belongs to
+    "bug": lambda c: [
+        _ibar(c, 6, 6.2, 14, 2.8, "blue"), _ibar(c, 6, 10.8, 13.2, 2.8, "blue"),
+        _ibar(c, 6, 15.4, 12.4, 2.8, "blue"), _ibar(c, 6, 20, 6.5, 2.8),
+    ],
+    # study(): a frame, a proposal drawn inside it, the point being reviewed
+    "annotate": lambda c: [
+        f'<rect x="5.5" y="6.5" width="15" height="13" rx="1.5" ry="1.5" '
+        f'fill="none" stroke="{c["line-strong"]}" stroke-width="1"/>',
+        f'<rect x="9" y="10" width="8.5" height="6.5" fill="none" '
+        f'stroke="{c["teal"]}" stroke-width="1.8"/>',
+        _idot(c, 13.25, 13.25, 1.3),
+    ],
+    # chain(): the spine, four hops, and the live one at the top
+    "signal": lambda c: [
+        _ivrule(c, 13, 7, 19.5, w=1.5),
+        _idot(c, 13, 7, 2.4), _idot(c, 13, 11.2, 2.1, "line-strong"),
+        _idot(c, 13, 15.3, 2.1, "line-strong"), _idot(c, 13, 19.5, 2.1, "line-strong"),
+    ],
+    # chain() again for the pipeline: three stages, wired left to right
+    "pipeline": lambda c: [
+        _ivrule(c, 0, 0, 0),  # placeholder replaced below by connectors
+        f'<line x1="9" y1="13" x2="11" y2="13" stroke="{c["line-strong"]}" stroke-width="1"/>',
+        f'<line x1="15" y1="13" x2="17" y2="13" stroke="{c["line-strong"]}" stroke-width="1"/>',
+        f'<rect x="5" y="11" width="4" height="4" rx="1" fill="{c["muted"]}"/>',
+        f'<rect x="11" y="11" width="4" height="4" rx="1" fill="{c["blue"]}"/>',
+        f'<rect x="17" y="11" width="4" height="4" rx="1" fill="{c["muted"]}"/>',
+    ],
+}
+
+ICON_ALT = {
+    "research": "Research", "projects": "Projects", "work": "Experience",
+    "stack": "Stack", "activity": "Activity", "talk": "Contact",
+    "bug": "Bug classification", "annotate": "Image annotation",
+    "signal": "Biometric chain", "pipeline": "Data pipeline",
+}
+
+
+def icon(theme, name):
+    c = THEMES[theme]
+    glyphs = [g for g in ICONS[name](c) if 'x1="0" y1="0" x2="0" y2="0"' not in g]
+    return "".join([head(ICON, ICON, ICON_ALT[name]), _itile(c)] + glyphs) + "</svg>"
 
 
 def main():
@@ -980,7 +1179,8 @@ def main():
                            ("tenure", tenure(theme)),
                            ("tenure-narrow", tenure_narrow(theme)),
                            ("stack", stack(theme)),
-                           ("stack-narrow", stack_narrow(theme))):
+                           ("stack-narrow", stack_narrow(theme))) + tuple(
+                               (f"icon-{k}", icon(theme, k)) for k in ICONS):
             path = OUT / f"{stem}{sfx}.svg"
             low = body.lower()
             bad = [b for b in BANNED if b in low]
