@@ -1,21 +1,23 @@
 <picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/masthead-narrow-dark.svg">
   <source media="(max-width: 500px)" srcset="assets/masthead-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/masthead-dark.svg">
   <img src="assets/masthead.svg" width="880" alt="Ardalan Askarian. Open to full-time software and ML roles. Software engineer working on machine learning systems, and the ordinary software that has to hold them up. M.Sc. Computer Science, University of Saskatchewan, Applied ML stream. Computer vision and image processing, under Dr. Mark Eramian. 1,552 hand-labelled reports. 36,407 logged events. 6 participants. 4 models. 1 null result.">
 </picture>
 
 [See the work](#-selected-projects) · [Get in touch](#-lets-talk) · [Portfolio](https://ardalanaskarian.github.io) · [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
 
-## <img src="assets/icon-research.svg" width="24" alt=""> &nbsp;Turning research questions into working systems
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-research-dark.svg"><img src="assets/icon-research.svg" width="24" alt=""></picture> &nbsp;Turning research questions into working systems
 
 Most of my work sits between a research question and the software that answers it: annotation platforms, data pipelines, and the interfaces researchers actually use. A good part of it is checking whether a thing works before claiming that it does.
 
 I'm a Master's student specializing in Applied Machine Learning, researching computer vision and image processing under Dr. Mark Eramian. Before that, a B.Sc. Honours in Computer Science, Software Engineering option.
 
-## <img src="assets/icon-projects.svg" width="24" alt=""> &nbsp;Selected projects
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-projects-dark.svg"><img src="assets/icon-projects.svg" width="24" alt=""></picture> &nbsp;Selected projects
 
 Research first, then apps and games. Open any one for the detail.
 
-### <img src="assets/icon-bug.svg" width="20" alt=""> &nbsp;Fine-tuning LLMs for bug classification
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-bug-dark.svg"><img src="assets/icon-bug.svg" width="20" alt=""></picture> &nbsp;Fine-tuning LLMs for bug classification
 
 Fine-tuned code transformers to sort GitHub bug reports into seven categories, benchmarked against classical ML on a hand-labelled corpus.
 
@@ -23,7 +25,9 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
 <summary>Read more</summary>
 
 <picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/bench-narrow-dark.svg">
   <source media="(max-width: 500px)" srcset="assets/bench-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/bench-dark.svg">
   <img src="assets/bench.svg" width="880" alt="Bug classification accuracy. GraphCodeBERT 94.54 percent, CodeBERT 93.99 percent, DistilBERT 92.90 percent, all fine-tuned transformers. Naive Bayes, the classical baseline, 74.59 percent. 1,552 hand-labelled reports across seven categories, agreement checked with Fleiss' Kappa.">
 </picture>
 
@@ -42,7 +46,7 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
 
 </details>
 
-### <img src="assets/icon-annotate.svg" width="20" alt=""> &nbsp;SIFT-assisted image annotation
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-annotate-dark.svg"><img src="assets/icon-annotate.svg" width="20" alt=""></picture> &nbsp;SIFT-assisted image annotation
 
 An annotation platform built to answer one question honestly: does machine assistance make human annotators better, or just busier?
 
@@ -50,7 +54,9 @@ An annotation platform built to answer one question honestly: does machine assis
 <summary>Read more</summary>
 
 <picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/study-narrow-dark.svg">
   <source media="(max-width: 500px)" srcset="assets/study-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/study-dark.svg">
   <img src="assets/study.svg" width="880" alt="Change from the manual baseline. Annotation time: plus 71.6 percent. IoU: no measurable change. Ground-truth coverage: no measurable change. SIFT-assisted annotation took 1.72 times as long as the manual baseline. 6 participants, 36,407 logged interaction events.">
 </picture>
 
@@ -69,7 +75,7 @@ An annotation platform built to answer one question honestly: does machine assis
 
 </details>
 
-### <img src="assets/icon-signal.svg" width="20" alt=""> &nbsp;Dreaming Machines
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-signal-dark.svg"><img src="assets/icon-signal.svg" width="20" alt=""></picture> &nbsp;Dreaming Machines
 
 <img src="banner.gif" width="420" alt="Dreaming Machines, VR experience footage">
 
@@ -79,7 +85,9 @@ Biometric VR driven by a live pulse sensor.
 <summary>Read more</summary>
 
 <picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/signal-narrow-dark.svg">
   <source media="(max-width: 500px)" srcset="assets/signal-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/signal-dark.svg">
   <img src="assets/signal.svg" width="880" alt="One heartbeat, four hops. Pulse sensor reads the pulse as an analog signal. Arduino turns it into BPM and IBI. Wi-Fi carries both values into Unity. Unity shader gives breathing and pulsing effects in real time. Phone: a swiped card spawns an object in VR. Team of 4, MIT Reality Hack 2026.">
 </picture>
 
@@ -96,7 +104,7 @@ Biometric VR driven by a live pulse sensor.
 
 </details>
 
-### <img src="assets/icon-pipeline.svg" width="20" alt=""> &nbsp;BEAP Engine
+### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-pipeline-dark.svg"><img src="assets/icon-pipeline.svg" width="20" alt=""></picture> &nbsp;BEAP Engine
 
 Smartwatch data ingestion and analytics.
 
@@ -104,7 +112,9 @@ Smartwatch data ingestion and analytics.
 <summary>Read more</summary>
 
 <picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/pipeline-narrow-dark.svg">
   <source media="(max-width: 500px)" srcset="assets/pipeline-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
   <img src="assets/pipeline.svg" width="880" alt="From vendor export to something plottable. Ingestion: wearable exports arrive, one format per vendor. Processing: machine learning normalises the formats. Analytics: an interface researchers actually use. Software Developer Intern, October 2024 to September 2025.">
 </picture>
 
@@ -132,10 +142,12 @@ Smartwatch data ingestion and analytics.
 
 [Browse every repo](https://github.com/ArdalanAskarian?tab=repositories)
 
-## <img src="assets/icon-work.svg" width="24" alt=""> &nbsp;Where I've worked
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-work-dark.svg"><img src="assets/icon-work.svg" width="24" alt=""></picture> &nbsp;Where I've worked
 
 <picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/tenure-narrow-dark.svg">
   <source media="(max-width: 500px)" srcset="assets/tenure-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tenure-dark.svg">
   <img src="assets/tenure.svg" width="880" alt="Three roles, one overlapping summer. Teaching Assistant, January 2023 to now. Software Developer Intern, October 2024 to September 2025. Research Assistant, May to August 2025. All three overlap through the summer of 2025. Projects: bug classification January to April 2025, annotation study May to August 2025, BEAP Engine October 2024 to September 2025, Dreaming Machines January 2026.">
 </picture>
 
@@ -149,10 +161,12 @@ Smartwatch data ingestion and analytics.
 
 Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022, one of two given province-wide, and the EAP Scholarship in 2020 as the highest achiever in English for Academic Purposes.
 
-## <img src="assets/icon-stack.svg" width="24" alt=""> &nbsp;Stack
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-stack-dark.svg"><img src="assets/icon-stack.svg" width="24" alt=""></picture> &nbsp;Stack
 
 <picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/stack-narrow-dark.svg">
   <source media="(max-width: 500px)" srcset="assets/stack-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
   <img src="assets/stack.svg" width="880" alt="Thirty-two things, weighted by how current. Filled chips are in a project this term, tinted a few times a year, outlined used but not current. 32 entries: 11 daily, 14 regular, 7 familiar.">
 </picture>
 
@@ -168,20 +182,29 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
 
 <sub>Daily, in a project this term. Regular, several times a year. Familiar, used but not current.</sub>
 
-## <img src="assets/icon-activity.svg" width="24" alt=""> &nbsp;Activity
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-activity-dark.svg"><img src="assets/icon-activity.svg" width="24" alt=""></picture> &nbsp;Activity
 
-<img src="https://streak-stats.demolab.com/?user=ArdalanAskarian&background=fbfbfc&border=e6e7ea&stroke=e6e7ea&ring=d3d5da&fire=fbfbfc&currStreakNum=14161c&currStreakLabel=0f7f77&sideNums=14161c&sideLabels=666b75&dates=9498a1&border_radius=14&card_width=880&disable_animations=true" width="880" alt="Total contributions since January 13, 2023. Current streak, and longest streak.">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=ArdalanAskarian&background=0e0f13&border=24272e&stroke=24272e&ring=343841&fire=0e0f13&currStreakNum=eceff0&currStreakLabel=3ecec2&sideNums=eceff0&sideLabels=8a8f99&dates=656a74&border_radius=14&card_width=880&disable_animations=true">
+  <img src="https://streak-stats.demolab.com/?user=ArdalanAskarian&background=fbfbfc&border=e6e7ea&stroke=e6e7ea&ring=d3d5da&fire=fbfbfc&currStreakNum=14161c&currStreakLabel=0f7f77&sideNums=14161c&sideLabels=666b75&dates=9498a1&border_radius=14&card_width=880&disable_animations=true" width="880" alt="Total contributions since January 13, 2023. Current streak, and longest streak.">
+</picture>
 
-<img src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" width="880" alt="Contribution graph rendered as a snake animation">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" width="880" alt="Contribution graph rendered as a snake animation">
+</picture>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&bg_color=fbfbfc&color=14161c&title_color=14161c&line=666b75&point=14161c&area=true&area_color=d3d5da&radius=14&grid=false&custom_title=Contributions%2C%20last%2031%20days" width="880" alt="Contributions per day over the last 31 days">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&bg_color=0e0f13&color=eceff0&title_color=eceff0&line=8a8f99&point=eceff0&area=true&area_color=343841&radius=14&grid=false&custom_title=Contributions%2C%20last%2031%20days">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&bg_color=fbfbfc&color=14161c&title_color=14161c&line=666b75&point=14161c&area=true&area_color=d3d5da&radius=14&grid=false&custom_title=Contributions%2C%20last%2031%20days" width="880" alt="Contributions per day over the last 31 days">
+</picture>
 
 <sub>Three windows on the same habit, widest first. The snake is redrawn every twelve hours by <a href=".github/workflows/snake.yml">an Action in this repo</a>; the streak and the thirty-one-day graph come from third-party services, passed the same tokens as every figure above so they arrive in this page's palette rather than their own. None of the three measures anything except how often I pushed.</sub>
 
-## <img src="assets/icon-talk.svg" width="24" alt=""> &nbsp;Let's talk.
+## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="24" alt=""></picture> &nbsp;Let's talk.
 
 I'm looking for full-time software and machine learning roles, and I'm interested in research collaborations in computer vision. I answer every email.
 
 [ardalan.askarian@usask.ca](mailto:ardalan.askarian@usask.ca) · [GitHub](https://github.com/ArdalanAskarian) · [LinkedIn](https://linkedin.com/in/ardalan-askarian-79221a24b) · [Portfolio](https://ardalanaskarian.github.io) · [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
 
-<sub>Saskatoon, SK. Figures are built by <a href="tools/build_svg.py">tools/build_svg.py</a> from the same tokens as <a href="https://ardalanaskarian.github.io">the portfolio</a>: system fonts, one neutral ramp, and colour reserved for links. The light set is served to every reader, so the page reads the same whichever theme you are in.</sub>
+<sub>Saskatoon, SK. Figures are built by <a href="tools/build_svg.py">tools/build_svg.py</a> from the same tokens as <a href="https://ardalanaskarian.github.io">the portfolio</a>: system fonts, one neutral ramp, and colour reserved for links. Every figure ships in both themes and switches on <code>prefers-color-scheme</code>, so the page follows your setting rather than picking for you. The one exception is the video still, which has no second version.</sub>
