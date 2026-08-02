@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build the two SVG figures used by README.md.
+Build the SVG figures used by README.md.
 
 This profile is themed to match the portfolio at ardalanaskarian.github.io.
 That site states its design language at the top of its stylesheet:
@@ -51,6 +51,17 @@ OUT = Path(__file__).resolve().parent.parent / "assets"
 # GitHub colours, focuses and gives a hit area itself.
 # --------------------------------------------------------------------------
 
+# Both sets are still built, but README.md serves only the dark one, to every
+# reader, in every theme. That is a deliberate choice and it has a visible cost:
+# on GitHub's light theme each figure lands as a dark block on a white page,
+# because GitHub owns the colour of the prose between them and a README cannot
+# reach it. The dark --bg is #0e0f13 against GitHub's #0d1117, so on dark the
+# seam disappears; on light the block is meant to read as a block.
+#
+# The light set stays canonical here regardless: it is the rendering the
+# portfolio's :root describes, it is what these tokens mean, and dropping it
+# would make the dark values the source of truth for a system that defines
+# itself the other way round.
 THEMES = {
     "light": {  # :root IS the light theme; light is canonical here too
         "bg": "#fbfbfc",
@@ -160,6 +171,12 @@ def head(w, h, title):
 # a background it has no contrast against.
 # --------------------------------------------------------------------------
 
+RECEIPTS = [("1,552", "LABELLED REPORTS"), ("36,407", "LOGGED EVENTS"),
+            ("6", "PARTICIPANTS"), ("4", "MODELS"), ("1", "NULL RESULT")]
+
+RECEIPTS_ALT = ("1,552 hand-labelled reports. 36,407 logged events. "
+                "6 participants. 4 models. 1 null result.")
+
 EYEBROW = "OPEN TO FULL-TIME SOFTWARE & ML ROLES"
 TAGLINE = ("Software engineer working on machine learning systems,",
            "and the ordinary software that has to hold them up.")
@@ -171,7 +188,42 @@ MASTHEAD_ALT = (
     "engineer working on machine learning systems, and the ordinary software "
     "that has to hold them up. M.Sc. Computer Science, University of "
     "Saskatchewan, Applied ML stream. Computer vision and image processing, "
-    "under Dr. Mark Eramian.")
+    "under Dr. Mark Eramian. " + RECEIPTS_ALT)
+
+
+# --------------------------------------------------------------------------
+# Receipts
+#
+# Five numbers that were already further down the page, pulled up under the
+# name so the claims arrive with their evidence attached. Set as a ledger row
+# rather than a run of small caps: a number wants to be read as a number, and a
+# letter-spaced sentence turns all five into texture.
+#
+# Part of the masthead rather than a figure of its own. As a separate image it
+# was a second block of ground with GitHub's 16px paragraph gutter between the
+# two - invisible on a dark page, a white seam on a light one, now that the
+# README serves the dark set to everybody. Inside the masthead it sits under
+# one hairline, inside the same clip, so the reveal that crosses the name
+# crosses the numbers too.
+#
+# The fifth column is the point. Every other number on a profile went the way
+# its owner wanted; this one did not, and it is set at the same size as the
+# rest.
+# --------------------------------------------------------------------------
+
+
+def receipts_row(o, c, CL, CR, rule_y, cols, size, label_size, track, pitch=0):
+    """The ledger. `cols` is how many columns per row; the rest wrap beneath."""
+    o.append(f'<line x1="{CL}" y1="{rule_y}.5" x2="{CR}" y2="{rule_y}.5" '
+             f'stroke="{c["line"]}" stroke-width="1"/>')
+    col = (CR - CL) / cols
+    for i, (n, label) in enumerate(RECEIPTS):
+        x = CL + (i % cols) * col
+        y = rule_y + 44 + (i // cols) * pitch
+        o.append(text(fits(n, size, col - 10, -0.5), x, y, MONO, size, 600,
+                      c["ink"], tracking=-0.5))
+        o.append(text(fits(label, label_size, col - 10, track), x, y + 22, MONO,
+                      label_size, 500, c["faint"], tracking=track))
 
 
 # The masthead is the one thing here that moves, and it moves once.
@@ -209,7 +261,7 @@ def edge(p, c, w, h):
 
 def masthead(theme):
     c = THEMES[theme]
-    W, H, CL = 880, 336, 76          # --gutter 24 + --frame-pad 52
+    W, H, CL = 880, 420, 76          # --gutter 24 + --frame-pad 52
     budget = 804 - CL                # to the shared right edge
     p = "m"
     o = [head(W, H, MASTHEAD_ALT), motion(p, W),
@@ -231,13 +283,14 @@ def masthead(theme):
     o.append(text_raw(sp("Computer vision and image processing", c["teal"])
                       + esc(", under Dr. Mark Eramian."),
                       CL, 280, MONO, 13, 400, c["muted"]))
+    receipts_row(o, c, CL, 804, 316, cols=5, size=26, label_size=10, track=1.3)
     o.append("</g>" + edge(p, c, W, H))
     return "".join(o) + "</svg>"
 
 
 def masthead_narrow(theme):
     c = THEMES[theme]
-    W, H, CL = 420, 372, 36          # clamp floors: gutter 14 + frame-pad 22
+    W, H, CL = 420, 616, 36          # clamp floors: gutter 14 + frame-pad 22
     budget = 384 - CL
     p = "n"
     o = [head(W, H, MASTHEAD_ALT), motion(p, W),
@@ -269,6 +322,10 @@ def masthead_narrow(theme):
                               + esc(","), CL, y, MONO, 11.5, 400, c["muted"]))
         else:
             o.append(text(fits(line, 11.5, budget), CL, y, MONO, 11.5, 400, c["muted"]))
+    # Two columns, three rows, five items: the null result lands alone on the
+    # last row rather than being padded out to fill the grid.
+    receipts_row(o, c, CL, 384, 400, cols=2, size=21, label_size=9.5, track=1.2,
+                 pitch=60)
     o.append("</g>" + edge(p, c, W, H))
     return "".join(o) + "</svg>"
 
@@ -462,10 +519,77 @@ def bench_narrow(theme):
 # --------------------------------------------------------------------------
 
 
+def pulse_mark(c, x, ys, dur=2.4):
+    """One mark, hopping the dots it is drawn on, then a ring where it lands.
+
+    The second and last moving thing in this profile, and it earns the same way
+    the masthead does: the masthead is an image resolving as it is read, and
+    this is a signal arriving. It steps rather than glides, because four hops
+    through hardware are discrete events and a smooth slide would draw a
+    continuum that is not there.
+
+    No rate is claimed. The figure's caption already says no rate, latency or
+    frame time was recorded, and that stays true: the loop period is a legible
+    interval, not a measurement, and the caption says so.
+
+    Degrades to nothing, by construction. Both marks carry opacity="0" as an
+    attribute, so a crawler, a social-card renderer or a sanitising proxy gets
+    the finished diagram with no stray dot in it, and reduced motion gets the
+    same by switching the animations off rather than parking them.
+    """
+    n = len(ys)
+    d = ys[-1] - ys[0]
+    r = 4
+    # steps(n, jump-none) holds each of the n dots for 1/n of the cycle, so the
+    # mark reaches the last one at (n-1)/n. Every time below is derived from
+    # that rather than typed, because a fade that starts before the arrival
+    # means the signal never visibly gets where the figure says it goes.
+    arrive = 100 * (n - 1) // n
+    return (
+        "<style>"
+        f".sgh{{animation:sgt {dur}s steps({n},jump-none) infinite}}"
+        f"@keyframes sgt{{from{{transform:translateY(0)}}"
+        f"to{{transform:translateY({d}px)}}}}"
+        f".sgm{{animation:sgo {dur}s linear infinite}}"
+        "@keyframes sgo{0%{opacity:0}6%{opacity:1}"
+        f"{arrive + 13}%{{opacity:1}}{arrive + 21}%{{opacity:0}}100%{{opacity:0}}}}"
+        # The ring peaks nine points after the arrival, not at it. Peaking on
+        # arrival puts full opacity on a radius still hidden behind the mark,
+        # so the only part you could see was the part that had already faded.
+        # scale(), not the `r` geometry property. Animating `r` from CSS is not
+        # supported in Firefox at all, and the ring is the payoff for the line
+        # that says "breathing and pulsing effects, in real time" - it cannot be
+        # the one thing a whole browser does not get. The circle sits at its own
+        # origin so scale() grows it about its centre with no transform-origin,
+        # and a non-scaling stroke keeps the hairline a hairline.
+        f".sgr{{animation:sgb {dur}s linear infinite}}"
+        f"@keyframes sgb{{0%,{arrive}%{{transform:scale(1);opacity:0}}"
+        f"{arrive + 9}%{{opacity:.85}}"
+        f"{arrive + 21}%{{transform:scale(4);opacity:0}}100%{{opacity:0}}}}"
+        "@media(prefers-reduced-motion:reduce){.sgh,.sgm,.sgr{animation:none}}"
+        "</style>"
+        # --muted, not --line-strong. The note under study() is right that
+        # line-strong at 1.44:1 vanishes, and a bloom nobody can see is weight
+        # without a reading. This one is momentary and fades to nothing, so it
+        # never competes with the type it passes.
+        f'<g transform="translate({x},{ys[-1]})"><circle class="sgr" r="{r}" '
+        f'fill="none" stroke="{c["muted"]}" stroke-width="1.5" '
+        f'vector-effect="non-scaling-stroke" opacity="0"/></g>'
+        f'<g class="sgh"><circle class="sgm" cx="{x}" cy="{ys[0]}" r="{r}" '
+        f'fill="{c["ink"]}" opacity="0"/></g>'
+    )
+
+
 def chain(theme, title, groups, stats, narrow=False, short=None,
-          stats_short=None):
+          stats_short=None, pulse=False):
     """A labelled sequence on the shared spine. `groups` is a list of
-    (group_label | None, [(step, description, hue_or_None), ...])."""
+    (group_label | None, [(step, description, hue_or_None), ...]).
+
+    `pulse` animates one mark down the first group's dots. Only the biometric
+    chain gets it: there, the thing being drawn really is a signal moving, so
+    the motion is the subject. The pipeline is a sequence of stages rather than
+    a signal, and animating it would be decoration.
+    """
     c = THEMES[theme]
     if narrow:
         W, CL, CR, SPINE = 420, 36, 384, 36
@@ -489,7 +613,9 @@ def chain(theme, title, groups, stats, narrow=False, short=None,
               tracking=-0.15)]
     y = 108 if narrow else 118
     spine_top, spine_bot = y - 14, y - 14
+    lanes = []
     for label, steps in groups:
+        lane = []
         if label:
             o.append(text(fits(label, 10 if narrow else 11, CR - CL, 1.3),
                           CL, y, MONO, 10 if narrow else 11, 500, c["faint"],
@@ -511,14 +637,18 @@ def chain(theme, title, groups, stats, narrow=False, short=None,
                 o.append(f'<circle cx="{SPINE}" cy="{y - 4}" r="3" fill="{c["line-strong"]}"/>')
                 o.append(text(fits(desc, 14, CR - SPINE - 36), SPINE + 34, y, SANS, 14,
                               400, c["ink-2"]))
+            lane.append(y - 4)
             spine_bot = y - 4
             y += pitch
+        lanes.append(lane)
     o.insert(4, f'<line x1="{SPINE}.5" y1="{spine_top}" x2="{SPINE}.5" y2="{spine_bot}" '
                 f'stroke="{c["line"]}" stroke-width="1"/>')
     fy = H - 62
     o.append(f'<line x1="{CL}" y1="{fy}.5" x2="{CR}" y2="{fy}.5" stroke="{c["line"]}" stroke-width="1"/>')
     o.append(text(fits(stats, 10 if narrow else 11, CR - CL, 1.3), CL, fy + 26, MONO,
                   10 if narrow else 11, 500, c["faint"], tracking=1.3))
+    if pulse and len(lanes[0]) > 1:
+        o.append(pulse_mark(c, SPINE, lanes[0]))
     return "".join(o) + "</svg>"
 
 
@@ -528,6 +658,7 @@ def chain(theme, title, groups, stats, narrow=False, short=None,
 SIGNAL = dict(
     title="One heartbeat, four hops",
     stats="TEAM OF 4 · MIT REALITY HACK 2026",
+    pulse=True,
     groups=[("BIOMETRIC CHAIN", [
                 ("PULSE SENSOR", "reads the pulse as an analog signal", None, None),
                 ("ARDUINO", "turns it into BPM and IBI", None, None),
@@ -551,7 +682,358 @@ PIPELINE = dict(
 
 def chain_svg(theme, spec, narrow=False):
     return chain(theme, spec["title"], spec["groups"], spec["stats"], narrow=narrow,
-                 short=spec.get("short"), stats_short=spec.get("stats_short"))
+                 short=spec.get("short"), stats_short=spec.get("stats_short"),
+                 pulse=spec.get("pulse", False))
+
+
+# --------------------------------------------------------------------------
+# Tenure
+#
+# The one figure here that shows something the tables cannot. A table of roles
+# is a list of ranges, read one at a time; the finding is that three of them
+# ran at once through one summer, and only a shared axis can show that.
+#
+# Drawn to a month scale, from the same dates the table below it carries, on
+# the grid the bar figures already use: labels from --gutter, measurement
+# starting at x=320. --muted for the roles, because they are the measurement;
+# the two cover hues on the projects, marking the same two subjects they mark
+# everywhere else. The hackathon is a dot, because a weekend has no length at
+# this scale and a three-day bar would be a lie about its width.
+# --------------------------------------------------------------------------
+
+START, NOW = (2023, 1), (2026, 8)
+
+
+def mo(ym):
+    """Months since START. Whole months only: nothing here is finer than that."""
+    return (ym[0] - START[0]) * 12 + (ym[1] - START[1])
+
+
+MONTHS = mo(NOW) + 1                     # Jan 2023 through Aug 2026, inclusive
+
+ROLES = [("Teaching Assistant", (2023, 1), NOW),
+         ("Software Developer Intern", (2024, 10), (2025, 9)),
+         ("Research Assistant", (2025, 5), (2025, 8))]
+
+WORKS = [("bug classification", (2025, 1), (2025, 4), "blue"),
+         ("annotation study", (2025, 5), (2025, 8), "teal"),
+         ("BEAP Engine", (2024, 10), (2025, 9), None),
+         ("Dreaming Machines", (2026, 1), None, None)]
+
+TENURE_TITLE = "Three roles, one overlapping summer"
+TENURE_STATS = "THREE ROLES · FOUR PROJECTS · JAN 2023 – AUG 2026"
+TENURE_STATS_SHORT = "THREE ROLES · FOUR PROJECTS"
+
+TENURE_ALT = (
+    "Three roles, one overlapping summer. Teaching Assistant, January 2023 to "
+    "now. Software Developer Intern, October 2024 to September 2025. Research "
+    "Assistant, May to August 2025. All three overlap through the summer of "
+    "2025. Projects: bug classification January to April 2025, annotation study "
+    "May to August 2025, BEAP Engine October 2024 to September 2025, Dreaming "
+    "Machines January 2026.")
+
+
+def _years(o, c, x0, ppm, y0, y1, size, tracking, label_y):
+    """Year gridlines and their labels. The scale is the same in both widths,
+    so it is written once."""
+    for yr in range(START[0], NOW[0] + 1):
+        x = x0 + mo((yr, 1)) * ppm
+        o.append(f'<line x1="{x:.1f}" y1="{y0}" x2="{x:.1f}" y2="{y1}" '
+                 f'stroke="{c["line"]}" stroke-width="1"/>')
+        o.append(text(str(yr), x, label_y, MONO, size, 500, c["faint"],
+                      tracking=tracking))
+
+
+def tenure(theme):
+    c = THEMES[theme]
+    W, H, CL, CR, X0 = 880, 468, 76, 804, 320
+    ppm = (CR - X0) / MONTHS             # 11.0 px per month
+    o = [head(W, H, TENURE_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<rect x="24.5" y="24.5" width="831" height="423" rx="{R}" ry="{R}" '
+         f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(TENURE_TITLE, 17, CR - CL, -0.15), CL, 82, MONO, 17, 600,
+              c["ink"], tracking=-0.15)]
+    _years(o, c, X0, ppm, 120, 386, 11, 1.43, 112)
+
+    o.append(text(fits("ROLES", 11, CR - CL, 1.3), CL, 142, MONO, 11, 500,
+                  c["faint"], tracking=1.3))
+    for i, (name, a, b) in enumerate(ROLES):
+        top = 156 + i * 34
+        fits(name, 14, X0 - CL - 20)
+        o.append(text(name, CL, top + 15, SANS, 14, 400, c["ink-2"]))
+        o.append(f'<rect x="{X0 + mo(a) * ppm:.1f}" y="{top}" '
+                 f'width="{(mo(b) - mo(a) + 1) * ppm:.1f}" height="20" '
+                 f'fill="{c["muted"]}"/>')
+
+    # Same 29px from group label to first row as ROLES gets above.
+    o.append(text(fits("PROJECTS", 11, CR - CL, 1.3), CL, 272, MONO, 11, 500,
+                  c["faint"], tracking=1.3))
+    for i, (name, a, b, hue) in enumerate(WORKS):
+        top = 292 + i * 28
+        fits(name, 14, X0 - CL - 20)
+        o.append(text(name, CL, top + 9, SANS, 14, 400, c["ink-2"]))
+        fill = c[hue] if hue else c["muted"]
+        if b is None:
+            o.append(f'<circle cx="{X0 + (mo(a) + 0.5) * ppm:.1f}" cy="{top + 5}" '
+                     f'r="5" fill="{fill}"/>')
+        else:
+            o.append(f'<rect x="{X0 + mo(a) * ppm:.1f}" y="{top}" '
+                     f'width="{(mo(b) - mo(a) + 1) * ppm:.1f}" height="10" '
+                     f'fill="{fill}"/>')
+
+    # The one thing on this figure with a state, so it gets the hue the
+    # masthead's availability line gets. The measured axis stops here.
+    o.append(f'<line x1="{CR}.5" y1="120" x2="{CR}.5" y2="386" '
+             f'stroke="{c["teal"]}" stroke-width="1"/>')
+    o.append(text(fits("NOW", 10, 44, 1.3), CR + 8, 112, MONO, 10, 500,
+                  c["teal"], tracking=1.3))
+
+    o.append(f'<line x1="{CL}" y1="406.5" x2="{CR}" y2="406.5" '
+             f'stroke="{c["line"]}" stroke-width="1"/>')
+    o.append(text(fits(TENURE_STATS, 11, CR - CL, 1.43), CL, 432, MONO, 11, 500,
+                  c["faint"], tracking=1.43))
+    return "".join(o) + "</svg>"
+
+
+def tenure_narrow(theme):
+    c = THEMES[theme]
+    W, H, CL, CR, X0 = 420, 484, 36, 384, 36
+    ppm = (CR - X0) / MONTHS
+    o = [head(W, H, TENURE_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<rect x="14.5" y="14.5" width="391" height="439" rx="{R}" ry="{R}" '
+         f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(TENURE_TITLE, 14, CR - CL, -0.15), CL, 62, MONO, 14, 600,
+              c["ink"], tracking=-0.15)]
+    _years(o, c, X0, ppm, 96, 402, 9, 1.0, 88)
+
+    # Labels sit above their bars rather than beside them: the same flip the
+    # site makes to its hero, and the only way a 25-character role name and a
+    # 44-month axis both get the full measure.
+    o.append(text(fits("ROLES", 10, CR - CL, 1.3), CL, 116, MONO, 10, 500,
+                  c["faint"], tracking=1.3))
+    for i, (name, a, b) in enumerate(ROLES):
+        base = 140 + i * 40
+        o.append(text(fits(name, 12, CR - CL), CL, base, SANS, 12, 400, c["ink-2"]))
+        o.append(f'<rect x="{X0 + mo(a) * ppm:.1f}" y="{base + 6}" '
+                 f'width="{(mo(b) - mo(a) + 1) * ppm:.1f}" height="12" '
+                 f'fill="{c["muted"]}"/>')
+
+    o.append(text(fits("PROJECTS", 10, CR - CL, 1.3), CL, 268, MONO, 10, 500,
+                  c["faint"], tracking=1.3))
+    for i, (name, a, b, hue) in enumerate(WORKS):
+        base = 292 + i * 32
+        o.append(text(fits(name, 12, CR - CL), CL, base, SANS, 12, 400, c["ink-2"]))
+        fill = c[hue] if hue else c["muted"]
+        if b is None:
+            o.append(f'<circle cx="{X0 + (mo(a) + 0.5) * ppm:.1f}" cy="{base + 10}" '
+                     f'r="4" fill="{fill}"/>')
+        else:
+            o.append(f'<rect x="{X0 + mo(a) * ppm:.1f}" y="{base + 6}" '
+                     f'width="{(mo(b) - mo(a) + 1) * ppm:.1f}" height="8" '
+                     f'fill="{fill}"/>')
+
+    o.append(f'<line x1="{CR}.5" y1="96" x2="{CR}.5" y2="402" '
+             f'stroke="{c["teal"]}" stroke-width="1"/>')
+    # End-anchored, so it cannot drift into the 2026 tick the way a fixed
+    # offset from the line did.
+    o.append(text("NOW", CR, 88, MONO, 9, 500, c["teal"], tracking=1.0,
+                  anchor="end"))
+
+    o.append(f'<line x1="{CL}" y1="422.5" x2="{CR}" y2="422.5" '
+             f'stroke="{c["line"]}" stroke-width="1"/>')
+    o.append(text(fits(TENURE_STATS_SHORT, 10, CR - CL, 1.3), CL, 448, MONO, 10,
+                  500, c["faint"], tracking=1.3))
+    return "".join(o) + "</svg>"
+
+
+# --------------------------------------------------------------------------
+# Stack
+#
+# The skills table answers "which ones". It cannot answer "how much of this is
+# current", because thirty-two names in fifteen cells all read at the same
+# weight. So the figure counts them instead: one dot per entry, in the column
+# for how current it is, and the shape of the answer is visible before any of
+# it is read.
+#
+# No hue at all. The three levels are three weights of the same neutral mark,
+# which is what the site's ramp is for, and a fluency level is not a subject.
+# The table stays underneath: the names are the part a reader searches for.
+# --------------------------------------------------------------------------
+
+STACK = [("Languages", 3, 3, 3), ("Vision & ML", 3, 3, 1), ("Web", 2, 4, 1),
+         ("Data", 1, 2, 1), ("Tools", 2, 2, 1)]
+
+LEVELS = ("DAILY", "REGULAR", "FAMILIAR")
+
+STACK_TITLE = "Thirty-two things, and where the daily weight sits"
+STACK_TITLE_SHORT = "Thirty-two things, by how current"
+STACK_STATS = "32 ENTRIES · 5 CATEGORIES · DAILY, REGULAR OR FAMILIAR"
+STACK_STATS_SHORT = "32 ENTRIES · 5 CATEGORIES"
+
+STACK_ALT = (
+    "Thirty-two things, and where the daily weight sits. Counts are daily, "
+    "regular, familiar. Languages 3, 3, 3. Vision and ML 3, 3, 1. Web 2, 4, 1. "
+    "Data 1, 2, 1. Tools 2, 2, 1. Thirty-two entries in five categories.")
+
+
+def _dot(c, x, y, level, r):
+    """One entry. Filled, half-weight or hollow, for daily, regular, familiar."""
+    if level == 0:
+        return f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c["ink-2"]}"/>'
+    if level == 1:
+        return f'<circle cx="{x}" cy="{y}" r="{r}" fill="{c["faint"]}"/>'
+    return (f'<circle cx="{x}" cy="{y}" r="{r - 0.5}" fill="none" '
+            f'stroke="{c["line-strong"]}" stroke-width="1.5"/>')
+
+
+def stack(theme):
+    c = THEMES[theme]
+    W, H, CL, CR = 880, 372, 76, 804
+    cols, pitch, r = (320, 480, 640), 20, 5
+    o = [head(W, H, STACK_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<rect x="24.5" y="24.5" width="831" height="323" rx="{R}" ry="{R}" '
+         f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(STACK_TITLE, 17, CR - CL, -0.15), CL, 82, MONO, 17, 600,
+              c["ink"], tracking=-0.15)]
+    for x, name in zip(cols, LEVELS):
+        o.append(text(fits(name, 10, 150, 1.3), x - r, 118, MONO, 10, 500,
+                      c["faint"], tracking=1.3))
+    o.append(text("TOTAL", CR, 118, MONO, 10, 500, c["faint"], tracking=1.3,
+                  anchor="end"))
+    for i, row in enumerate(STACK):
+        name, counts = row[0], row[1:]
+        cy = 148 + i * 34
+        fits(name, 14, cols[0] - CL - 20)
+        o.append(text(name, CL, cy + 5, SANS, 14, 400, c["ink-2"]))
+        for level, (x, n) in enumerate(zip(cols, counts)):
+            for k in range(n):
+                o.append(_dot(c, x + k * pitch, cy, level, r))
+        o.append(text(str(sum(counts)), CR, cy + 5, MONO, 13, 600, c["ink"],
+                      anchor="end"))
+    o.append(f'<line x1="{CL}" y1="310.5" x2="{CR}" y2="310.5" '
+             f'stroke="{c["line"]}" stroke-width="1"/>')
+    o.append(text(fits(STACK_STATS, 11, CR - CL, 1.43), CL, 336, MONO, 11, 500,
+                  c["faint"], tracking=1.43))
+    return "".join(o) + "</svg>"
+
+
+def stack_narrow(theme):
+    c = THEMES[theme]
+    W, H, CL, CR = 420, 412, 36, 384
+    pitch, gap, r = 14, 10, 4.5
+    o = [head(W, H, STACK_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<rect x="14.5" y="14.5" width="391" height="367" rx="{R}" ry="{R}" '
+         f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(STACK_TITLE_SHORT, 14, CR - CL, -0.15), CL, 62, MONO, 14, 600,
+              c["ink"], tracking=-0.15)]
+    # One legend line, because the three columns collapse into one row here and
+    # the mark is the only thing left distinguishing the levels.
+    x = CL
+    for level, name in enumerate(LEVELS):
+        o.append(_dot(c, x + r, 88 - 4, level, r))
+        o.append(text(fits(name, 9, 70, 1.1), x + 2 * r + 6, 88, MONO, 9, 500,
+                      c["faint"], tracking=1.1))
+        x += 2 * r + 6 + len(name) * 0.62 * 9 + (len(name) - 1) * 1.1 + 16
+    for i, row in enumerate(STACK):
+        name, counts = row[0], row[1:]
+        base = 128 + i * 44
+        o.append(text(fits(name, 12, CR - CL - 40), CL, base, SANS, 12, 400,
+                      c["ink-2"]))
+        o.append(text(str(sum(counts)), CR, base, MONO, 12, 600, c["ink"],
+                      anchor="end"))
+        x = CL + r
+        for level, n in enumerate(counts):
+            for k in range(n):
+                o.append(_dot(c, x, base + 16, level, r))
+                x += pitch
+            x += gap
+        assert x <= CR, f"{name}: dots run {x - CR:.0f}px past the measure"
+    o.append(f'<line x1="{CL}" y1="352.5" x2="{CR}" y2="352.5" '
+             f'stroke="{c["line"]}" stroke-width="1"/>')
+    o.append(text(fits(STACK_STATS_SHORT, 10, CR - CL, 1.3), CL, 376, MONO, 10,
+                  500, c["faint"], tracking=1.3))
+    return "".join(o) + "</svg>"
+
+
+# --------------------------------------------------------------------------
+# Tokens
+#
+# The colophon already claims one neutral ramp and colour reserved for links.
+# This is that sentence with its evidence attached: the ten colours this
+# profile is allowed to use, at the size they are used, with their hexes.
+#
+# Unframed, like the masthead, so the page opens and closes on type sitting on
+# the ground with nothing drawn around it. Two of the swatches are --bg and
+# --surface and would otherwise be invisible, so every swatch is outlined
+# rather than only the pale ones - the outline is a constant, not a fix.
+#
+# The last line is the rule this whole directory is built to keep, and BANNED
+# above is what enforces it: the accent cannot reach a committed asset, so it
+# is not in the specimen either. It is only ever on something you can click.
+# --------------------------------------------------------------------------
+
+RAMP = ("bg", "surface", "line", "line-strong", "faint", "muted", "ink-2", "ink")
+HUES = ("teal", "blue")
+
+TOKENS_EYEBROW = "HOW THIS PAGE IS DRAWN"
+TOKENS_LINE = "Eight neutral steps, two cover hues, and nothing else."
+TOKENS_RULE = "THE ACCENT IS ABSENT FROM EVERY FILE HERE · IT BELONGS TO LINKS"
+
+TOKENS_ALT = (
+    "How this page is drawn. Eight neutral steps, two cover hues, and nothing "
+    "else. The accent is absent from every file here; it belongs to links.")
+
+
+def _swatches(o, c, x, y, size, pitch, hex_size, hex_track, gap):
+    for i, name in enumerate(RAMP + HUES):
+        sx = x + i * pitch + (gap if i >= len(RAMP) else 0)
+        o.append(f'<rect x="{sx}.5" y="{y}.5" width="{size}" height="{size}" '
+                 f'fill="{c[name]}" stroke="{c["line-strong"]}" stroke-width="1"/>')
+        o.append(text(fits(c[name], hex_size, pitch - 2, hex_track), sx,
+                      y + size + 16, MONO, hex_size, 400, c["faint"],
+                      tracking=hex_track))
+
+
+def tokens(theme):
+    c = THEMES[theme]
+    W, H, CL, CR = 880, 176, 76, 804
+    o = [head(W, H, TOKENS_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         text(fits(TOKENS_EYEBROW, 11, CR - CL, 1.43), CL, 34, MONO, 11, 500,
+              c["faint"], tracking=1.43)]
+    _swatches(o, c, CL, 50, 34, 46, 8.5, 0, 24)
+    o.append(text(fits(TOKENS_LINE, 14, CR - CL), CL, 132, SANS, 14, 400, c["ink-2"]))
+    o.append(text(fits(TOKENS_RULE, 11, CR - CL, 1.43), CL, 158, MONO, 11, 500,
+                  c["faint"], tracking=1.43))
+    return "".join(o) + "</svg>"
+
+
+def tokens_narrow(theme):
+    c = THEMES[theme]
+    W, H, CL, CR = 420, 196, 36, 384
+    o = [head(W, H, TOKENS_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         text(fits(TOKENS_EYEBROW, 10, CR - CL, 1.3), CL, 34, MONO, 10, 500,
+              c["faint"], tracking=1.3)]
+    # No hexes at this width: eight of them at a legible size do not fit, and a
+    # size that fits would not be legible. The wide figure carries the numbers.
+    for i, name in enumerate(RAMP + HUES):
+        sx = CL + i * 32 + (16 if i >= len(RAMP) else 0)
+        o.append(f'<rect x="{sx}.5" y="50.5" width="28" height="28" '
+                 f'fill="{c[name]}" stroke="{c["line-strong"]}" stroke-width="1"/>')
+    for i, line in enumerate(("Eight neutral steps, two cover hues,",
+                              "and nothing else.")):
+        o.append(text(fits(line, 12.5, CR - CL), CL, 108 + i * 19, SANS, 12.5,
+                      400, c["ink-2"]))
+    for i, line in enumerate(("THE ACCENT IS ABSENT FROM EVERY",
+                              "FILE HERE · IT BELONGS TO LINKS")):
+        o.append(text(fits(line, 10, CR - CL, 1.3), CL, 162 + i * 17, MONO, 10,
+                      500, c["faint"], tracking=1.3))
+    return "".join(o) + "</svg>"
 
 
 def main():
@@ -568,7 +1050,13 @@ def main():
                            ("signal-narrow", chain_svg(theme, SIGNAL, narrow=True)),
                            ("pipeline", chain_svg(theme, PIPELINE)),
                            ("pipeline-narrow", chain_svg(theme, PIPELINE, narrow=True)),
-                           ("study-narrow", study_narrow(theme))):
+                           ("study-narrow", study_narrow(theme)),
+                           ("tenure", tenure(theme)),
+                           ("tenure-narrow", tenure_narrow(theme)),
+                           ("stack", stack(theme)),
+                           ("stack-narrow", stack_narrow(theme)),
+                           ("tokens", tokens(theme)),
+                           ("tokens-narrow", tokens_narrow(theme))):
             path = OUT / f"{stem}{sfx}.svg"
             low = body.lower()
             bad = [b for b in BANNED if b in low]
