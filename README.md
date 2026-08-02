@@ -3,19 +3,19 @@
   <img src="assets/masthead.svg" width="880" alt="Ardalan Askarian. Open to full-time software and ML roles. Software engineer working on machine learning systems, and the ordinary software that has to hold them up. M.Sc. Computer Science, University of Saskatchewan, Applied ML stream. Computer vision and image processing, under Dr. Mark Eramian. 1,552 hand-labelled reports. 36,407 logged events. 6 participants. 4 models. 1 null result.">
 </picture>
 
-[See the work](#selected-projects) · [Get in touch](#lets-talk) · [Portfolio](https://ardalanaskarian.github.io) · [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
+[See the work](#-selected-projects) · [Get in touch](#-lets-talk) · [Portfolio](https://ardalanaskarian.github.io) · [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
 
-## Turning research questions into working systems
+## <img src="assets/icon-research.svg" width="24" alt=""> &nbsp;Turning research questions into working systems
 
 Most of my work sits between a research question and the software that answers it: annotation platforms, data pipelines, and the interfaces researchers actually use. A good part of it is checking whether a thing works before claiming that it does.
 
 I'm a Master's student specializing in Applied Machine Learning, researching computer vision and image processing under Dr. Mark Eramian. Before that, a B.Sc. Honours in Computer Science, Software Engineering option.
 
-## Selected projects
+## <img src="assets/icon-projects.svg" width="24" alt=""> &nbsp;Selected projects
 
 Research first, then apps and games. Open any one for the detail.
 
-### Fine-tuning LLMs for bug classification
+### <img src="assets/icon-bug.svg" width="20" alt=""> &nbsp;Fine-tuning LLMs for bug classification
 
 Fine-tuned code transformers to sort GitHub bug reports into seven categories, benchmarked against classical ML on a hand-labelled corpus.
 
@@ -42,7 +42,7 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
 
 </details>
 
-### SIFT-assisted image annotation
+### <img src="assets/icon-annotate.svg" width="20" alt=""> &nbsp;SIFT-assisted image annotation
 
 An annotation platform built to answer one question honestly: does machine assistance make human annotators better, or just busier?
 
@@ -69,7 +69,7 @@ An annotation platform built to answer one question honestly: does machine assis
 
 </details>
 
-### Dreaming Machines
+### <img src="assets/icon-signal.svg" width="20" alt=""> &nbsp;Dreaming Machines
 
 <img src="banner.gif" width="420" alt="Dreaming Machines, VR experience footage">
 
@@ -96,7 +96,7 @@ Biometric VR driven by a live pulse sensor.
 
 </details>
 
-### BEAP Engine
+### <img src="assets/icon-pipeline.svg" width="20" alt=""> &nbsp;BEAP Engine
 
 Smartwatch data ingestion and analytics.
 
@@ -132,7 +132,7 @@ Smartwatch data ingestion and analytics.
 
 [Browse every repo](https://github.com/ArdalanAskarian?tab=repositories)
 
-## Where I've worked
+## <img src="assets/icon-work.svg" width="24" alt=""> &nbsp;Where I've worked
 
 <picture>
   <source media="(max-width: 500px)" srcset="assets/tenure-narrow.svg">
@@ -149,14 +149,14 @@ Smartwatch data ingestion and analytics.
 
 Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022, one of two given province-wide, and the EAP Scholarship in 2020 as the highest achiever in English for Academic Purposes.
 
-## Stack
+## <img src="assets/icon-stack.svg" width="24" alt=""> &nbsp;Stack
 
 <picture>
   <source media="(max-width: 500px)" srcset="assets/stack-narrow.svg">
-  <img src="assets/stack.svg" width="880" alt="Thirty-two things, and where the daily weight sits. Counts are daily, regular, familiar. Languages 3, 3, 3. Vision and ML 3, 3, 1. Web 2, 4, 1. Data 1, 2, 1. Tools 2, 2, 1. Thirty-two entries in five categories.">
+  <img src="assets/stack.svg" width="880" alt="Thirty-two things, weighted by how current. Filled chips are in a project this term, tinted a few times a year, outlined used but not current. 32 entries: 11 daily, 14 regular, 7 familiar.">
 </picture>
 
-<sub>One dot per entry, in the column for how current it is. The figure answers how much of this is live; the table answers which ones, and that is the part a reader searches for.</sub>
+<sub>Filled is in a project this term, tinted is a few times a year, outlined is used but not current. The table repeats it as text, which is the version a search can find.</sub>
 
 |  | Daily | Regular | Familiar |
 |:--|:--|:--|:--|
@@ -168,7 +168,7 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
 
 <sub>Daily, in a project this term. Regular, several times a year. Familiar, used but not current.</sub>
 
-## Activity
+## <img src="assets/icon-activity.svg" width="24" alt=""> &nbsp;Activity
 
 <img src="https://streak-stats.demolab.com/?user=ArdalanAskarian&background=fbfbfc&border=e6e7ea&stroke=e6e7ea&ring=d3d5da&fire=fbfbfc&currStreakNum=14161c&currStreakLabel=0f7f77&sideNums=14161c&sideLabels=666b75&dates=9498a1&border_radius=14&card_width=880&disable_animations=true" width="880" alt="Total contributions since January 13, 2023. Current streak, and longest streak.">
 
@@ -178,7 +178,7 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
 
 <sub>Three windows on the same habit, widest first. The snake is redrawn every twelve hours by <a href=".github/workflows/snake.yml">an Action in this repo</a>; the streak and the thirty-one-day graph come from third-party services, passed the same tokens as every figure above so they arrive in this page's palette rather than their own. None of the three measures anything except how often I pushed.</sub>
 
-## Let's talk.
+## <img src="assets/icon-talk.svg" width="24" alt=""> &nbsp;Let's talk.
 
 I'm looking for full-time software and machine learning roles, and I'm interested in research collaborations in computer vision. I answer every email.
 
