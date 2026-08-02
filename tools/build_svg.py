@@ -146,11 +146,48 @@ MASTHEAD_ALT = (
     "under Dr. Mark Eramian.")
 
 
+# The masthead is the one thing here that moves, and it moves once.
+#
+# A single hairline crosses the block left to right and the type is revealed in
+# its wake, firming up from --faint to its final ink just behind the edge - an
+# image resolving as it is read. Four staggered bands would have been a generic
+# content reveal; one travelling edge is a pass over a surface.
+#
+# It degrades to the finished masthead, by construction. The clip rect's base
+# position covers everything and the edge's base opacity is 0, so anything that
+# never runs CSS - a crawler, a social-card renderer, a sanitising proxy - gets
+# the complete figure with no edge in it. No animation uses `forwards`.
+EASE = "cubic-bezier(.32,.72,.24,1)"
+
+
+def motion(p, w, dur=1.3):
+    return (
+        f"<style>"
+        f".{p}v{{animation:{p}rv {dur}s {EASE}}}"
+        f"@keyframes {p}rv{{from{{transform:translateX(-{w}px)}}}}"
+        f".{p}e{{animation:{p}ed {dur}s {EASE}}}"
+        f"@keyframes {p}ed{{0%{{transform:translateX(-{w}px);opacity:0}}"
+        f"6%{{opacity:1}}88%{{opacity:1}}100%{{transform:translateX(0);opacity:0}}}}"
+        f".{p}g{{animation:{p}rs {dur + .25}s {EASE}}}"
+        f"@keyframes {p}rs{{from{{opacity:.28}}}}"
+        f"@media(prefers-reduced-motion:reduce){{.{p}v,.{p}e,.{p}g{{animation:none}}}}"
+        f"</style>")
+
+
+def edge(p, c, w, h):
+    return (f'<rect class="{p}e" x="{w - 1}" y="0" width="1" height="{h}" '
+            f'fill="{c["line-strong"]}" opacity="0"/>')
+
+
 def masthead(theme):
     c = THEMES[theme]
     W, H, CL = 880, 336, 76          # --gutter 24 + --frame-pad 52
     budget = 804 - CL                # to the shared right edge
-    o = [head(W, H, MASTHEAD_ALT), f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>']
+    p = "m"
+    o = [head(W, H, MASTHEAD_ALT), motion(p, W),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<clipPath id="{p}c"><rect class="{p}v" width="{W}" height="{H}"/></clipPath>',
+         f'<g clip-path="url(#{p}c)" class="{p}g">']
 
     # .label, verbatim: mono 11 / w500 / .13em / --faint / uppercase.
     o.append(text(fits(EYEBROW, 11, budget, 1.43), CL, 75, MONO, 11, 500,
@@ -165,6 +202,7 @@ def masthead(theme):
     for i, line in enumerate(DESCRIPTOR):
         o.append(text(fits(line, 14.5, budget), CL, 251 + i * 23, SANS, 14.5,
                       400, c["muted"]))
+    o.append("</g>" + edge(p, c, W, H))
     return "".join(o) + "</svg>"
 
 
@@ -172,7 +210,11 @@ def masthead_narrow(theme):
     c = THEMES[theme]
     W, H, CL = 420, 372, 36          # clamp floors: gutter 14 + frame-pad 22
     budget = 384 - CL
-    o = [head(W, H, MASTHEAD_ALT), f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>']
+    p = "n"
+    o = [head(W, H, MASTHEAD_ALT), motion(p, W),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<clipPath id="{p}c"><rect class="{p}v" width="{W}" height="{H}"/></clipPath>',
+         f'<g clip-path="url(#{p}c)" class="{p}g">']
     o.append(text(fits(EYEBROW, 10, budget, 1.30), CL, 48, MONO, 10, 500,
                   c["faint"], tracking=1.30))
     # The name breaks to two lines, which is what the site's h1 does here.
@@ -189,6 +231,7 @@ def masthead_narrow(theme):
     for i, line in enumerate(desc):
         o.append(text(fits(line, 12.5, budget), CL, 275 + i * 20, SANS, 12.5,
                       400, c["muted"]))
+    o.append("</g>" + edge(p, c, W, H))
     return "".join(o) + "</svg>"
 
 
