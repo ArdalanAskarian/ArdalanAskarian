@@ -14,11 +14,19 @@ That site states its design language at the top of its stylesheet:
     Two radii only: --r for surfaces, --r-pill for controls.
     Micro-labels use the system monospace stack, still zero font requests.
 
-Everything below follows from that. Nothing here is chromatic, nothing here is
-a drawn control, and no font is downloaded: SVG in an <img> cannot fetch web
-fonts, but font-family still resolves against the fonts already on the
-reader's machine - which is exactly what a system stack is. So the site's
-three stacks paste in verbatim and "zero font requests" becomes literally true.
+Everything below follows from that. Nothing here is a drawn control, and no
+font is downloaded: SVG in an <img> cannot fetch web fonts, but font-family
+still resolves against the fonts already on the reader's machine - which is
+exactly what a system stack is. So the site's three stacks paste in verbatim
+and "zero font requests" becomes literally true.
+
+The masthead does carry two colours, and they are the rule's own exception
+rather than a hole in it: "the project cover images carry the rest of the
+colour on the page." The masthead is a cover. Its two hues are sampled from
+the site's actual cover art - teal #1ba69c from the SIFT cover, blue #325eae
+from the LLM cover - and each marks the subject it belongs to, so the colour
+is carrying meaning rather than filling space. The accent ultramarine is still
+absent from every file here, because the accent belongs to links.
 
     python3 tools/build_svg.py
 
@@ -53,6 +61,9 @@ THEMES = {
         "faint": "#9498a1",
         "line": "#e6e7ea",
         "line-strong": "#d3d5da",
+        # Cover hues, darkened for paper. 4.7:1 and 7.7:1 on --bg.
+        "teal": "#0f7f77",   # vision, from covers/sift-cover.png
+        "blue": "#2b4f92",   # machine learning, from covers/llm-cover.png
     },
     "dark": {
         "bg": "#0e0f13",
@@ -63,14 +74,16 @@ THEMES = {
         "faint": "#656a74",
         "line": "#24272e",
         "line-strong": "#343841",
+        # Lightened for ink. 9.9:1 and 7.1:1 on --bg.
+        "teal": "#3ecec2",
+        "blue": "#7d9ce6",
     },
 }
 
-# The site's three stacks, verbatim from styles.css:17-19.
+# The site's stacks, verbatim from styles.css:17-19. The display face is
+# unused here: this masthead is set in the monospace.
 SANS = ("-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', "
         "'Segoe UI', Roboto, Arial, sans-serif")
-DISPLAY = ("-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', "
-           "'Segoe UI', Roboto, Arial, sans-serif")
 MONO = ("ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, "
         "'Liberation Mono', monospace")
 
@@ -114,6 +127,21 @@ def text(s, x, y, family, size, weight=400, fill="#000", tracking=None,
     if anchor:
         a.append(f'text-anchor="{anchor}"')
     return f'<text {" ".join(a)}>{esc(s)}</text>'
+
+
+def sp(s, fill):
+    """Colour one phrase inside a line. <tspan> flows inline, so this needs no
+    width - which is the only reason per-phrase colour is safe here at all."""
+    return f'<tspan fill="{fill}">{esc(s)}</tspan>'
+
+
+def text_raw(body, x, y, family, size, weight=400, fill="#000", tracking=None):
+    """Like text(), but `body` is already-escaped markup that may hold tspans."""
+    a = [f'x="{x}"', f'y="{y}"', f'font-family="{family}"',
+         f'font-size="{size}"', f'font-weight="{weight}"', f'fill="{fill}"']
+    if tracking is not None:
+        a.append(f'letter-spacing="{tracking}"')
+    return f'<text {" ".join(a)}>{body}</text>'
 
 
 def head(w, h, title):
@@ -189,19 +217,20 @@ def masthead(theme):
          f'<clipPath id="{p}c"><rect class="{p}v" width="{W}" height="{H}"/></clipPath>',
          f'<g clip-path="url(#{p}c)" class="{p}g">']
 
-    # .label, verbatim: mono 11 / w500 / .13em / --faint / uppercase.
+    # .label geometry, verbatim: mono 11 / w500 / .13em. Teal because the line
+    # is about availability, the one thing on the page with a state.
     o.append(text(fits(EYEBROW, 11, budget, 1.43), CL, 75, MONO, 11, 500,
-                  c["faint"], tracking=1.43))
-    # .hero-name: 68 is the clamp ceiling, which is what a desktop reader sees.
-    # -2.24 = -.033em x 68, the tightest tracking in the stylesheet.
-    o.append(text(fits("Ardalan Askarian", 68, budget, -2.24), CL, 146, DISPLAY,
-                  68, 650, c["ink"], tracking=-2.24))
-    for i, line in enumerate(TAGLINE):
-        o.append(text(fits(line, 19, budget, -0.19), CL, 195 + i * 28, SANS, 19,
-                      400, c["ink-2"], tracking=-0.19))
-    for i, line in enumerate(DESCRIPTOR):
-        o.append(text(fits(line, 14.5, budget), CL, 251 + i * 23, SANS, 14.5,
-                      400, c["muted"]))
+                  c["teal"], tracking=1.43))
+    o.append(text(fits("Ardalan Askarian", 58, budget, -1.2), CL, 150, MONO,
+                  58, 600, c["ink"], tracking=-1.2))
+    o.append(text_raw("Software engineer working on "
+                      + sp("machine learning systems,", c["blue"]),
+                      CL, 200, MONO, 17, 400, c["ink-2"]))
+    o.append(text(fits(TAGLINE[1], 17, budget), CL, 226, MONO, 17, 400, c["ink-2"]))
+    o.append(text(fits(DESCRIPTOR[0], 13, budget), CL, 258, MONO, 13, 400, c["muted"]))
+    o.append(text_raw(sp("Computer vision and image processing", c["teal"])
+                      + esc(", under Dr. Mark Eramian."),
+                      CL, 280, MONO, 13, 400, c["muted"]))
     o.append("</g>" + edge(p, c, W, H))
     return "".join(o) + "</svg>"
 
@@ -216,21 +245,30 @@ def masthead_narrow(theme):
          f'<clipPath id="{p}c"><rect class="{p}v" width="{W}" height="{H}"/></clipPath>',
          f'<g clip-path="url(#{p}c)" class="{p}g">']
     o.append(text(fits(EYEBROW, 10, budget, 1.30), CL, 48, MONO, 10, 500,
-                  c["faint"], tracking=1.30))
-    # The name breaks to two lines, which is what the site's h1 does here.
+                  c["teal"], tracking=1.30))
     for i, part in enumerate(("Ardalan", "Askarian")):
-        o.append(text(fits(part, 40, budget, -1.32), CL, 98 + i * 41, DISPLAY,
-                      40, 650, c["ink"], tracking=-1.32))
-    tag = ("Software engineer working on", "machine learning systems, and the",
-           "ordinary software that has to hold", "them up.")
+        o.append(text(fits(part, 44, budget, -0.9), CL, 100 + i * 46, MONO, 44,
+                      600, c["ink"], tracking=-0.9))
+    # Hand-broken lines. A coloured phrase never straddles a break, so each
+    # line is either plain or holds exactly one tspan.
+    tag = ("Software engineer working on", None, "ordinary software that has to hold",
+           "them up.")
     for i, line in enumerate(tag):
-        o.append(text(fits(line, 16, budget, -0.16), CL, 178 + i * 23, SANS, 16,
-                      400, c["ink-2"], tracking=-0.16))
+        y = 210 + i * 23
+        if line is None:
+            o.append(text_raw(sp("machine learning systems,", c["blue"]) + esc(" and the"),
+                              CL, y, MONO, 14, 400, c["ink-2"]))
+        else:
+            o.append(text(fits(line, 14, budget), CL, y, MONO, 14, 400, c["ink-2"]))
     desc = ("M.Sc. Computer Science · University of", "Saskatchewan · Applied ML stream",
-            "Computer vision and image processing,", "under Dr. Mark Eramian.")
+            None, "under Dr. Mark Eramian.")
     for i, line in enumerate(desc):
-        o.append(text(fits(line, 12.5, budget), CL, 275 + i * 20, SANS, 12.5,
-                      400, c["muted"]))
+        y = 306 + i * 20
+        if line is None:
+            o.append(text_raw(sp("Computer vision and image processing", c["teal"])
+                              + esc(","), CL, y, MONO, 11.5, 400, c["muted"]))
+        else:
+            o.append(text(fits(line, 11.5, budget), CL, y, MONO, 11.5, 400, c["muted"]))
     o.append("</g>" + edge(p, c, W, H))
     return "".join(o) + "</svg>"
 
@@ -265,8 +303,8 @@ def study(theme):
     o = [head(W, H, STUDY_ALT), f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>']
     o.append(f'<rect x="24.5" y="24.5" width="831" height="331" rx="{R}" ry="{R}" '
              f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>')
-    o.append(text(fits(TITLE, 20, CR - CL, -0.36), CL, 91, DISPLAY, 20, 600,
-                  c["ink"], tracking=-0.36))
+    o.append(text(fits(TITLE, 17, CR - CL, -0.2), CL, 91, MONO, 17, 600,
+                  c["ink"], tracking=-0.2))
     # Without a zero rule a zero-length bar is nothing at all; with it, a dot
     # sitting on the line reads as measured, and it was zero.
     o.append(f'<line x1="{ZERO}.5" y1="112" x2="{ZERO}.5" y2="232" '
@@ -308,8 +346,8 @@ def study_narrow(theme):
     o = [head(W, H, STUDY_ALT), f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>']
     o.append(f'<rect x="14.5" y="14.5" width="391" height="364" rx="{R}" ry="{R}" '
              f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>')
-    o.append(text(fits(TITLE, 17, CR - CL, -0.31), CL, 68, DISPLAY, 17, 600,
-                  c["ink"], tracking=-0.31))
+    o.append(text(fits(TITLE, 14, CR - CL, -0.15), CL, 68, MONO, 14, 600,
+                  c["ink"], tracking=-0.15))
     o.append(f'<line x1="{ZERO - 0.5}" y1="92" x2="{ZERO - 0.5}" y2="250" '
              f'stroke="{c["line"]}" stroke-width="1"/>')
 
