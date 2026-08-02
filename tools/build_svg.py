@@ -1185,6 +1185,61 @@ ICONS = {
         f'<rect x="11.9" y="7.2" width="2.2" height="2.6" fill="{c["ink-2"]}"/>',
         f'<rect x="14.8" y="7.2" width="2.2" height="2.6" fill="{c["ink-2"]}"/>',
     ],
+    # The four labels every project panel repeats, so four marks earn sixteen
+    # placements and the panels get one consistent left rail.
+    # built: brickwork, because the row is about what was put up
+    "built": lambda c: [
+        f'<rect x="6.5" y="8.2" width="6.2" height="4" fill="{c["muted"]}"/>',
+        f'<rect x="13.3" y="8.2" width="6.2" height="4" fill="{c["muted"]}"/>',
+        f'<rect x="6.5" y="13.3" width="3" height="4" fill="{c["muted"]}"/>',
+        f'<rect x="9.8" y="13.3" width="6.2" height="4" fill="{c["muted"]}"/>',
+        f'<rect x="16.8" y="13.3" width="2.7" height="4" fill="{c["muted"]}"/>',
+    ],
+    # result: concentric, because the row is about what it hit
+    "result": lambda c: [
+        f'<circle cx="13" cy="13" r="6.3" fill="none" stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        f'<circle cx="13" cy="13" r="2.9" fill="none" stroke="{c["ink-2"]}" stroke-width="1.4"/>',
+        _idot(c, 13, 13, 1.1),
+    ],
+    # with: two heads and one body, because the row is about who else was there
+    "with": lambda c: [
+        _idot(c, 9.8, 10.2, 2.5), _idot(c, 16.2, 10.2, 2.5, "faint"),
+        f'<rect x="5.8" y="15.2" width="14.4" height="4.8" rx="2.4" ry="2.4" '
+        f'fill="{c["muted"]}"/>',
+    ],
+    # stack: three layers in the same three weights the chip wall uses
+    "tools": lambda c: [
+        f'<rect x="6" y="8" width="14" height="3.2" rx="1.4" ry="1.4" fill="{c["ink-2"]}"/>',
+        f'<rect x="6" y="12.4" width="14" height="3.2" rx="1.4" ry="1.4" fill="{c["faint"]}"/>',
+        f'<rect x="6" y="16.8" width="14" height="3.2" rx="1.4" ry="1.4" fill="{c["line-strong"]}"/>',
+    ],
+    # The contact row: the plainest line on a page full of drawings, and the one
+    # actually asking the reader to do something.
+    "github": lambda c: [
+        f'<path d="M11 9 L7.2 13 L11 17" fill="none" stroke="{c["ink-2"]}" '
+        f'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>',
+        f'<path d="M15 9 L18.8 13 L15 17" fill="none" stroke="{c["ink-2"]}" '
+        f'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>',
+    ],
+    "linkedin": lambda c: [
+        f'<line x1="8" y1="16.5" x2="13" y2="8.5" stroke="{c["line-strong"]}" stroke-width="1.3"/>',
+        f'<line x1="13" y1="8.5" x2="18" y2="16.5" stroke="{c["line-strong"]}" stroke-width="1.3"/>',
+        _idot(c, 13, 8.5, 2.2), _idot(c, 8, 16.5, 2.2), _idot(c, 18, 16.5, 2.2, "faint"),
+    ],
+    "portfolio": lambda c: [
+        f'<rect x="5.5" y="7.5" width="15" height="11.5" rx="2" ry="2" '
+        f'fill="none" stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        f'<line x1="5.5" y1="11.2" x2="20.5" y2="11.2" stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+        _idot(c, 8.2, 9.4, 0.9, "muted"), _idot(c, 10.8, 9.4, 0.9, "muted"),
+    ],
+    "resume": lambda c: [
+        f'<rect x="7.2" y="6" width="11.6" height="14.5" rx="1.5" ry="1.5" '
+        f'fill="none" stroke="{c["ink-2"]}" stroke-width="1.5"/>',
+    ] + [
+        f'<line x1="9.6" y1="{y}" x2="{x2}" y2="{y}" stroke="{c["muted"]}" '
+        f'stroke-width="1.3" stroke-linecap="round"/>'
+        for y, x2 in ((10.8, 16.4), (13.8, 16.4), (16.8, 14.2))
+    ],
     # and the rest: three dots fading out, which is what "Also" means
     "also": lambda c: [
         _idot(c, 7.5, 13, 1.9), _idot(c, 13, 13, 1.9, "faint"),
@@ -1199,6 +1254,9 @@ ICON_ALT = {
     "signal": "Biometric chain", "pipeline": "Data pipeline",
     "schedule": "Team scheduling", "weather": "Weather forecasts",
     "maps": "Booking and maps", "tower": "Tower defence", "also": "Also",
+    "built": "Built", "result": "Result", "with": "With", "tools": "Stack",
+    "github": "GitHub", "linkedin": "LinkedIn", "portfolio": "Portfolio",
+    "resume": "Résumé",
 }
 
 
