@@ -51,17 +51,20 @@ OUT = Path(__file__).resolve().parent.parent / "assets"
 # GitHub colours, focuses and gives a hit area itself.
 # --------------------------------------------------------------------------
 
-# Both sets are still built, but README.md serves only the dark one, to every
-# reader, in every theme. That is a deliberate choice and it has a visible cost:
-# on GitHub's light theme each figure lands as a dark block on a white page,
-# because GitHub owns the colour of the prose between them and a README cannot
-# reach it. The dark --bg is #0e0f13 against GitHub's #0d1117, so on dark the
-# seam disappears; on light the block is meant to read as a block.
+# Both sets are still built, but README.md serves only the light one, to every
+# reader, in every theme. One page, whatever the reader's setting.
 #
-# The light set stays canonical here regardless: it is the rendering the
-# portfolio's :root describes, it is what these tokens mean, and dropping it
-# would make the dark values the source of truth for a system that defines
-# itself the other way round.
+# That has a cost and it is worth naming, because GitHub owns the colour of the
+# prose between the figures and a README cannot reach it: on GitHub's dark theme
+# each figure lands as a pale block on a near-black page. Light --bg is #fbfbfc
+# against GitHub's #ffffff, so on light the seam disappears entirely; on dark the
+# block is meant to read as a block.
+#
+# Restoring the swap is one flag in the markup, not a change here - both sets
+# exist either way. Light is canonical regardless: it is the rendering the
+# portfolio's :root describes, it is what these tokens mean, and treating the
+# dark values as the source of truth would invert a system that defines itself
+# the other way round.
 THEMES = {
     "light": {  # :root IS the light theme; light is canonical here too
         "bg": "#fbfbfc",
