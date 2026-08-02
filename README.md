@@ -24,13 +24,23 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
 <details>
 <summary>Read more</summary>
 
-**Overview.** A study comparing fine-tuned language models with traditional ML for automated bug classification. We hand-labelled 1,552 GitHub bug reports from React, VS Code, scikit-learn and TensorFlow into seven categories: syntax, runtime, performance, security, logical, dependency and UI/UX.
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/bench-narrow-dark.svg">
+  <source media="(max-width: 500px)" srcset="assets/bench-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/bench-dark.svg">
+  <img src="assets/bench.svg" width="880" alt="Bug classification accuracy. GraphCodeBERT 94.54 percent, CodeBERT 93.99 percent, DistilBERT 92.90 percent, all fine-tuned transformers. Naive Bayes, the classical baseline, 74.59 percent. 1,552 hand-labelled reports across seven categories, agreement checked with Fleiss' Kappa.">
+</picture>
 
-**Key results.** Transformers outperformed the traditional approaches by a wide margin. GraphCodeBERT reached 94.54%, CodeBERT 93.99% and DistilBERT 92.90%, against Naïve Bayes at 74.59%. Dataset quality was checked with Fleiss' Kappa inter-rater agreement.
+<sub>Bars start at zero, where the twenty-point gap to the classical baseline is true. Truncating the axis would have separated the three transformers, but they finish within 1.64 points of each other, and that is a tie however it is drawn.</sub>
 
-**Team.** Ardalan Askarian, Princess Tayab, Timofei Kabakov, Marmik Patel. January to April 2025.
+| | |
+|:--|:--|
+| **Built** | A labelling protocol, a scraper over the GitHub API, and one fine-tuning harness run across four models on one corpus |
+| **Result** | GraphCodeBERT **94.54%** · CodeBERT 93.99% · DistilBERT 92.90% · Naïve Bayes 74.59% |
+| **With** | Princess Tayab, Timofei Kabakov, Marmik Patel · January to April 2025 |
+| **Stack** | Python · PyTorch · Transformers · CodeBERT · scikit-learn · GitHub API |
 
-Python · Transformers · CodeBERT · scikit-learn · GitHub API · PyTorch
+> Four people had to agree, 1,552 times, on whether a thing was a runtime bug or a logical one. That is what Fleiss' Kappa is measuring, and it is the part that never shows up in the accuracy column.
 
 [Repo](https://github.com/ArdalanAskarian/LLM-Bug-Classification-Research) · [Full paper](https://drive.google.com/file/d/1-EZ82nrDkz-cz7pluI41sm9CC6QkuIQV/view?usp=sharing) · [Presentation](https://docs.google.com/presentation/d/1UArFkzsltQq3Azejfe2cvDD90rAO6j08/edit?usp=sharing)
 
@@ -50,13 +60,18 @@ An annotation platform built to answer one question honestly: does machine assis
   <img src="assets/study.svg" width="880" alt="Change from the manual baseline. Annotation time: plus 71.6 percent. IoU: no measurable change. Ground-truth coverage: no measurable change. SIFT-assisted annotation took 1.72 times as long as the manual baseline. 6 participants, 36,407 logged interaction events.">
 </picture>
 
-**Overview.** NSERC USRA research under Dr. Mark Eramian at the Imaging & AI Lab. A Django annotation platform that proposed SIFT-derived bounding boxes for a human to accept, adjust or reject, measured against a manual baseline. Six participants, 36,407 logged interaction events.
+<sub>Deltas from the manual baseline rather than absolute times. Drawn this way a null result still has a length, so both quality metrics sit on the same scale as the cost — which is the whole comparison.</sub>
 
-**Key finding.** The assistance increased annotation time by 71.6% without improving IoU or ground-truth coverage. So the contribution isn't the platform, it's the account of where the time went: reviewing a wrong proposal costs more than drawing a box from scratch, and confidence in a suggestion is not the same as its accuracy. Co-authored research poster.
+| | |
+|:--|:--|
+| **Built** | A Django platform that proposed SIFT-derived bounding boxes for a human to accept, adjust or reject, logging every interaction against a manual baseline |
+| **Result** | Assistance cost **71.6%** more time and returned no measurable gain in IoU or ground-truth coverage · 6 participants · 36,407 logged events |
+| **With** | Dr. Mark Eramian, Imaging &amp; AI Lab · NSERC USRA, May to August 2025 · co-authored research poster |
+| **Stack** | Django · Python · SIFT · OpenCV · JavaScript |
 
-**Lab.** Imaging & AI Lab. Ardalan Askarian, Dr. Mark Eramian. May to August 2025.
+> Reviewing a wrong proposal costs more than drawing a box from scratch, and confidence in a suggestion is not the same thing as its accuracy.
 
-Django · Python · SIFT · OpenCV · JavaScript
+<sub>Private research. Details on request.</sub>
 
 </details>
 
@@ -69,13 +84,21 @@ Biometric VR driven by a live pulse sensor.
 <details>
 <summary>Read more</summary>
 
-**Overview.** Does the Internet dream of itself? An immersive VR experience for Meta Quest where players step inside the internet's dream of humanity. A phone companion app lets participants feed content into the VR space, reinterpreted as symbolic dream artifacts.
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/signal-narrow-dark.svg">
+  <source media="(max-width: 500px)" srcset="assets/signal-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/signal-dark.svg">
+  <img src="assets/signal.svg" width="880" alt="One heartbeat, four hops. Pulse sensor reads the pulse as an analog signal. Arduino turns it into BPM and IBI. Wi-Fi carries both values into Unity. Unity shader gives breathing and pulsing effects in real time. Phone: a swiped card spawns an object in VR. Team of 4, MIT Reality Hack 2026.">
+</picture>
 
-**Biometric integration.** An Arduino pulse sensor streams live BPM and IBI over WiFi into Unity, driving custom breathing and pulsing shader effects in real time. Card swiping on the phone spawns objects live in VR.
+<sub>Every hop between a heartbeat and a shader parameter. The diagram is the topology, not a measurement — no rate, latency or frame time was recorded.</sub>
 
-**Team Dream Hackers.** Samantha Herle (design and PM), Sean Rove (tech art), Ardalan Askarian (software), Ben Branch (hardware). Built at MIT Reality Hack 2026.
-
-Unity 6 · OpenXR · XR Toolkit · Node.js · WebSocket · Three.js · Arduino · C#
+| | |
+|:--|:--|
+| **Built** | A Meta Quest experience, a phone companion app that feeds content in as dream artifacts, and the wire between a fingertip and a shader |
+| **Result** | Live biometrics driving the environment in real time, demoed at MIT Reality Hack 2026 |
+| **With** | Samantha Herle (design and PM), Sean Rove (tech art), Ben Branch (hardware) · Ardalan Askarian on software |
+| **Stack** | Unity 6 · OpenXR · XR Toolkit · Node.js · WebSocket · Three.js · Arduino · C# |
 
 [Repo](https://github.com/ArdalanAskarian/dream_hackers) · [Demo video](https://www.youtube.com/watch?v=NY5WnzpsTtc) · [Pitch deck](https://docs.google.com/presentation/d/1j2qTOKgDBow35dwZyvudL7hVXUyHlVYta0Yu95tXGPk/edit?usp=sharing)
 
@@ -88,11 +111,23 @@ Smartwatch data ingestion and analytics.
 <details>
 <summary>Read more</summary>
 
-**Overview.** Led full-stack development of the BEAP Engine, a smartwatch data processing and analytics platform built at BEAP Lab. It handles ingestion, processing and analytics of wearable sensor data for research use. I rebuilt the interface in React and TypeScript, and implemented the machine learning that parses inconsistent vendor export formats into something the analytics could use.
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/pipeline-narrow-dark.svg">
+  <source media="(max-width: 500px)" srcset="assets/pipeline-narrow.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
+  <img src="assets/pipeline.svg" width="880" alt="From vendor export to something plottable. Ingestion: wearable exports arrive, one format per vendor. Processing: machine learning normalises the formats. Analytics: an interface researchers actually use. Software Developer Intern, October 2024 to September 2025.">
+</picture>
 
-**Role.** Software Developer Intern, October 2024 to September 2025.
+<sub>The three stages are the platform's own. The shapes are drawn rather than measured: this is internal research tooling and nothing about it is published.</sub>
 
-React · TypeScript · Python · Data processing
+| | |
+|:--|:--|
+| **Built** | Ingestion, processing and analytics for wearable sensor data, with the interface rebuilt in React and TypeScript |
+| **Result** | Vendor exports that disagree on shape, parsed into one the analytics can read |
+| **With** | BEAP Lab · Software Developer Intern, October 2024 to September 2025 |
+| **Stack** | React · TypeScript · Python · Data processing |
+
+<sub>Internal platform. No public repo.</sub>
 
 </details>
 

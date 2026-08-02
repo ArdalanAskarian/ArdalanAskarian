@@ -377,6 +377,183 @@ def study_narrow(theme):
     return "".join(o) + "</svg>"
 
 
+# --------------------------------------------------------------------------
+# Bug classification benchmark
+#
+# The site leads with this project and the README had no figure for it. The
+# story is not that GraphCodeBERT won by half a point over CodeBERT - those
+# three are a cluster - it is the twenty-point gap between the transformers
+# and the classical baseline. So the bars start at zero, where that gap is
+# true, and colour marks the family rather than the winner: blue is the
+# transformers, --muted is the baseline they are being measured against.
+# --------------------------------------------------------------------------
+
+MODELS = [("GraphCodeBERT", 94.54, True), ("CodeBERT", 93.99, True),
+          ("DistilBERT", 92.90, True), ("Naïve Bayes", 74.59, False)]
+
+BENCH_ALT = (
+    "Bug classification accuracy. GraphCodeBERT 94.54 percent, CodeBERT 93.99 "
+    "percent, DistilBERT 92.90 percent, all fine-tuned transformers. Naïve Bayes, "
+    "the classical baseline, 74.59 percent. 1,552 hand-labelled reports across "
+    "seven categories, agreement checked with Fleiss' Kappa.")
+
+BENCH_TITLE = "Bug classification accuracy"
+BENCH_STATS = "1,552 HAND-LABELLED REPORTS · 7 CATEGORIES · FLEISS' KAPPA CHECKED"
+
+
+def bench(theme):
+    c = THEMES[theme]
+    W, H, CL, CR = 880, 380, 76, 804
+    X0, SCALE = 300, 4.34            # x=300 is zero; 4.34px per accuracy point
+    o = [head(W, H, BENCH_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<rect x="24.5" y="24.5" width="831" height="331" rx="{R}" ry="{R}" '
+         f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(BENCH_TITLE, 17, CR - CL, -0.2), CL, 91, MONO, 17, 600,
+              c["ink"], tracking=-0.2),
+         f'<line x1="{X0}.5" y1="112" x2="{X0}.5" y2="288" stroke="{c["line"]}" stroke-width="1"/>']
+    for i, (name, acc, is_tf) in enumerate(MODELS):
+        y = 122 + i * 44
+        fits(name, 14, X0 - CL - 20)
+        o.append(text(name, CL, y + 15, SANS, 14, 400, c["ink-2"]))
+        o.append(f'<rect x="{X0}" y="{y}" width="{acc * SCALE:.0f}" height="20" '
+                 f'fill="{c["blue"] if is_tf else c["muted"]}"/>')
+        o.append(text(f"{acc:.2f}%", X0 + acc * SCALE + 14, y + 15, MONO, 13,
+                      600 if is_tf else 400, c["ink"] if is_tf else c["muted"]))
+    o.append(f'<line x1="{CL}" y1="308.5" x2="{CR}" y2="308.5" stroke="{c["line"]}" stroke-width="1"/>')
+    o.append(text(fits(BENCH_STATS, 11, CR - CL, 1.43), CL, 334, MONO, 11, 500,
+                  c["faint"], tracking=1.43))
+    return "".join(o) + "</svg>"
+
+
+def bench_narrow(theme):
+    c = THEMES[theme]
+    W, H, CL, CR = 420, 372, 36, 384
+    X0, SCALE = 36, 3.4
+    o = [head(W, H, BENCH_ALT),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<rect x="14.5" y="14.5" width="391" height="343" rx="{R}" ry="{R}" '
+         f'fill="{c["surface"]}" stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(BENCH_TITLE, 14, CR - CL, -0.15), CL, 62, MONO, 14, 600,
+              c["ink"], tracking=-0.15)]
+    for i, (name, acc, is_tf) in enumerate(MODELS):
+        b = 100 + i * 52
+        o.append(text(name, CL, b, SANS, 13, 400, c["ink-2"]))
+        o.append(text(f"{acc:.2f}%", CR, b, MONO, 13, 600 if is_tf else 400,
+                      c["ink"] if is_tf else c["muted"], anchor="end"))
+        o.append(f'<rect x="{X0}" y="{b + 8}" width="{acc * SCALE:.0f}" height="14" '
+                 f'fill="{c["blue"] if is_tf else c["muted"]}"/>')
+    o.append(f'<line x1="{CL}" y1="316.5" x2="{CR}" y2="316.5" stroke="{c["line"]}" stroke-width="1"/>')
+    for i, line in enumerate(("1,552 HAND-LABELLED REPORTS · 7", "CATEGORIES · FLEISS' KAPPA CHECKED")):
+        o.append(text(fits(line, 10, CR - CL, 1.30), CL, 336 + i * 16, MONO, 10, 500,
+                      c["faint"], tracking=1.30))
+    return "".join(o) + "</svg>"
+
+
+# --------------------------------------------------------------------------
+# Chain figures
+#
+# Two of the four projects have no measurement to plot, and inventing one
+# would be worse than having none. What they do have is a path: a signal
+# moving through hardware, and data moving through a pipeline. So the spine
+# that carries a scale in the bar figures carries a sequence here - same
+# hairline, same grid, same dots as the site's .timeline-dot - and the reader
+# gets one drawing grammar across every panel instead of two.
+# --------------------------------------------------------------------------
+
+
+def chain(theme, title, groups, stats, narrow=False, short=None,
+          stats_short=None):
+    """A labelled sequence on the shared spine. `groups` is a list of
+    (group_label | None, [(step, description, hue_or_None), ...])."""
+    c = THEMES[theme]
+    if narrow:
+        W, CL, CR, SPINE = 420, 36, 384, 36
+    else:
+        W, CL, CR, SPINE = 880, 76, 804, 320
+    rows = sum(len(g[1]) for g in groups)
+    heads = sum(1 for g in groups if g[0])
+    pitch = 54 if narrow else 40
+    H = (140 if narrow else 128) + rows * pitch + heads * (30 if narrow else 26) + 56
+    if narrow:
+        title = short or title
+        stats = stats_short or stats
+    o = [head(W, H, f"{title}. " + " ".join(
+            f"{st}: {d}." for _, steps in groups for st, d, _, _ in steps) + f" {stats}."),
+         f'<rect width="{W}" height="{H}" fill="{c["bg"]}"/>',
+         f'<rect x="{14.5 if narrow else 24.5}" y="14.5" width="{W - (29 if narrow else 49)}" '
+         f'height="{H - 45}" rx="{R}" ry="{R}" fill="{c["surface"]}" '
+         f'stroke="{c["line"]}" stroke-width="1"/>',
+         text(fits(title, 14 if narrow else 17, CR - CL, -0.15),
+              CL, 62 if narrow else 78, MONO, 14 if narrow else 17, 600, c["ink"],
+              tracking=-0.15)]
+    y = 108 if narrow else 118
+    spine_top, spine_bot = y - 14, y - 14
+    for label, steps in groups:
+        if label:
+            o.append(text(fits(label, 10 if narrow else 11, CR - CL, 1.3),
+                          CL, y, MONO, 10 if narrow else 11, 500, c["faint"],
+                          tracking=1.3))
+            y += 30 if narrow else 26
+        for st, desc, hue, short_desc in steps:
+            if narrow and short_desc:
+                desc = short_desc
+            if narrow:
+                o.append(f'<circle cx="{SPINE}" cy="{y - 4}" r="3" fill="{c["line-strong"]}"/>')
+                o.append(text(fits(st, 10, CR - CL - 20, 1.3), CL + 16, y, MONO, 10,
+                              500, c[hue] if hue else c["muted"], tracking=1.3))
+                o.append(text(fits(desc, 12, CR - CL - 16), CL + 16, y + 20, SANS,
+                              12, 400, c["ink-2"]))
+            else:
+                o.append(text(fits(st, 11, SPINE - CL - 24, 1.3), SPINE - 20, y, MONO,
+                              11, 500, c[hue] if hue else c["muted"], tracking=1.3,
+                              anchor="end"))
+                o.append(f'<circle cx="{SPINE}" cy="{y - 4}" r="3" fill="{c["line-strong"]}"/>')
+                o.append(text(fits(desc, 14, CR - SPINE - 36), SPINE + 34, y, SANS, 14,
+                              400, c["ink-2"]))
+            spine_bot = y - 4
+            y += pitch
+    o.insert(4, f'<line x1="{SPINE}.5" y1="{spine_top}" x2="{SPINE}.5" y2="{spine_bot}" '
+                f'stroke="{c["line"]}" stroke-width="1"/>')
+    fy = H - 62
+    o.append(f'<line x1="{CL}" y1="{fy}.5" x2="{CR}" y2="{fy}.5" stroke="{c["line"]}" stroke-width="1"/>')
+    o.append(text(fits(stats, 10 if narrow else 11, CR - CL, 1.3), CL, fy + 26, MONO,
+                  10 if narrow else 11, 500, c["faint"], tracking=1.3))
+    return "".join(o) + "</svg>"
+
+
+# Each chain declares its own narrow copy. The wide grid has 728px of measure
+# and the narrow one has 348px, so a string that fits one often will not fit
+# the other - and fits() fails the build rather than clipping it.
+SIGNAL = dict(
+    title="One heartbeat, four hops",
+    stats="TEAM OF 4 · MIT REALITY HACK 2026",
+    groups=[("BIOMETRIC CHAIN", [
+                ("PULSE SENSOR", "reads the pulse as an analog signal", None, None),
+                ("ARDUINO", "turns it into BPM and IBI", None, None),
+                ("WI-FI", "carries both values into Unity", None, None),
+                ("UNITY SHADER", "breathing and pulsing effects, in real time", None,
+                 "breathing and pulsing shaders, live")]),
+            ("COMPANION APP", [
+                ("PHONE", "a swiped card spawns an object in VR", None, None)])])
+
+PIPELINE = dict(
+    title="From vendor export to something plottable",
+    short="Vendor export to something plottable",
+    stats="SOFTWARE DEVELOPER INTERN · OCT 2024 – SEP 2025",
+    stats_short="SOFTWARE DEV INTERN · 2024 – 2025",
+    groups=[(None, [
+                ("INGESTION", "wearable exports arrive, one format per vendor", None,
+                 "exports arrive, one shape per vendor"),
+                ("PROCESSING", "machine learning normalises the formats", "blue", None),
+                ("ANALYTICS", "an interface researchers actually use", None, None)])])
+
+
+def chain_svg(theme, spec, narrow=False):
+    return chain(theme, spec["title"], spec["groups"], spec["stats"], narrow=narrow,
+                 short=spec.get("short"), stats_short=spec.get("stats_short"))
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     n = 0
@@ -385,6 +562,12 @@ def main():
         for stem, body in (("masthead", masthead(theme)),
                            ("masthead-narrow", masthead_narrow(theme)),
                            ("study", study(theme)),
+                           ("bench", bench(theme)),
+                           ("bench-narrow", bench_narrow(theme)),
+                           ("signal", chain_svg(theme, SIGNAL)),
+                           ("signal-narrow", chain_svg(theme, SIGNAL, narrow=True)),
+                           ("pipeline", chain_svg(theme, PIPELINE)),
+                           ("pipeline-narrow", chain_svg(theme, PIPELINE, narrow=True)),
                            ("study-narrow", study_narrow(theme))):
             path = OUT / f"{stem}{sfx}.svg"
             low = body.lower()
