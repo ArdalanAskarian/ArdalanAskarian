@@ -1,8 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/masthead-narrow-dark.svg">
-  <source media="(max-width: 500px)" srcset="assets/masthead-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/masthead-dark.svg">
-  <img src="assets/masthead.svg" width="880" alt="Ardalan Askarian. Open to full-time software and ML roles. Software engineer working on machine learning systems, and the ordinary software that has to hold them up. M.Sc. Computer Science, University of Saskatchewan, Applied ML stream. Computer vision and image processing, under Dr. Mark Eramian.">
+  <source media="(max-width: 500px)" srcset="assets/masthead-narrow-dark.svg">
+  <img src="assets/masthead-dark.svg" width="880" alt="Ardalan Askarian. Open to full-time software and ML roles. Software engineer working on machine learning systems, and the ordinary software that has to hold them up. M.Sc. Computer Science, University of Saskatchewan, Applied ML stream. Computer vision and image processing, under Dr. Mark Eramian. 1,552 hand-labelled reports. 36,407 logged events. 6 participants. 4 models. 1 null result.">
 </picture>
 
 [See the work](#selected-projects) · [Get in touch](#lets-talk) · [Portfolio](https://ardalanaskarian.github.io) · [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
@@ -25,10 +23,8 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
 <summary>Read more</summary>
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/bench-narrow-dark.svg">
-  <source media="(max-width: 500px)" srcset="assets/bench-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/bench-dark.svg">
-  <img src="assets/bench.svg" width="880" alt="Bug classification accuracy. GraphCodeBERT 94.54 percent, CodeBERT 93.99 percent, DistilBERT 92.90 percent, all fine-tuned transformers. Naive Bayes, the classical baseline, 74.59 percent. 1,552 hand-labelled reports across seven categories, agreement checked with Fleiss' Kappa.">
+  <source media="(max-width: 500px)" srcset="assets/bench-narrow-dark.svg">
+  <img src="assets/bench-dark.svg" width="880" alt="Bug classification accuracy. GraphCodeBERT 94.54 percent, CodeBERT 93.99 percent, DistilBERT 92.90 percent, all fine-tuned transformers. Naive Bayes, the classical baseline, 74.59 percent. 1,552 hand-labelled reports across seven categories, agreement checked with Fleiss' Kappa.">
 </picture>
 
 <sub>Bars start at zero, where the twenty-point gap to the classical baseline is true. Truncating the axis would have separated the three transformers, but they finish within 1.64 points of each other, and that is a tie however it is drawn.</sub>
@@ -54,10 +50,8 @@ An annotation platform built to answer one question honestly: does machine assis
 <summary>Read more</summary>
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/study-narrow-dark.svg">
-  <source media="(max-width: 500px)" srcset="assets/study-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/study-dark.svg">
-  <img src="assets/study.svg" width="880" alt="Change from the manual baseline. Annotation time: plus 71.6 percent. IoU: no measurable change. Ground-truth coverage: no measurable change. SIFT-assisted annotation took 1.72 times as long as the manual baseline. 6 participants, 36,407 logged interaction events.">
+  <source media="(max-width: 500px)" srcset="assets/study-narrow-dark.svg">
+  <img src="assets/study-dark.svg" width="880" alt="Change from the manual baseline. Annotation time: plus 71.6 percent. IoU: no measurable change. Ground-truth coverage: no measurable change. SIFT-assisted annotation took 1.72 times as long as the manual baseline. 6 participants, 36,407 logged interaction events.">
 </picture>
 
 <sub>Deltas from the manual baseline rather than absolute times. Drawn this way a null result still has a length, so both quality metrics sit on the same scale as the cost — which is the whole comparison.</sub>
@@ -85,13 +79,11 @@ Biometric VR driven by a live pulse sensor.
 <summary>Read more</summary>
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/signal-narrow-dark.svg">
-  <source media="(max-width: 500px)" srcset="assets/signal-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/signal-dark.svg">
-  <img src="assets/signal.svg" width="880" alt="One heartbeat, four hops. Pulse sensor reads the pulse as an analog signal. Arduino turns it into BPM and IBI. Wi-Fi carries both values into Unity. Unity shader gives breathing and pulsing effects in real time. Phone: a swiped card spawns an object in VR. Team of 4, MIT Reality Hack 2026.">
+  <source media="(max-width: 500px)" srcset="assets/signal-narrow-dark.svg">
+  <img src="assets/signal-dark.svg" width="880" alt="One heartbeat, four hops. Pulse sensor reads the pulse as an analog signal. Arduino turns it into BPM and IBI. Wi-Fi carries both values into Unity. Unity shader gives breathing and pulsing effects in real time. Phone: a swiped card spawns an object in VR. Team of 4, MIT Reality Hack 2026.">
 </picture>
 
-<sub>Every hop between a heartbeat and a shader parameter. The diagram is the topology, not a measurement — no rate, latency or frame time was recorded.</sub>
+<sub>Every hop between a heartbeat and a shader parameter. One mark travels the chain and blooms where it lands; it loops at no particular rate, because no rate, latency or frame time was recorded. The diagram is the topology, not a measurement.</sub>
 
 | | |
 |:--|:--|
@@ -112,10 +104,8 @@ Smartwatch data ingestion and analytics.
 <summary>Read more</summary>
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 500px)" srcset="assets/pipeline-narrow-dark.svg">
-  <source media="(max-width: 500px)" srcset="assets/pipeline-narrow.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
-  <img src="assets/pipeline.svg" width="880" alt="From vendor export to something plottable. Ingestion: wearable exports arrive, one format per vendor. Processing: machine learning normalises the formats. Analytics: an interface researchers actually use. Software Developer Intern, October 2024 to September 2025.">
+  <source media="(max-width: 500px)" srcset="assets/pipeline-narrow-dark.svg">
+  <img src="assets/pipeline-dark.svg" width="880" alt="From vendor export to something plottable. Ingestion: wearable exports arrive, one format per vendor. Processing: machine learning normalises the formats. Analytics: an interface researchers actually use. Software Developer Intern, October 2024 to September 2025.">
 </picture>
 
 <sub>The three stages are the platform's own. The shapes are drawn rather than measured: this is internal research tooling and nothing about it is published.</sub>
@@ -133,9 +123,23 @@ Smartwatch data ingestion and analytics.
 
 ### Also
 
-[Sports Scheduling App](https://github.com/ArdalanAskarian/Sports-Scheduler), front end for a team-management app · [Weather App](https://github.com/ArdalanAskarian/Ardalan-Weather-App), a native Swift client for live forecasts · [Dentistry Website](https://github.com/ArdalanAskarian/Dentist-Website), booking flow and integrated maps · [Darkness Defenders](https://github.com/ArdalanAskarian/Darkness-Defenders), a Unity tower defence with layered enemy AI · [Browse every repo](https://github.com/ArdalanAskarian?tab=repositories)
+| | |
+|:--|:--|
+| [Sports Scheduling App](https://github.com/ArdalanAskarian/Sports-Scheduler) | front end for a team-management app |
+| [Weather App](https://github.com/ArdalanAskarian/Ardalan-Weather-App) | a native Swift client for live forecasts |
+| [Dentistry Website](https://github.com/ArdalanAskarian/Dentist-Website) | booking flow and integrated maps |
+| [Darkness Defenders](https://github.com/ArdalanAskarian/Darkness-Defenders) | a Unity tower defence with layered enemy AI |
+
+[Browse every repo](https://github.com/ArdalanAskarian?tab=repositories)
 
 ## Where I've worked
+
+<picture>
+  <source media="(max-width: 500px)" srcset="assets/tenure-narrow-dark.svg">
+  <img src="assets/tenure-dark.svg" width="880" alt="Three roles, one overlapping summer. Teaching Assistant, January 2023 to now. Software Developer Intern, October 2024 to September 2025. Research Assistant, May to August 2025. All three overlap through the summer of 2025. Projects: bug classification January to April 2025, annotation study May to August 2025, BEAP Engine October 2024 to September 2025, Dreaming Machines January 2026.">
+</picture>
+
+<sub>Drawn to a month scale from the dates in the table below. The hackathon is a dot rather than a bar because it was a weekend, and a three-day bar would be a lie about its own width.</sub>
 
 | | Role | |
 |:--|:--|:--|
@@ -144,6 +148,15 @@ Smartwatch data ingestion and analytics.
 | Oct 2024 – Sep 2025 | **Software Developer Intern** | BEAP Lab · BEAP Engine |
 
 Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022, one of two given province-wide, and the EAP Scholarship in 2020 as the highest achiever in English for Academic Purposes.
+
+## Stack
+
+<picture>
+  <source media="(max-width: 500px)" srcset="assets/stack-narrow-dark.svg">
+  <img src="assets/stack-dark.svg" width="880" alt="Thirty-two things, and where the daily weight sits. Counts are daily, regular, familiar. Languages 3, 3, 3. Vision and ML 3, 3, 1. Web 2, 4, 1. Data 1, 2, 1. Tools 2, 2, 1. Thirty-two entries in five categories.">
+</picture>
+
+<sub>One dot per entry, in the column for how current it is. The figure answers how much of this is live; the table answers which ones, and that is the part a reader searches for.</sub>
 
 |  | Daily | Regular | Familiar |
 |:--|:--|:--|:--|
@@ -155,20 +168,13 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
 
 <sub>Daily, in a project this term. Regular, several times a year. Familiar, used but not current.</sub>
 
-<details>
-<summary>GitHub activity</summary>
+## Activity
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" width="880" alt="Contribution graph rendered as a snake animation">
-</picture>
+<img src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake-dark.svg" width="880" alt="Contribution graph rendered as a snake animation">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&include_all_commits=true&count_private=true&border_color=24272e&bg_color=16181d&title_color=eceff0&text_color=c2c6cd&icon_color=8a8f99">
-  <img height="165" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&include_all_commits=true&count_private=true&border_color=e6e7ea&bg_color=ffffff&title_color=14161c&text_color=3b3f49&icon_color=666b75">
-</picture>
+<img height="165" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=ArdalanAskarian&show_icons=true&include_all_commits=true&count_private=true&border_color=24272e&bg_color=16181d&title_color=eceff0&text_color=c2c6cd&icon_color=8a8f99">
 
-</details>
+<sub>The snake is redrawn from the contribution graph every twelve hours by <a href=".github/workflows/snake.yml">a GitHub Action</a>, along the same neutral ink ramp as every figure above. Neither of these is a measurement of anything except how often I pushed.</sub>
 
 ## Let's talk.
 
@@ -176,4 +182,9 @@ I'm looking for full-time software and machine learning roles, and I'm intereste
 
 [ardalan.askarian@usask.ca](mailto:ardalan.askarian@usask.ca) · [GitHub](https://github.com/ArdalanAskarian) · [LinkedIn](https://linkedin.com/in/ardalan-askarian-79221a24b) · [Portfolio](https://ardalanaskarian.github.io) · [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
 
-<sub>Saskatoon, SK. Figures are built by <a href="tools/build_svg.py">tools/build_svg.py</a> from the same tokens as <a href="https://ardalanaskarian.github.io">the portfolio</a>: system fonts, one neutral ramp, and colour reserved for links.</sub>
+<picture>
+  <source media="(max-width: 500px)" srcset="assets/tokens-narrow-dark.svg">
+  <img src="assets/tokens-dark.svg" width="880" alt="How this page is drawn. Eight neutral steps, two cover hues, and nothing else. The accent is absent from every file here; it belongs to links.">
+</picture>
+
+<sub>Saskatoon, SK. Figures are built by <a href="tools/build_svg.py">tools/build_svg.py</a> from the same tokens as <a href="https://ardalanaskarian.github.io">the portfolio</a>: system fonts, one neutral ramp, and colour reserved for links. The dark set is served to every reader, so the page reads the same whichever theme you are in.</sub>
