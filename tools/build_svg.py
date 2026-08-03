@@ -1260,26 +1260,34 @@ ICON_ALT = {
 }
 
 
-# Transparent room below the tile, in viewBox units.
+# The tile box is square, and the alignment is done with align="texttop".
 #
-# align="middle" is the only vertical-align GitHub's sanitizer keeps, and it
-# centres a mark on the x-height rather than the cap height - so beside a
-# heading, where the caps rise well above the x-height, the mark reads low.
-# Baseline alignment has the opposite fault and can only ever read high.
+# This took measuring rather than reasoning. Of the eight values GitHub's
+# sanitizer keeps, tested against real Primer type at 4x device scale with a
+# 28px mark beside 24px/600 text:
 #
-# The truth is between the two, and neither attribute can express it. So the
-# nudge is baked into the geometry instead: the tile sits at the top of a box
-# that is PAD units taller than it is wide, which lifts the tile above the box
-# centre that align="middle" is positioning. It scales with the mark, so one
-# value serves 28px on a heading and 22px on a link.
-ICON_PAD = 4.2
-
-
+#     baseline / bottom / none   -5.50px   too high
+#     top                        -1.50px
+#     texttop                    -0.75px
+#     absbottom                  +0.50px
+#     absmiddle                  +2.25px
+#     middle                     +8.50px   too low  <- what was shipped
+#
+# middle was the wrong choice: it centres on the x-height, so beside a line of
+# caps it drops the mark half a cap below where it belongs. Padding the box to
+# compensate needed ~15 units, which inflated every line box it touched.
+#
+# texttop anchors the box top to the top of the font's content area, so it is
+# font-relative and does not move with line-height: measured +1.25px at both
+# 1.5 and 1.6 leading, where absbottom drifted from +0.75 to +1.50. Residuals
+# across the three type sizes are -0.75, -0.12 and +1.25px, all inside a pixel.
+#
+# Because texttop anchors the box top, padding below the tile cannot move it -
+# so the box goes back to square and no line box grows.
 def icon(theme, name):
     c = THEMES[theme]
     glyphs = [g for g in ICONS[name](c) if 'x1="0" y1="0" x2="0" y2="0"' not in g]
-    return "".join([head(ICON, ICON + ICON_PAD, ICON_ALT[name]), _itile(c)]
-                   + glyphs) + "</svg>"
+    return "".join([head(ICON, ICON, ICON_ALT[name]), _itile(c)] + glyphs) + "</svg>"
 
 
 def main():
