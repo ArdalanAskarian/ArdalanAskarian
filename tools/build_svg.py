@@ -183,15 +183,14 @@ RECEIPTS_ALT = ("1,552 hand-labelled reports. 36,407 logged events. "
 EYEBROW = "OPEN TO FULL-TIME SOFTWARE & ML ROLES"
 TAGLINE = ("Software engineer working on machine learning systems,",
            "and the ordinary software that has to hold them up.")
-DESCRIPTOR = ("M.Sc. Computer Science · University of Saskatchewan · Applied ML stream",
+DESCRIPTOR = ("M.Sc. Computer Science · Applied ML stream",
               "Computer vision and image processing, under Dr. Mark Eramian.")
 
 MASTHEAD_ALT = (
     "Ardalan Askarian. Open to full-time software and ML roles. Software "
     "engineer working on machine learning systems, and the ordinary software "
-    "that has to hold them up. M.Sc. Computer Science, University of "
-    "Saskatchewan, Applied ML stream. Computer vision and image processing, "
-    "under Dr. Mark Eramian. " + RECEIPTS_ALT)
+    "that has to hold them up. M.Sc. Computer Science, Applied ML stream. "
+    "Computer vision and image processing, under Dr. Mark Eramian. " + RECEIPTS_ALT)
 
 
 # --------------------------------------------------------------------------
@@ -293,7 +292,7 @@ def masthead(theme):
 
 def masthead_narrow(theme):
     c = THEMES[theme]
-    W, H, CL = 420, 616, 36          # clamp floors: gutter 14 + frame-pad 22
+    W, H, CL = 420, 596, 36          # clamp floors: gutter 14 + frame-pad 22
     budget = 384 - CL
     p = "n"
     o = [head(W, H, MASTHEAD_ALT), motion(p, W),
@@ -316,8 +315,8 @@ def masthead_narrow(theme):
                               CL, y, MONO, 14, 400, c["ink-2"]))
         else:
             o.append(text(fits(line, 14, budget), CL, y, MONO, 14, 400, c["ink-2"]))
-    desc = ("M.Sc. Computer Science · University of", "Saskatchewan · Applied ML stream",
-            None, "under Dr. Mark Eramian.")
+    desc = ("M.Sc. Computer Science · Applied ML stream", None,
+            "under Dr. Mark Eramian.")
     for i, line in enumerate(desc):
         y = 306 + i * 20
         if line is None:
@@ -327,7 +326,7 @@ def masthead_narrow(theme):
             o.append(text(fits(line, 11.5, budget), CL, y, MONO, 11.5, 400, c["muted"]))
     # Two columns, three rows, five items: the null result lands alone on the
     # last row rather than being padded out to fill the grid.
-    receipts_row(o, c, CL, 384, 400, cols=2, size=21, label_size=9.5, track=1.2,
+    receipts_row(o, c, CL, 384, 380, cols=2, size=21, label_size=9.5, track=1.2,
                  pitch=60)
     o.append("</g>" + edge(p, c, W, H))
     return "".join(o) + "</svg>"
