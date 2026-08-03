@@ -1260,10 +1260,26 @@ ICON_ALT = {
 }
 
 
+# Transparent room below the tile, in viewBox units.
+#
+# align="middle" is the only vertical-align GitHub's sanitizer keeps, and it
+# centres a mark on the x-height rather than the cap height - so beside a
+# heading, where the caps rise well above the x-height, the mark reads low.
+# Baseline alignment has the opposite fault and can only ever read high.
+#
+# The truth is between the two, and neither attribute can express it. So the
+# nudge is baked into the geometry instead: the tile sits at the top of a box
+# that is PAD units taller than it is wide, which lifts the tile above the box
+# centre that align="middle" is positioning. It scales with the mark, so one
+# value serves 28px on a heading and 22px on a link.
+ICON_PAD = 4.2
+
+
 def icon(theme, name):
     c = THEMES[theme]
     glyphs = [g for g in ICONS[name](c) if 'x1="0" y1="0" x2="0" y2="0"' not in g]
-    return "".join([head(ICON, ICON, ICON_ALT[name]), _itile(c)] + glyphs) + "</svg>"
+    return "".join([head(ICON, ICON + ICON_PAD, ICON_ALT[name]), _itile(c)]
+                   + glyphs) + "</svg>"
 
 
 def main():
