@@ -31,8 +31,6 @@ Fine-tuned code transformers to sort GitHub bug reports into seven categories, b
   <img src="assets/bench.svg" width="880" alt="Bug classification accuracy. GraphCodeBERT 94.54 percent, CodeBERT 93.99 percent, DistilBERT 92.90 percent, all fine-tuned transformers. Naive Bayes, the classical baseline, 74.59 percent. 1,552 hand-labelled reports across seven categories, agreement checked with Fleiss' Kappa.">
 </picture>
 
-<sub>Bars start at zero, where the twenty-point gap to the classical baseline is true. Truncating the axis would have separated the three transformers, but they finish within 1.64 points of each other, and that is a tie however it is drawn.</sub>
-
 | | |
 |:--|:--|
 | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="20" align="texttop" alt=""></picture> **Built** | A labelling protocol, a scraper over the GitHub API, and one fine-tuning harness run across four models on one corpus |
@@ -60,8 +58,6 @@ An annotation platform built to answer one question honestly: does machine assis
   <img src="assets/study.svg" width="880" alt="Change from the manual baseline. Annotation time: plus 71.6 percent. IoU: no measurable change. Ground-truth coverage: no measurable change. SIFT-assisted annotation took 1.72 times as long as the manual baseline. 6 participants, 36,407 logged interaction events.">
 </picture>
 
-<sub>Deltas from the manual baseline rather than absolute times. Drawn this way a null result still has a length, so both quality metrics sit on the same scale as the cost — which is the whole comparison.</sub>
-
 | | |
 |:--|:--|
 | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="20" align="texttop" alt=""></picture> **Built** | A Django platform that proposed SIFT-derived bounding boxes for a human to accept, adjust or reject, logging every interaction against a manual baseline |
@@ -70,8 +66,6 @@ An annotation platform built to answer one question honestly: does machine assis
 | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="20" align="texttop" alt=""></picture> **Stack** | Django · Python · SIFT · OpenCV · JavaScript |
 
 > Reviewing a wrong proposal costs more than drawing a box from scratch, and confidence in a suggestion is not the same thing as its accuracy.
-
-<sub>Private research. Details on request.</sub>
 
 </details>
 
@@ -90,8 +84,6 @@ Biometric VR driven by a live pulse sensor.
   <source media="(prefers-color-scheme: dark)" srcset="assets/signal-dark.svg">
   <img src="assets/signal.svg" width="880" alt="One heartbeat, four hops. Pulse sensor reads the pulse as an analog signal. Arduino turns it into BPM and IBI. Wi-Fi carries both values into Unity. Unity shader gives breathing and pulsing effects in real time. Phone: a swiped card spawns an object in VR. Team of 4, MIT Reality Hack 2026.">
 </picture>
-
-<sub>Every hop between a heartbeat and a shader parameter. One mark travels the chain and blooms where it lands; it loops at no particular rate, because no rate, latency or frame time was recorded. The diagram is the topology, not a measurement.</sub>
 
 | | |
 |:--|:--|
@@ -118,16 +110,12 @@ Smartwatch data ingestion and analytics.
   <img src="assets/pipeline.svg" width="880" alt="From vendor export to something plottable. Ingestion: wearable exports arrive, one format per vendor. Processing: machine learning normalises the formats. Analytics: an interface researchers actually use. Software Developer Intern, October 2024 to September 2025.">
 </picture>
 
-<sub>The three stages are the platform's own. The shapes are drawn rather than measured: this is internal research tooling and nothing about it is published.</sub>
-
 | | |
 |:--|:--|
 | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-built-dark.svg"><img src="assets/icon-built.svg" width="20" align="texttop" alt=""></picture> **Built** | Ingestion, processing and analytics for wearable sensor data, with the interface rebuilt in React and TypeScript |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-result-dark.svg"><img src="assets/icon-result.svg" width="20" align="texttop" alt=""></picture> **Result** | Vendor exports that disagree on shape, parsed into one the analytics can read |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-with-dark.svg"><img src="assets/icon-with.svg" width="20" align="texttop" alt=""></picture> **With** | BEAP Lab · Software Developer Intern, October 2024 to September 2025 |
 | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-tools-dark.svg"><img src="assets/icon-tools.svg" width="20" align="texttop" alt=""></picture> **Stack** | React · TypeScript · Python · Data processing |
-
-<sub>Internal platform. No public repo.</sub>
 
 </details>
 
@@ -151,8 +139,6 @@ Smartwatch data ingestion and analytics.
   <img src="assets/tenure.svg" width="880" alt="Three roles, one overlapping summer. Teaching Assistant, January 2023 to now. Software Developer Intern, October 2024 to September 2025. Research Assistant, May to August 2025. All three overlap through the summer of 2025. Projects: bug classification January to April 2025, annotation study May to August 2025, BEAP Engine October 2024 to September 2025, Dreaming Machines January 2026.">
 </picture>
 
-<sub>Drawn to a month scale from the dates in the table below. The hackathon is a dot rather than a bar because it was a weekend, and a three-day bar would be a lie about its own width.</sub>
-
 | | Role | |
 |:--|:--|:--|
 | Jan 2023 – present | **Teaching Assistant** | Department of Computer Science · six core courses, including CMPT 332 Operating Systems |
@@ -170,8 +156,6 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
   <img src="assets/stack.svg" width="880" alt="Thirty-two things, weighted by how current. Filled chips are in a project this term, tinted a few times a year, outlined used but not current. 32 entries: 11 daily, 14 regular, 7 familiar.">
 </picture>
 
-<sub>Filled is in a project this term, tinted is a few times a year, outlined is used but not current. The table repeats it as text, which is the version a search can find.</sub>
-
 |  | Daily | Regular | Familiar |
 |:--|:--|:--|:--|
 | **Languages** | Python, TypeScript, JavaScript | C, Java, SQL | C#, PHP, R |
@@ -179,8 +163,6 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
 | **Web** | React, Django | Node.js, Next.js, React Native, Express | Flask |
 | **Data** | PostgreSQL | MongoDB, MySQL | SQLite |
 | **Tools** | Git, Unix/Linux | Docker, Playwright | Unity |
-
-<sub>Daily, in a project this term. Regular, several times a year. Familiar, used but not current.</sub>
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-activity-dark.svg"><img src="assets/icon-activity.svg" width="30" align="texttop" alt=""></picture> &nbsp;Activity
 
@@ -199,12 +181,8 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&bg_color=fbfbfc&color=14161c&title_color=14161c&line=666b75&point=14161c&area=true&area_color=d3d5da&radius=14&grid=false&custom_title=Contributions%2C%20last%2031%20days" width="880" alt="Contributions per day over the last 31 days">
 </picture>
 
-<sub>Three windows on the same habit, widest first. The snake is redrawn every twelve hours by <a href=".github/workflows/snake.yml">an Action in this repo</a>; the streak and the thirty-one-day graph come from third-party services, passed the same tokens as every figure above so they arrive in this page's palette rather than their own. None of the three measures anything except how often I pushed.</sub>
-
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="30" align="texttop" alt=""></picture> &nbsp;Let's talk.
 
 I'm looking for full-time software and machine learning roles, and I'm interested in research collaborations in computer vision. I answer every email.
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="20" align="texttop" alt=""></picture> [ardalan.askarian@usask.ca](mailto:ardalan.askarian@usask.ca) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-github-dark.svg"><img src="assets/icon-github.svg" width="20" align="texttop" alt=""></picture> [GitHub](https://github.com/ArdalanAskarian) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-linkedin-dark.svg"><img src="assets/icon-linkedin.svg" width="20" align="texttop" alt=""></picture> [LinkedIn](https://linkedin.com/in/ardalan-askarian-79221a24b) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-portfolio-dark.svg"><img src="assets/icon-portfolio.svg" width="20" align="texttop" alt=""></picture> [Portfolio](https://ardalanaskarian.github.io) · <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-resume-dark.svg"><img src="assets/icon-resume.svg" width="20" align="texttop" alt=""></picture> [Résumé](https://ardalanaskarian.github.io/icons/resume.pdf)
-
-<sub>Saskatoon, SK. Figures are built by <a href="tools/build_svg.py">tools/build_svg.py</a> from the same tokens as <a href="https://ardalanaskarian.github.io">the portfolio</a>: system fonts, one neutral ramp, and colour reserved for links. Every figure ships in both themes and switches on <code>prefers-color-scheme</code>, so the page follows your setting rather than picking for you. The one exception is the video still, which has no second version.</sub>
