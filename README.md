@@ -176,11 +176,6 @@ Two awards came out of the teaching side: the TESL Saskatchewan Bursary in 2022,
   <img src="https://raw.githubusercontent.com/ArdalanAskarian/ArdalanAskarian/output/github-snake.svg" width="880" alt="Contribution graph rendered as a snake animation">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&bg_color=0e0f13&color=eceff0&title_color=eceff0&line=8a8f99&point=eceff0&area=true&area_color=343841&radius=14&grid=false&custom_title=Contributions%2C%20last%2031%20days">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArdalanAskarian&bg_color=fbfbfc&color=14161c&title_color=14161c&line=666b75&point=14161c&area=true&area_color=d3d5da&radius=14&grid=false&custom_title=Contributions%2C%20last%2031%20days" width="880" alt="Contributions per day over the last 31 days">
-</picture>
-
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icon-talk-dark.svg"><img src="assets/icon-talk.svg" width="30" align="texttop" alt=""></picture> &nbsp;Let's talk.
 
 I'm looking for full-time software and machine learning roles, and I'm interested in research collaborations in computer vision. I answer every email.
